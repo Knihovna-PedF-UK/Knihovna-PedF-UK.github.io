@@ -1,0 +1,106 @@
+/* tricks from https://madebymike.com.au/writing/precise-control-responsive-typography/*/
+:root { font-size: 14px;  /* default below 600px */ }
+
+img.aktual-img{ display:none;}
+@media (min-width: 770px){
+  img.aktual-img{
+    display:block;
+    margin-top:1rem;
+    width:86%;
+  }
+}
+@media (min-width: 933px){
+    :root {
+          font-size: 1.5vw;
+    }
+    div.logo-container img{height:100%;width:auto;}
+
+    
+}
+@media (min-width: 1200px){
+    :root {
+          font-size: 18px;
+    }
+
+}
+
+@media print{
+  body{font-size:12pt;}
+  body * {background-color:none;color:black;}
+  body.container > div.card{border:none;}
+  /* [role=banner], */ 
+
+  #duckduckgo-search,[role=navigation],footer{display:none;}
+
+}
+
+hr {width:100%;}
+/* div.logo-container {background-color:#ff677b;} */
+div.logo-container div.row{min-height:12vh;}
+/* When page is whorter than logo width * 2 */
+@media (max-width: 514px){
+  div.logo-container div.row{min-height:auto;}
+}
+div.logo-container img{margin-top:0.5rem;}
+
+body.container{padding-top:1rem;}
+
+/* html.wf-active {font-family:"Fira Sans";} */
+html.wf-active body *{font-family:"Fira Sans";}
+
+footer *, footer p{
+  font-size:0.9rem;
+  color:#dfd0b0 ;
+  margin:0;
+}
+footer a, footer a:visited{
+  color:#DDDDBC;
+  /* text-decoration:none; */
+}
+
+caption a, caption a:visited{
+  color: white;
+}
+
+div.page-img {margin-top:.5rem;}
+div.page-img img{width:100%;}
+
+.archiv-link{float:right;margin-left:auto;}
+
+table.prov_doba{margin-bottom:1rem;}
+table.prov_doba caption{margin:0;padding:0;font-size:1rem; font-weight:bold; text-align:left;}
+table.prov_doba td:first-child{min-width:2em;}
+
+table.small{margin-left:0;padding-left:0.5rem;}
+table.closing{margin-top:2.2rem;}
+
+
+table.closing, table.small{
+  border:none; 
+}
+table.closing td, table.small td{border: none; padding:2pt; padding-right: 12pt; margin:0}
+
+div.closed div:first-child{color:#d63422;}
+
+table.small * {padding-left: 0;}
+/* div.row h1{margin:0.5rem 0; } */
+table.small caption{
+  background-color:black;
+  color:#f5f5f5;
+  font-weight:normal;
+  padding-left:.5rem;
+  padding-right:.5rem;
+  padding-top:.2rem;
+}
+
+address{font-style:normal;}
+address li{list-style:none;margin-left:0;list-style-position:inside;}
+address ul{margin-left:0;padding-left:0.5rem;}
+div#mapa img{max-width:none;}
+
+
+ul + h2, ol + h2, p + h2 {margin-top:1.4rem;}
+p, h1, h2, h3{margin-left:0;margin-right:0;}
+ul + h1, ol + h1, p + h1 {margin-top:2rem;}
+
+/* section.section h2{text-align:center;} */

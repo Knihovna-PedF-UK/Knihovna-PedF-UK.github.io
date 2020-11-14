@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            About Library
+        </title>
+        <meta content="website" property="og:type">
+        <meta content="About Library" property="og:title">
+        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
+        <meta content="http://knihovna.pedf.cuni.cz//en/about.html" property="og:url">
+        <meta content="Knihovna PedF UK" property="og:site_name">
+        <meta content="http://knihovna.pedf.cuni.cz/img/informace.jpg" property="og:image">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+        <link href="feed.rss" rel="alternate" type="application/rss+xml">
+        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
+        <link href="/style.css" rel="stylesheet" type="text/css">
+        <link href="/media.css" rel="stylesheet" type="text/css">
+              <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
+      <script defer src="/js/fontawesome-all.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+      <script>
+        WebFont.load({
+          custom: {
+            families: ['Fira Sans']
+          }
+        });
+        </script>
+      
+    </head>
+    <body class="container">
+        <div role="navigation">
+            <header>
+                <span class="logo">
+                    &nbsp;
+                </span>
+                <a href="/index.html" class="button">
+                    Domů
+                </a>
+                <a href="/sluzby.htm" class="button">
+                    Služby
+                </a>
+                <a href="/biblio.html" class="button">
+                    Publikační činnost
+                </a>
+                <a href="/periodika.htm" class="button">
+                    Časopisy
+                </a>
+                <a href="/eiz.htm" class="button">
+                    Elektronické zdroje
+                </a>
+                <a href="/kvalifikacni_prace.htm" class="button">
+                    Závěrečné práce
+                </a>
+                <a href="/objednavani_liter.htm" class="button">
+                    Nákup publikací
+                </a>
+                <a href="/informace.htm" class="button">
+                    O knihovně
+                </a>
+                <span>
+                    <a href="informace.htm">
+                        <img src="/img/gb.svg" alt="English version" style="width:1em;">
+                    </a>
+                </span>
+            </header>
+        </div>
+        <div class="logo-container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <a href="/index.html">
+                        <img role="banner" src="/img/logo.svg" alt="Logo knihovny" style="height:90%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card fluid">
+            <section class="section">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <article role="main">
+<h1 id="about-library">About Library</h1>
+<p><strong>Address:</strong> Magdalény Rettigové 4, 116 39 Prague 1</p>
+<p>There are two branches of our Library in this building – the reference desk (loans) and the study room (printing, web browsing, in-house loans).</p>
+<h2>Location:</h2>
+<p>Reference desk:
+ground floor to the left of the porter’s room</p>
+<p>Study room:
+ground floor to the left of the porter’s room
+<h2>Contacts</h2>
+<ul>
+  <li>Reference desk: <a href="+420221900148">+420 221 900 148</a></li>
+  <li>Study Room: <a href="+420221900178">+420 221 900 178</a> </li>
+  <li>Email:<a href="mailto:knihovna@pedf.cuni.cz"><span class="underline">knihovna@pedf.cuni.cz</span></a></li>
+</ul>
+
+<h2><a href="celetna-en.html">Language Study Room Celetná</a></h2>
+<p><strong>Address:</strong> Celetná 13, 110 00 Praha 1, 4th floor</p>
+<p>Phone: <a href="tel:221900759">221&#8239;900&#8239;759</a></p>
+
+<h2 id="other-documents"><strong>Other documents and links</strong></h2>
+<ul>
+<li><a href="prices.html">Pricelist of Fees and Paid Services.</a></li>
+<li><a href="rules.html">Excerpt of Library functional rules</a></li> 
+<li><a href="opening.html">Opening Hours and Closing Days</a></li>
+<li><a href="https://cuni.cz/UKEN-1167.html">Charles University Library Rules</a> / <a href="/data/cuni_loan_rules.xlsx"><span class="underline">University Loan Rules</span></a></li> 
+</ul>
+<div class="col-sm-12 col-md-6">
+  <h2>Map</h2>
+  <!-- <img src= "rettig.jpg" /> -->
+  <div id="mapa"  style="width:100%; height:400px;"></div>
+</div>
+
+<script src="https://api.mapy.cz/loader.js"></script>
+<script>
+  Loader.load()
+window.onload=function(){
+  var stred = SMap.Coords.fromWGS84(14.4203650,50.0798322 );
+  var mapa = new SMap(JAK.gel("mapa"), stred, 17);
+  mapa.addDefaultLayer(SMap.DEF_BASE).enable();
+  mapa.addDefaultControls();
+  var layer = new SMap.Layer.Marker();
+  mapa.addLayer(layer);
+  layer.enable();
+
+  var options = {};
+  var marker = new SMap.Marker(stred, "myMarker", options);
+  layer.addMarker(marker);
+};
+</script>
+</article>
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <div class="page-img"><img src="/img/informace.jpg" alt="Foto: Martina Růžičková" title="Foto: Martina Růžičková"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer role="contentinfo">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <p>
+                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                        </p>
+                        <p>
+                            Aktualizováno: 2020-11-12
+                        </p>
+                        <p>
+                            © Univerzita Karlova
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <div>
+                            <a href="https://www.facebook.com/knihovnapedfpraha">
+                                Facebook
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                                Instagram
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/feed.rss">
+                                RSS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div>
+                        <p>
+                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
+                        </p>
+                        <p>
+                            <a href="prohlaseni.html">
+                                Prohlášení o přístupnosti stránek
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

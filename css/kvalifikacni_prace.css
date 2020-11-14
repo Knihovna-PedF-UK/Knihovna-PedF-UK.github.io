@@ -1,0 +1,15 @@
+
+article h2{
+  font-size:1.3rem;
+  margin-top:0.5em;
+  margin-bottom:0.2em;
+}
+
+article h3{
+  font-size:1.1rem;
+  margin-top:0.3rem;
+}
+p {
+   margin-bottom: 0em;
+   margin-top: 0.3em;
+}
