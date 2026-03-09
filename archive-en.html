@@ -1,81 +1,430 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Library of Faculty of Education CU
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Knihovna PedF UK" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz/archive-en.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.czimg/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Knihovna PedF UK">
+        <meta property="og:description" content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz/archive-en.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed-en.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index-en.html" class="button">
-                    Home
-                </a>
-                <a href="/services.html" class="button">
-                    Services
-                </a>
-                <a href="/catalogues.html" class="button">
-                    Catalogues and databases
-                </a>
-                <a href="/about.html" class="button">
-                    About library
-                </a>
-                <span>
-                    <a href="/index.html">
-                        <img src="/img/cz.svg" alt="Česká verze" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a href="/index-en.html">
-                        <img role="banner" src="/img/logo-eng.svg" alt="Library logo" style="height:90%;">
-                    </a>
+        <header>
+            <nav class="topmenu" aria-label="additional navigation">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-145.html">
+                            All departments
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-1.html">
+                            Faculty of Education
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Přepnout na českou verzi" href="/index.html">
+                            CS
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
                 </div>
-            </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <article role="main"><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="SARS-Cov-2. CDC/ Alissa Eckert, MS; Dan Higgins, MAM – https://phil.cdc.gov/Details.aspx?pid=23312 " alt="SARS-Cov-2. CDC/ Alissa Eckert, MS; Dan Higgins, MAM – https://phil.cdc.gov/Details.aspx?pid=23312 " class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>13.10.2020 – Library Closed</h3><p>Our library had to be closed due to preventive measures following the
+            </nav>
+            <nav class="mainmenu" aria-label="main menu">
+                <div class="nav-container">
+                    <a href="/index-en.html">
+                        <img class="logo" src="/img/logo-eng.svg" alt="Back to library homepage" role="banner">
+                    </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/index-en.html">
+                                Home
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/catalogues.html">
+                                Catalogues and databases
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/about.html">
+                                About library
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="breadcrumb navigation">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index-en.html">
+                                <img src="/img/home.svg" alt="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <article role="main"><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megaphone" alt="megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.01.2026 – Library Renovation: Temporary Closure and Service Changes</h3><p>
+During the renovation, we are expanding the space available for study and meetings.
+Consultations are provided in office <strong>R136</strong> on <strong>Mondays and Wednesdays</strong>
+from <strong>9:00 a.m. to 4:00 p.m.</strong>, or by email at
+<a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>.
+The study room at <strong>Celetná 13</strong> remains open under normal conditions.
+</p>
+
+
+<p><strong>During the closure:</strong></p>
+
+
+<ul>
+  <li>the lending desk and study room at <strong>M. Rettigové 4</strong> are closed,</li>
+  <li>loans due during this period are automatically extended until <strong>4 May 2026</strong>,</li>
+  <li>books can be returned at any time via the book drop at the porter’s desk,</li>
+  <li>borrowing books (including via reservation boxes) is not possible.</li>
+</ul>
+
+
+<p>
+For up-to-date information, please follow the faculty website and social media.
+Thank you for your understanding, and we look forward to welcoming you to our new
+spaces after the renovation.
+</p>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megaphone" alt="megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>10.11.2025 – Library at M. Rettigové 4 closed from 1 December 2025 due to renovation</h3><p>We are expanding and improving our spaces for studying and meeting.</p>
+
+
+<p>Please make sure to borrow all the books you will need in time – <strong>the last day for borrowing is Friday, 28 November 2025.</strong></p>
+
+
+<h3>During the closure:</h3>
+
+
+<ul>
+<li>all loans due during this period will be <strong>automatically extended until 4 May 2026</strong>,</li>
+<li>books can be <strong>returned at any time via the return box next to the porter’s lodge</strong>,</li>
+<li><strong>borrowing (including through reservation boxes) will not be possible</strong>,</li>
+<li>the <strong>study room in Celetná 13 will remain open</strong> as usual.</li>
+</ul>
+
+
+<p>For the latest updates, please follow the faculty website and social media.  
+Thank you for your understanding – we look forward to welcoming you back in our renewed library.</p>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.11.2025 – Trial access to psychological databases</h3><p>Until 02.12.2025, Charles University has a trial access to the following databases: 
+the <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926125499906986">APA PsycBooks</a> and 
+<a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926125499806986">APA PsycTests</a> databases from the American Psychological
+Association; they provide extensive scholarly resources in psychology.
+PsycBooks includes over 4,600 titles, featuring reference works and classic
+texts. PsycTests offers thousands of psychological assessments, measurement
+tools, and surveys with detailed methodology and validity data.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lean-library_logo.jpg" title="Lean Library" alt="Lean Library" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.10.2025 – Lean Library – browser extension for easy access to e-resources</h3><p>Try the new <a href="https://wiki.alma.cuni.cz/index.php?title=Lean_Library/en">Lean Library</a> browser extension that helps you access licensed electronic information resources (EIZ) of Charles University.
+The extension automatically detects if the university has access to a requested article or e-book and offers login through EZproxy or another available route. It can also point you to legal open-access versions or printed copies available at CU libraries.</p>
+
+<p>Lean Library works both on and off campus, for example when searching via Google Scholar or directly on publishers’ websites.</p>
+
+<p><a href="https://wiki.alma.cuni.cz/index.php?title=Lean_Library/en">Available</a> for browsers:
+Chrome, Firefox, Edge, Opera, and Safari.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megaphone" alt="Megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.10.2025 – Shortened Library Opening Hours</h3><p>On Monday, October 27, the library will be open only until 3 p.m.<br/>
+We apologize for any inconvenience and thank you for your understanding.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/drew-beamer-3SIXZisims4-unsplash.jpg" title="Hello" alt="Hello" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.09.2025 – Welcome, first-year students!</h3><p>We look forward to your first visit to the faculty library. You’re welcome to
+stop by anytime just to have a look around, or you can come with your
+registration already completed – by filling out <a href="https://library.cuni.cz/e-application/">this simple online form</a>, 
+you’ll immediately become a registered reader at all libraries of Charles University.
+All you need is your student ID card.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/listy.jpg" title="Photo by Aaron Burden on Unsplash" alt="Photo by Aaron Burden on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.09.2025 – We will reopen the library at M. Rettigová 4 on 29 September. The reading room at Celetná 13 is open daily.</h3><p>The loan period for all books has been extended until 15 October 2025.
+The <a href="celetna-en.html">reading room at Celetná 13</a> is open Monday to Thursday 9:00–16:00 and Friday 9:00–13:00.
+We look forward to seeing you!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/newton.jpg" title="Newton" alt="Newton" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.06.2025 – New media database NewtonOne</h3><p>The Anopress media database has now been replaced by the more modern <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925904312806986">NewtonOne platform</a>.</p>
+
+<p>The entire user interface has been redesigned – it’s more user-friendly and
+offers new features, such as grouping news about the same event and tracking
+article edits, including headline changes.</p>
+
+<p>Try NewtonOne at home, on the go, or in our library – we’ll be happy to help!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/slunecnice.jpg" title="photo of flower, summer, blue sky, and leaves in Paris, United States by Courtney Cook (@courtneymcook)" alt="photo of flower, summer, blue sky, and leaves in Paris, United States by Courtney Cook (@courtneymcook)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.06.2025 – During the summer, only the study room at Celetná 13 will be open</h3><p>The library at M. Rettigové 4 will be closed, along with the entire building,
+starting from July 1, 2025. It will reopen no earlier than the second half of
+September. Due to reconstruction, access to the books at M. Rettigové 4 will
+not be possible during this entire period.</p>
+
+<p>June will therefore be the last opportunity to stock up on books for the autumn
+(e.g., for exams or the winter semester). We are currently extending the loan
+period for all books until October 1, 2025.</p>
+
+<p><strong>Good news: The study room in Celetná 13 will remain open throughout the entire
+period, every working day from 9 AM to 3 PM. Printing, ring binding and other
+usual services will be available there.</strong></p>
+
+<p>An exception will be July 17 and 18, 2025, when the Celetná study room will be
+closed due to the regular library collection inventory.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megaphone" alt="Megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.05.2025 – Book Smart Lockers Temporarily in the Entrance Hall</h3><p>Although the reconstruction of the Library of the Faculty of Education is not
+yet underway, some construction work will affect the area in front of the
+library. Therefore, we have temporarily moved the book smart lockers to the
+entrance hall. We apologize for any inconvenience.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/velikonoce-kytky.jpg" title="flowers" alt="flowers" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.04.2025 – Planned Library Closure</h3><p>The lending and study rooms will be closed on the following days:</p>
+
+<ul>
+<li>April 17, 2025 (Dean&rsquo;s Day)</li>
+<li>May 1, 2025 (Public Holiday)</li>
+<li>May 2, 2025 (Closing day)</li>
+<li>May 8, 2025 (Public Holiday)</li>
+<li>May 9, 2025 (Closing day)</li>
+<li>May 13, 2025 (Rector&rsquo;s Day)</li>
+</ul>
+
+
+<p>Loans will be automatically extended.</p>
+
+<p>Thank you for your understanding, and we look forward to welcoming you again soon!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.04.2025 – Night of Education at the Study Room in Celetná 13</h3><p>On April 9, 2025, the study room at Celetná 13 will have reduced opening hours
+until 5 PM due to the Night of Education event. The study room at M. Rettigová
+will remain open until 6 PM. We apologize for any inconvenience!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/51983022924_9c7d41b7df_w.jpg" title="Night with Andersen" alt="Night with Andersen" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>18.03.2025 – Night with Andersen</h3><p>We warmly invite the children and grandchildren of faculty employees to the
+Night with Andersen 2025, which will take place on March 28, 2025. In addition
+to spending the night in the study room, we will have a literary game – this
+time based on the book &ldquo;Mr. Lepron’s Soup&rdquo; by Giovanna Zoboli. Recommended age
+of children: 6-12 years. You can find the registration <a href="https://forms.office.com/e/RWBwh8Kv5N?origin=lprLink">form here</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/clarivate.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.03.2025 – Web of Science Research Assistant</h3><p>Until 30th April, Charles University has trial access to an AI extension to the <a href="https://cuni.primo.exlibrisgroup.com/discovery/fulldisplay?context=L&amp;vid=420CKIS_INST:DB&amp;search_scope=DBsearch&amp;tab=DB_search&amp;docid=alma9925591385206986&amp;lang=en">Web of Science (WoS) database: Web of Science Research Assistant</a>.
+The Assistant is a tool using generative AI that assists users in searching the Web of Science Core Collection, provides reports and visualizations of search results and offers the possibility to explore connections between topics, literature and authors.
+For more information, please visit <a href="https://ai.cuni.cz/AIEN-18.html?news=25231&amp;locale=en">this website</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/akce_listopad_2023.jpg" title="Hello" alt="Hello" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.02.2025 – Meeting in the library (english friendly)</h3><p>Do you want to learn about our library and its services? We invite you to a meeting on February, 28th. You are welcome to hear about services and ask what interests you.</p>
+
+<p>We are situated in two places:</p>
+
+<ol>
+<li>On M. Rettigové Street, there is a loan desk and a study room (meeting on 28th February, 8.30)</li>
+<li>In the building on Celetná Street is situated the study room for English, German, and Russian languages (meeting on 28th February, 13.00)</li>
+</ol>
+
+
+<p>Please fill out the
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2naS4DT5hkC_CIgWogQUonkVoOQtgLlHl8b99n_NH_dUNlAxTDZKUlZaRExJSEdZRjQ4UE4zQVE0QS4u">questionnaire</a>
+if you are interested in the excursion. The event will last 30 min.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/joao-silas-74207.jpg" title="author Joao Silas" alt="author Joao Silas" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>11.02.2025 – New trial access to electronic resources</h3><p>Charles University offers trial access to the following resources:</p>
+
+<ul>
+<li><a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926039169706986">British Library Newspapers (Part I)</a> – an archive of national and regional newspapers from Victorian Britain, carefully selected by the British Library&rsquo;s editorial board. Access will be available until March 4, 2025.</li>
+<li><a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591405706986">Oxford English Dictionary Database</a> has launched an AI Search Assistant as an additional search tool. This AI feature will be available to Charles University in a pilot version until mid-2025.</li>
+<li><a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591384606986">World Christian Database</a>, which provides statistical information on Christianity and other religions, including reporting options. Access will be available until December 31, 2025.</li>
+</ul>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.01.2025 – New Student and Employee Card Portal</h3><p><a href="https://cuni.cz/UKEN-1437.html">The Student and Employee Card Portal</a> has been launched. You can now extend your
+ISIC, ITIC, and ALIVE licenses online, order a new UK card, or
+deactivate/activate this card. In UK libraries it is not yet possible to use
+the ID card loaded on phones. The reason is the missing barcode. Thank you for
+continuing to bring your plastic cards to the libraries. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Christmas" alt="Christmas" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.12.2024 – Merry Christmas and thank you for your year-round support</h3><p>The library will reopen on January 6, 2025. If you have reserved books in the
+circulation boxes, you may check them out on January 2 and 3, 2025 from 8 a.m.
+to 3 p.m. Thank you so much for your year-round patronage. You visited us
+29,643 times in 2024 in the study rooms alone, which is 1,000 more visits than
+last year. We look forward to seeing you again and will continue to strive to
+create the best possible learning environment for you.  </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megaphone" alt="Megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.12.2024 – Reduced Opening Hours at the Celetná Study Room</h3><p>Today, the study room at Celetná 13 will close at 4:00 PM due to podcast
+recording. We apologize for any inconvenience. The study room at M. Rettigová 4
+will remain open as usual until 6:00 PM.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/dramox-0.png" title="Dramox sticker" alt="Dramox sticker" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.10.2024 – Watch Theatre Plays!</h3><p>You can now watch Czech and world theater in our Study Room in M. Rettigové! We have unlimited access 
+to the <a href="https://www.dramox.tv/">Dramox</a> platform with more than 400 records from Czech, Slovak and international theaters, including 
+popular scenes such as Dejvické divadlo, Klicperovo divadlo or Divadlo v Dlouhé. You can watch comedies, 
+dramas, operas, Shakespeare in English as well as dozens of recommended reading titles.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/akce_listopad_2023.jpg" title="Hello" alt="Hello" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.10.2024 –  Meeting in the library (english friendly)</h3><p>Do you want to learn about our library and its services? We invite you to a meeting. You are welcome to hear about  services and ask what interests you.</p>
+
+<p>We are situated in two places:</p>
+
+<ol>
+<li>On M. Rettigové Street, there is a loan desk and a study room.</li>
+<li>In the building on Celetná Street is situated the study room for English, German, and Russian languages.</li>
+</ol>
+
+
+<p>Please fill out the <a href="https://forms.office.com/e/Gz1UEyq1hq">questionnaire</a> if you are interested in the excursion.  The event will last 45 min.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/plamenak.png" title="Unsplash/Vicko Mozara" alt="Unsplash/Vicko Mozara" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.06.2024 – Summer opening hours</h3><p>The lending- and study room at M. Rettigové 4 will be open from July 1st to July
+11th, 2024, every working day from 9 AM to 3 PM. In August, we look forward to
+seeing you every Tuesday from 9 AM to 3 PM. The study room in Celetná will be
+closed in both July and August.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/velikonoce-kytky.jpg" title="Flowersimg" alt="Flowersimg" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.03.2024 – We wish you a Happy Easter!</h3><p>We wish all our users a pleasant Easter holiday. The lending room and reading
+rooms will be open for the last time on Wednesday 27 March 2024. We look
+forward to seeing you again on Tuesday 2 April 2024!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/brooke-cagle-n1m25jvupEU-unsplash.jpg" title="Unsplash/Brooke Cagle" alt="Unsplash/Brooke Cagle" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.02.2024 – Trial access to e-books on the De Gruyter platform</h3><p>Until April 30, 2024, trial access to e-books on the de Gruyter platform is
+available for the entire UK. These are multidisciplinary books in different 
+languages. Visit the <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925612682806986">e-resources portal to access</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/celetna-pamet.jpg" title="Memorial Plaque" alt="Memorial Plaque" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.02.2024 – New Memorial Plaque in the Study Room at Celetná 13</h3><p>The memorial plaque, which we unveiled to the academic community on January 24,
+2024, is the work of sculptor Radek Mužík. It commemorates the activities of
+Assoc. Prof. Anna Grmelová (1947-2012) and Assoc. Prof. Josef Grmela
+(1942-2020), who significantly contributed to the development of the Department
+of English Language and Literature during the post-November period. Assoc.
+Prof. Anna Grmelová, who led the department from 1993 to 2009, among other
+achievements, initiated the establishment of a specialized study room for
+English language and literature in 1995. You can view photographs from the
+unveiling of the memorial plaque <a href="https://www.flickr.com/photos/145636261%40N02/albums/72177720314309955/">here</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>12.01.2024 – Operation of libraries at the Faculty of Arts</h3><p>In connection with the recent tragic events at the Faculty of Arts, there have
+been several changes in the operation of libraries and library services. All
+libraries in the main building will remain closed until at least the end of
+January 2024. Books and notebooks can be returned at the 
+<a href="https://knihovna.ff.cuni.cz/o-nas/seznam-dilcich-knihoven/budova-celetna-20/knihovna-celetna/">CU FA Library at Celetná 20 with extended opening hours</a>. 
+In the <a href="https://knihovna.ff.cuni.cz/o-nas/seznam-dilcich-knihoven/budova-celetna-20/knihovna-ustavu-reckych-a-latinskych-studii/">Library of the Institute of
+Latin and Greek Studies of the Faculty of Arts</a> a temporary reading room for
+interlibrary loan services has been operating since 8 January.</p>
+
+<p>All loans have an extended deadline until 1 March 2024. However, this does not
+apply to those that were due to be returned before December 21, 2023. If you
+have any questions, do not hesitate to contact the CU FA Library by e-mail
+<a href="mailto:knihovna@ff.cuni.cz">knihovna@ff.cuni.cz</a>. More information
+can be found
+<a href="https://knihovna.ff.cuni.cz/2024/01/04/oznameni-o-zmenach-v-provozu-knihovny-filozoficke-fakulty/">here</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/mikrofon-celetna.jpg" title="matt-botsford" alt="matt-botsford" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>07.12.2023 – Short-term closure of the study room in Celetná 13</h3><p>On Monday, December 11, 2023, the recording of the 
+<a href="https://youtube.com/playlist?list=PL28ZjLb0fJ36Sujrb-MlT2vljQZtgAa12&amp;feature=shared">podcast Podtrženo</a>
+will take place in the study room. The study room will be closed from 9:30 AM to 11:30
+AM.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megaphone" alt="megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.10.2023 – Closure of the reference desk due to the strike</h3><p>Due to the strike, the reference desk will be closed on October 17, 2023 from 2
+to 3 p.m. Study rooms will remain open. You can find more information about the
+strike here: 
+<a href="https://www.facebook.com/events/284167454427297/?__cft__%5B0%5D=AZWUbhvJEatpW-Fxd8M-zyAWfYqBBcuJoBj2ImTMmnFvu3vaQ1QPqbDlvkjTkHd-AYFdBj2QSkQJwsTt3u_-AJqCLARbPS52xMiyIms3ZiIeIygIjcjlE1VKtyR0lUTipXyMBNxubUy57UV2SK9FqzKIk5CZSYhnThQS7DlKNjHq6aNUUR-Jt87thQzZ1DpxYz0&amp;__tn__=-UK-R">Universities at the crossroads: red light for Czech universities!</a></p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/selfcheck.jpg" title="Image of the self-service device" alt="Image of the self-service device" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.09.2023 – News in the study room in Celetná</h3><p>We have newly equipped the study room in Celetná with a self-service device.
+Thanks to it, you can borrow and return books independently. Simply place your
+student card or employee card to the reader and put the books in the designated
+place.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/henry-be-leto.jpg" title="Photo by Henry Be on Unsplash" alt="Photo by Henry Be on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.06.2023 – Library opening hours in summer</h3><p>The Library in M. Rettigové 4 will be open on July 3<sup>rd</sup>, 4<sup>th</sup> and 10<sup>th</sup> 2023, and every
+Tuesday in August. You can use the study room and the lending service from 9 am
+to 3 pm. The study room in Celetná 13 is closed for the whole of July and
+August. Books can be picked up in the smart lockers outside the study room by
+appointment. For returns, use the bibliobox in M. Rettigová 4 next to the
+reception desk or the Bibliobox in Celetná 13 in front of the library entrance.
+If you have any questions, we will be happy to answer them by e-mail:
+<a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.05.2023 – Press conference in the study room</h3><p>On Thursday, <strong>May 25</strong>, there will be a press conference in the Study Room. The Study Room will be
+ <strong>closed from 8am to 12pm</strong>. We invite you to the Study Room in Celetna 13, which is
+open from 9 am to 6 pm. </p>
+
+<p>Thank you for your understanding and we apologize for the inconvenience.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/zoubkova.jpg" title="Jana Zoubková" alt="Jana Zoubková" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.03.2023 – Discussion with translator Jana Zoubková in Celetná 13</h3><p>On Monday, 20 March 2023 at 10 a.m. we invite you to a discussion with
+translator Jana Zoubková in the <a href="celetna-en.html">study room of Celetná 13</a>. The discussion will
+take place as part of the national event Meet Your Translator. Organized by the
+Library of the Faculty of Education CU, the Department of German Studies and
+the Translators' Association.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/mesic_ctenaru.png" title="Readers' Month" alt="Readers' Month" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.03.2023 – All March we forgive late fees for returned books</h3><p>As part of March &ndash; Readers' Month, we are announcing a reading amnesty. Users
+who return books borrowed from the Faculty of Education Library (including the
+study room in Celetna) during March 2023 will not be charged for the late fees
+attached to them. Books can be returned in the lending room or to biblioboxes.
+The bibliobox for returning books can be found in M. Rettigové next to the
+reception desk, the bibliobox in Celetná 13 is outside the entrance to our
+attic study room.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/noc_s_andersenem.jpg" title="Night widh Andersen" alt="Night widh Andersen" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.02.2023 – Night with Andersen will take place in our library again this year</h3><p>The Night with Andersen 2023 will occur in our library on 31 March 2023. The
+children and grandchildren of the faculty staff are welcome. Recommended age of
+children: 6-12 years. Please send your applications by March 15, 2023, to
+<a href="mailto:monika.horakova@pedf.cuni.cz">monika.horakova@pedf.cuni.cz</a>. 
+The maximum capacity is 12 children. 
+<a href="https://www.flickr.com/photos/145636261%40N02/albums/72177720297864709">Photos from the previous Night</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/SAGE_Publishing_logo.svg.png" title="SAGE logo" alt="SAGE logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.01.2023 – SAGE Publishing Journals</h3><p>Online journals from <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591402506986">Sage
+Publishing</a>
+are now available until 2025, filled with impactful journals in the field of
+education, including in-demand titles from the American Educational Research
+Association. And that&rsquo;s not all &ndash; you can search for specific journal titles
+directly on <a href="https://ukaz.cuni.cz/">UKAŽ</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Chad Madden (Unsplash)" alt="Chad Madden (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.12.2022 – Merry Christmas!</h3><p>Dear readers, thank you for your support in the past year. We are delighted to
+have had more than 20,000 visits to our reading rooms! We wish you a merry
+Christmas and look forward to seeing you again!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.11.2022 – Web of Science - seminar</h3><p>We invite you to the seminar <strong>Supporting researchers throughout the research
+cycle and news not only in Web of Science</strong>. The seminar will take place on 22
+November 2022 at 10 a.m. at the Faculty of Education of Charles University in
+room R118. You will learn how to effectively map the scientific literature, how
+to create your own library, how to cite while writing, how to format citations
+to the correct style and how to choose the most appropriate journal to submit
+your article. Please register in advance at <a
+href="mailto:zuzana.formanova@pedf.cuni.cz">zuzana.formanova@pedf.cuni.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megaphone" alt="megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>10.11.2022 – Restrictions on the operation of the study room in M. Rettigové 4</h3><p>The study room in M. Rettigové will be closed on Thursday, November 10, 2022,
+from 2 to 3 p.m. due to the filming of a documentary for Czech Television. From
+3 p.m. you can use the study room in full again. We apologize for any
+complications.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/hudebniny-celetna.jpg" title="Josh Goddard/Unsplash" alt="Josh Goddard/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.10.2022 – We moved the sheet music collection to Celetná 13</h3><p>Our sheet music collection consists of almost 8000 copies. You can now borrow
+them in the <a href="celetna-en.html">study room in Celetná 13</a>, where we moved the collection during the
+summer. We look forward to your visit!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megaphone" alt="megaphone" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.09.2022 – Library opening hours from October</h3><p>You can find us in the <a href="reference-desk.html">Lending Library</a> at M. Rettigové 4 every working day from
+9 a.m. to 5 p.m., in the <a href="study-room.html">Study Room</a> in the same building from 8 a.m. to 6 p.m
+from Monday to Thursday and from 8 a.m.  to 5 p.m. on Fridays. After the
+summer break, we are also opening the <a href="celetna-en.html">Study Room</a> at Celetná 13: we look forward
+to seeing you every Monday from 1 to 6 p.m., from Tuesday to Thursday from 9
+a.m. to 6 p.m. and on Fridays from 9 a.m. to 1 p.m. We wish you a successful
+winter semester!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/kufr.jpg" title="Unsplash - Nick Fewings" alt="Unsplash - Nick Fewings" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>01.09.2022 – Opening Hours in September</h3><p>On Monday, September 5, we will reopen the study room and lending library in
+the main faculty building. We will be open every working day from 9<sup>am</sup> to 5<sup>pm</sup>.
+The study room in Celetná will remain closed in September. If you have any questions, we can<br/>
+answer them at <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.03.2022 – Discarded books e-shop</h3><p>Let us invite you to our <a href="https://knihovna.pedf.cuni.cz/wp/">e-shop with discarded books</a>. You can choose from more than 400 books for a symbolic price of 5 Kč!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>07.01.2022 – Book your books</h3><p>We have opened the option of booking books in advance, to avoid queues at the Reference Desk.
+You can pick up the books you have ordered from one of the boxes in front the Study Room.
+Instructions for online booking and addtional details can be found on the <a href="lockers.html">Smart Lockers page</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Chad Madden (Unsplash)" alt="Chad Madden (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.12.2021 – Restrictions on the operation of the Study Room in Rettigová</h3><p>On Wednesday, December 15, a Christmas meeting of the faculty staff will be
+held in the study room. The study room will be closed from 2 pm. We apologize
+for the complications and cordially invite you to our study room in Celetná 13,
+which will be open until 20:30 on this day.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.11.2021 – Power Outage in Celetná</h3><p>On Wednesday, 1 December, there will be a power outage in the faculty building
+in Celetná Street. For this reason, our study room in
+<a href="celetna-en.html">Celetná</a> will be closed all day.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/drew-beamer-3SIXZisims4-unsplash.jpg" title="Drew Beamer (Unsplash)" alt="Drew Beamer (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.09.2021 – Are you new to the faculty? Log in to the library!</h3><p>Just open <a href="https://library.cuni.cz/e-application/">this link</a>, enter your student&rsquo;s number and password, and confirm your
+application. The application is valid for all libraries of Charles University.
+We look forward to you! </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="COVID" alt="COVID" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>01.07.2021 – Current operation of the library</h3><p>Our Library Window is open again. You can order books via
+the <a href="https://ckis.cuni.cz/F/?func=file&amp;file_name=find-a&amp;CON_LNG=ENG">catalog</a>
+and wait for an e-mail that books are ready for You to pick up. We can lend
+books using <a href="lockers.html">Smart Lockers</a> on request. <a href="catalogues.html">Electronic Resources</a> are available 24
+hours a day. To return books, use the bibliobox next to the gatehouse. You
+can also send them by mail. You can pay any <a href="fees.html">late fees</a> by bank transfer. Do not
+hesitate to use our online counseling center via <a href="https://www.facebook.com/knihovnapedfpraha">FB @knihovnapedfpraha</a>! We
+help with access to e-resources, citations and discuss the availability of
+literature with you.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>27.04.2021 – Discarded books e-shop</h3><p> Let us invite you to our new e-shop with discarded books: <a href="https://knihovna.pedf.cuni.cz/wp/">https://knihovna.pedf.cuni.cz/wp/</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/vystava-martina.jpg" title="Exhibition" alt="Exhibition" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>04.01.2021 – PHOTO EXHIBITION: Martina Růžičková: Details of Nature</h3><p>Martina Růžičková is a former employee of our library, an enthusiastic amateur
+photographer. Last December, you could see an exhibition of her photographs
+<em>Winter &ndash; color and black and white</em> &ndash; in our Small Gallery by the Studyroom. The
+current exhibition presents her other favorite theme &ndash; plants and insects.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="SARS-Cov-2. CDC/ Alissa Eckert, MS; Dan Higgins, MAM – https://phil.cdc.gov/Details.aspx?pid=23312 " alt="SARS-Cov-2. CDC/ Alissa Eckert, MS; Dan Higgins, MAM – https://phil.cdc.gov/Details.aspx?pid=23312 " class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>13.10.2020 – Library Closed</h3><p>Our library had to be closed due to preventive measures following the
 restrictions given by the Government of the Czech Republic until further
-notice. We prolonged loans until November 18, 2020. All <a href="catalogues.html">e-resources</a> are
+notice. We will extend all loans so that there are no new late payments. All <a href="catalogues.html">e-resources</a> are
 available 24 hours a day. Books can be returned in the Bibliobox next to the
 reception desk. You can also mail them back to us. You can pay any <a href="fees.html">late fees by bank transfer</a>.</p>
 
@@ -95,6 +444,8 @@ your understanding.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>01.07.2020 – Share your experience with an open access</h3><p>What is important for you for the easiest publication of your open access articles? We will be glad if you complete this questionnaire.
 We will analyze the current situation in the area of open acces in Charles University from your responses in the questionnaire.
 You will find more detailed info on brand new <a href="https://openscience.cuni.cz/OSCI-1.html">web for open science</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>21.05.2020 – Exhibition: Czech monuments from the 19th century</h3><p>Visit an exhibition in the Small Gallery next to the study room. You will see engraving of Czech monuments from
+the 19th century and you can also win prices if you participate in our competition.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>21.05.2020 – Use the opportunity to reserve a book in advance</h3><p>We recommend you to reserve a book in advance for avoding waiting in the queue.</p>
 
 <p>How to order books:</p>
@@ -105,8 +456,6 @@ book situated in FEdu Magdalény Rettigové or FEdu Celetná.</p>
 <p>Always return books to the library you borrowed them from. In
 Magdalény Rettigové, you can return the books in the Bibliobox which
 is situated next to the reception desk.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>21.05.2020 – Exhibition: Czech monuments from the 19th century</h3><p>Visit an exhibition in the Small Gallery next to the study room. You will see engraving of Czech monuments from
-the 19th century and you can also win prices if you participate in our competition.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>08.05.2020 – Book loans</h3><p>The loaning desk in the building in M. Rettigové street is open from Monday to Friday 9.OO-15.00. </p>
 
 <p>Language Study Room Celetná is open every Wednesday from 9.00-14.30.</p>
@@ -133,14 +482,14 @@ For new information you can visit a web page <a href="https://koronavirus.pedf.c
 Gallery next to the study room till the end of March. We appreciate the
 cooperation with the Library of Václav Havel which has borrowed us the
 Anticodes.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Media database Anopress is now accessible from anywhere</h3><p>Media database Anopress contains full texts of peridodicals, radio
-programmes and TV programmes from 1996 until today. It is now accessible
-from anywhere for students and employees of Faculty of Education for
-free!</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/gronsko.png" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Come to see the photo exhibition about Greenland</h3><p>Andrea Kalinová captured on her photos Arctic Circle Trail or 240 kilometers of
 Greenland wilderness.
 Come and enjoy the Nordic vibe in the Small Gallery next to the study room. The exhibition will last until
 the end of the February.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Media database Anopress is now accessible from anywhere</h3><p>Media database Anopress contains full texts of peridodicals, radio
+programmes and TV programmes from 1996 until today. It is now accessible
+from anywhere for students and employees of Faculty of Education for
+free!</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/celetna-atkualita.jpg" title="Study Room" alt="Study Room" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.01.2020 – New Language Study Room</h3><p>We are going to open a new Language Study Room in the Faculty building in Celetná street.
 The opening will take place on 17th January 2020. Study room provides reference
 literature, exercise books, monographies and specialised databases for
@@ -177,10 +526,10 @@ We look forward for your visit!</p>
 moving of the circulation desk. The desk will be moved in front of the study room so you do
 not have to go to two different places. The Bibliobox will work without
 interruption. We look forward to seeing you in a brand new library!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/garnier.png" title="GC logo" alt="GC logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Trial access to Garnier Classics database</h3><p>Until the end of November we have a trial access to the Garnier Classics database. It offers access to databases in the fields of literature and the humanities.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/juve.png" title="JoVE logo" alt="JoVE logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Trial access to JoVE journals</h3><p>Until the end of November we have a trial access to these two sources:
 <a href="https://pez.cuni.cz/prehled/zdroj.php?lang=en&amp;&amp;id=852">JoVE</a> and <a href="https://pez.cuni.cz/prehled/zdroj.php?lang=en&amp;&amp;id=786">JoVE Science
 Education</a></p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/garnier.png" title="GC logo" alt="GC logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Trial access to Garnier Classics database</h3><p>Until the end of November we have a trial access to the Garnier Classics database. It offers access to databases in the fields of literature and the humanities.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/guilherme-cunha-222337-unsplash.jpg" title="Photo by Guilherme Cunha on Unsplash" alt="Photo by Guilherme Cunha on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>04.06.2018 – Reconstruction of the Study room</h3><p>We are going to close the Study room from June 18 because of a biggest reconstruction in the last 30 years. 
 The photo shows a visualisation of the new Study room from Aleliér P.H.A.</p>
 
@@ -196,55 +545,92 @@ Tichý. This is the third exhibition we have created for you. We look forward to
 seeing you!  <a href="/img/tichy-pozvanka.jpg">Invitation</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.01.2018 – Access to Oxford English Dictionary</h3><p>We acquired a temporary access to <a href="http://www.oed.com/">Oxford English Dictionary</a>. It is accessible only from computers located in the faculty.</p>
 </div></div></div></article>
-            </section>
-        </div>
+                </section>
+            </div>
+        </main>
         <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
                     <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="phone">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="column">
                     <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
                     <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UKEN-903.html">
+                            GDPR
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
+            </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

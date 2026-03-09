@@ -1,169 +1,236 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Reference desk
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Reference desk" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz//reference-desk.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.cz/img/vypujcka.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Reference desk">
+        <meta property="og:description" content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz//reference-desk.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/vypujcka.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed-en.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index-en.html" class="button">
-                    Home
-                </a>
-                <a href="/services.html" class="button">
-                    Services
-                </a>
-                <a href="/catalogues.html" class="button">
-                    Catalogues and databases
-                </a>
-                <a href="/about.html" class="button">
-                    About library
-                </a>
-                <span>
-                    <a href="vypujcni_protokol.html">
-                        <img src="/img/cz.svg" alt="Česká verze" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
+        <header>
+            <nav class="topmenu" aria-label="additional navigation">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-145.html">
+                            All departments
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-1.html">
+                            Faculty of Education
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Přepnout na českou verzi" href="vypujcni_protokol.html">
+                            CS
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
+                </div>
+            </nav>
+            <nav class="mainmenu" aria-label="main menu">
+                <div class="nav-container">
                     <a href="/index-en.html">
-                        <img role="banner" src="/img/logo-eng.svg" alt="Library logo" style="height:90%;">
+                        <img class="logo" src="/img/logo-eng.svg" alt="Back to library homepage" role="banner">
                     </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/index-en.html">
+                                Home
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/catalogues.html">
+                                Catalogues and databases
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/about.html">
+                                About library
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="breadcrumb navigation">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index-en.html">
+                                <img src="/img/home.svg" alt="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <article role="main">
+<h1 id="loans">Reference desk</h1>
+
+<p>The Reference Desk is situated on the ground floor to the left of the foyer in the building in Rettigova 4 Street. </p>
+
+<h2>Registration </h2>
+
+<p>To become a registered user, it is necessary to get a <a
+href="http://www.cuni.cz/UKEN-163.html">Charles University identification
+card</a> and apply to the <a href="https://library.cuni.cz/e-application/">Charles University Library application form</a>. The registration is valid in all CU
+Libraries. </p>
+
+<h2>UKAŽ – online catalog </h2>
+
+<p>Charles University’s discovery service UKAŽ allows simultaneous searching of printed, digitized, and electronic resources available at CU. You can also log in to your library account here, where you can view and renew your loans, make requests, and more. </p>
+
+<h2>Borrowing books </h2>
+
+<p>The collections are located without free access to shelves; librarians deliver documents on request. You can search the records in UKAŽ - every book has its code number, which you can write down and hand to the librarian. Or you can also make a reservation in the <a href="lockers.html">smart lockers</a>  for the book via <a href="https://ukaz.cuni.cz/en/">UKAŽ</a>. </p>
+
+<p>The period of outside loans is usually 30 days (regular loans); in-house loans can be read-only in the study room. You can make prolongation via your library account.  </p>
+
+<h2>Returning books </h2>
+
+<p>Books can be returned at the reference desk, or you can use a Bibliobox (situated next to the reception), which is available during the opening hours of the faculty. Documents handed back via Bibliobox are cut out of a user’s library account the next weekday. </p>
+
+ 
+</article>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="page-img"><img src="/img/vypujcka.jpg"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer role="contentinfo">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
+                    <div>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="phone">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
+                    </div>
+                    <div>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UKEN-903.html">
+                            GDPR
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <div class="row">
-                    <div class="col-sm-12 col-md-7">
-                        <article role="main">
-<h1 id="loans">Reference desk</h1>
-<p>To become a registered user, it is necessary to get a Charles University <a
-  href="http://www.cuni.cz/UKEN-163.html"><span
-    class="underline">identification card</span></a> and to apply to the
-<a href="https://library.cuni.cz/e-application/">Charles University Library application form</a>.
-During the next visit, user is obliged to present his CU Card
-to use library services of the LFE. CU Card is non delegable and user is due to
-notify the Library of its loss.</p>
-<p>The Library manages in-house and outside loans, the most of the collections
-are located without free access to shelves (stock holdings), documents are
-delivered by librarians on request – location code listed in the catalogue is
-necessary.</p>
-<p>Some of the collections are located in depositories and loans are realized
-on request in advance and are distributed on the next day.</p>
-<p>In-house loans can be read only in the study room, outside loans may be kept
-for 1 month (regular loans) and they can be prolonged via the online catalogue.
-Reservations can be made via the online catalogue on books borrowed at the
-moment only.</p>
-<p>Every member of the University finishing his contract or his studies has a
-duty to prove no commitments to the Library.</p>
-<p>E-sources are to be used according to their licences and to the Copyright
-Act. They are to be used for personal usage only and just for research or
-educational purposes, not for any commercial purposes, any further distribution
-or remote storing. Additional information is available at the Service Desk of
-the Study Room. Copying of audio or visual documents is forbidden.</p>
-<h2>Bibliobox</h2>
-<p>
-Documents borrowed from the Library can be handed back via Bibliobox in the foyer
-of the Faculty building. Documents handed back via Bibliobox are cut out of a
-user’s library account the next week-day. In case of a running fine connected
-to a late handing back of the document, the fine will remain unpaid until the user
-comes to the Library to pay it. Documents loaned via inter-library service
-are to be handed back only during the visit of the Library.</p>
-</article>
-                    </div>
-                    <div class="col-sm-12 col-md-5">
-                        <div class="page-img"><img src="/img/vypujcka.jpg"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
-                    </div>
-                </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

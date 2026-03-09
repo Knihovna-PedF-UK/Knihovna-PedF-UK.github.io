@@ -1,266 +1,321 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="cs">
+<html lang="cs" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Price list of fees and paid services
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Price list of fees and paid services" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz//en/prices.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.czimg/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Price list of fees and paid services">
+        <meta property="og:description" content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz//en/prices.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index.html" class="button">
-                    Domů
-                </a>
-                <a href="/sluzby.htm" class="button">
-                    Služby
-                </a>
-                <a href="/biblio.html" class="button">
-                    Publikační činnost
-                </a>
-                <a href="/periodika.htm" class="button">
-                    Časopisy
-                </a>
-                <a href="/eiz.htm" class="button">
-                    Elektronické zdroje
-                </a>
-                <a href="/kvalifikacni_prace.htm" class="button">
-                    Závěrečné práce
-                </a>
-                <a href="/objednavani_liter.htm" class="button">
-                    Nákup publikací
-                </a>
-                <a href="/informace.htm" class="button">
-                    O knihovně
-                </a>
-                <span>
-                    <a href="/index-en.html">
-                        <img src="/img/gb.svg" alt="English version" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
+        <header>
+            <nav class="topmenu" aria-label="doplňková navigace">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDF-871.html">
+                            Všechny katedry
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/">
+                            Pedagogická fakulta
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Switch to English version" href="/index-en.html">
+                            EN
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
+                </div>
+            </nav>
+            <nav class="mainmenu" aria-label="hlavní menu">
+                <div class="nav-container">
                     <a href="/index.html">
-                        <img role="banner" src="/img/logo.svg" alt="Logo knihovny" style="height:90%;">
+                        <img class="logo" src="/img/logo.svg" alt="Zpět na hlavní stránku knihovny" role="banner">
                     </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/sluzby.htm">
+                                Služby
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/rezervacni_boxy.html">
+                                        Rezervace knih
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/studovna.html">
+                                        Studovna
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/biblio.html">
+                                Publikační činnost
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/zdroje.htm">
+                                Zdroje
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/periodika.htm">
+                                        Časopisy
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/eiz.htm">
+                                        Elektronické zdroje
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/kvalifikacni_prace.htm">
+                                        Závěrečné práce
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/objednavani_liter.htm">
+                                        Nákup publikací
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/informace.htm">
+                                O knihovně
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="drobénková navigace">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">
+                                <img src="/img/home.svg" alt="Domů">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <article role="main">
+<h1>Determination of Fees Paid by Students of the Faculty of Education, Charles University</h1>
+<p><strong>Dean's Measure No. 9/2023</strong></p>
+<p><strong>Ref. No.:</strong> UKPedF/270584/2023</p>
+<p><strong>Prepared by:</strong> Head of the Study Department, Library and IT Center</p>
+<p><strong>Responsible:</strong> Dean of the Faculty</p>
+<p>Pursuant to the Rector's Directive of Charles University regarding the
+collection of fees for services provided to students, and based on a cost
+calculation, I hereby set the following fees for students of the Faculty of
+Education, Charles University:</p>
+
+<h2>B. Fees and Paid Services in the Faculty Library</h2>
+<p>Items B1–B4 are governed by Rector’s Directive OR 19/2022, Annex No. 4.</p>
+<ol>
+  <li><strong>Loss or damage of a barcode or RFID chip in a publication:</strong> CZK 20</li>
+  <li><strong>Late return fine according to the Unified Loan Matrix:</strong>
+    <ul>
+      <li>For home loans: CZK 3 per item per day</li>
+      <li>For in-library loans: CZK 50 per item per day</li>
+      <li>For both types of loans of e-book readers: CZK 100 per item per day</li>
+    </ul>
+  </li>
+  <li><strong>Reminder fees:</strong>
+    <ul>
+      <li>1st, 2nd, 3rd reminder by email: free of charge</li>
+      <li>Printed reminder by post: postage + CZK 15 administration fee</li>
+      <li>4th reminder by registered mail: CZK 250 (administrative cost)</li>
+      <li>Pre-lawsuit reminder: according to the fee for 1 legal service act under §7 of the Attorney Tariff</li>
+      <li>Pre-lawsuit preparation: CZK 200 per document</li>
+    </ul>
+  </li>
+  <li><strong>Compensation for lost/damaged library items:</strong>
+    <ul>
+      <li>Processing fee: CZK 50 per document</li>
+      <li>B/W copy of a page: CZK 2</li>
+      <li>Binding of replacement: CZK 250</li>
+      <li>Loss or damage of borrowed electronic devices: up to full purchase price</li>
+    </ul>
+  </li>
+  <li><strong>Reprographic services:</strong>
+    <ul>
+      <li>B/W printing/copying:
+        <ul>
+          <li>A4 single-sided: CZK 2</li>
+          <li>A4 double-sided: CZK 3</li>
+          <li>A3 single-sided: CZK 3</li>
+          <li>A3 double-sided: CZK 5</li>
+        </ul>
+      </li>
+      <li>Color printing/copying:
+        <ul>
+          <li>A4 single-sided: CZK 10</li>
+          <li>A4 double-sided: CZK 15</li>
+          <li>A3 single-sided: CZK 15</li>
+          <li>A3 double-sided: CZK 20</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Data media:</strong> A4 paper: CZK 1</li>
+  <li><strong>Research services:</strong>
+    <ul>
+      <li>Teachers and staff: free of charge</li>
+      <li>Other users: CZK 100 (administrative fee, even for no results)</li>
+      <li>Researcher’s work: CZK 250 per hour</li>
+    </ul>
+  </li>
+  <li><strong>Spiral binding:</strong>
+    <ul>
+      <li>Self-service binding (per started 100 sheets): CZK 10</li>
+      <li>Order-based binding (per started 100 sheets): CZK 60</li>
+      <li>Cover (cardboard/transparent): CZK 10</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Effective from:</strong> October 1, 2023</p>
+<p><strong>Issued by:</strong> Prof. PaedDr. Michal Nedělka, Dr., Dean</p>
+
+</article>
+                </section>
+            </div>
+        </main>
+        <footer role="contentinfo">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
+                    <div>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="telefon">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
+                    </div>
+                    <div>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UK-9056.html">
+                            GDPR
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <article role="main"><h1 style="font-size: 28pt">Price list of fees and paid services</h1>
-<h1 class="western">Overdue fees:</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">Overdue outside loan 3 Kč
-	per 1 day</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Overdue
-	in-house loan 50 Kč per 1 day</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Overdue
-	e-book reader 100 Kč per 1 day</font></p>
-</ul>
-<h1 class="western">Overdue notices</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">Certified letter –
-	according to prices of the Czech Post + processing 15 Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">4th
-	notice sent by certified letter 250 Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Reminder
-	before court action – depends on the fee of the lawyer</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Before
-	court action – 200 Kč/1 document</font></p>
-</ul>
-<h1 class="western">Compensation of a loss or damage of a document</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">Compensation of a loss or
-	damage of a document - library document                   
-	processing 50 Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-	and white copy of the compensating document 1 page/2 Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Ring-binding
-	of the compensating document 250 Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Loss
-	or damage of an electronic supply may be up to the original price of
-	the supply</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Compensation
-	will be suggested by the library individually</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Loss
-	or damage of the barcode in a document 20 Kč</font></p>
-</ul>
-<h1 class="western">Interlibrary loan services</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">National interlibrary loans –
-	free at libraries placed in Prague, depends on price list of the
-	borrowing institution + postage</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Copies
-	from Czech libraries - depends on price list of the borrowing
-	institution</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">International
-	interlibrary loans - depends on individually price list of the
-	borrowing institution and the postage</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Copies
-	from libraries abroad - depends on individuall price list of the
-	borrowing institution and the postage</font></p>
-</ul>
-<h1 class="western">Reprographic services</h1>
-<ul>
-	<li><h2 class="western">Copies on the copy machine</h2>
-	<ul>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-		and white - 1 page A4 2 Kč</font></p>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-		and white - 1 page A3 3 Kč</font></p>
-	</ul>
-	<li><h2 class="western">Copy on demand</h2>
-	<ul>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-		and white - 1 page A4 3 Kč</font></p>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-		and white - 1 page A3 6 Kč</font></p>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Colour
-		- 1 page A4 10 Kč</font></p>
-		<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Colour
-		- 1 page A3 15 Kč</font></p>
-	</ul>
-</ul>
-<p style="margin-left: 1.91cm; margin-top: 0.49cm; margin-bottom: 0.49cm; line-height: 100%">
-<font size="3" style="font-size: 12pt">Making copy from rare document
-collections 1page/15 Kč</font></p>
-<ul>
-	<li><h2 class="western">Printing</h2>
-</ul>
-<ul>
-	<ul>
-		<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-		<font size="3" style="font-size: 12pt">Black and white - 1 page A4
-		2 Kč</font></p>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Black
-		and white - 1 page A4 two-sided printing 3 Kč</font></p>
-		<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Colour
-		- 1 page A4 10 Kč</font></p>
-		<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Colour
-		- 1 page A4 in colours two-sided 15 Kč</font></p>
-	</ul>
-</ul>
-<p align="justify" style="margin-left: 0.64cm; margin-top: 0.49cm; margin-bottom: 0.49cm; line-height: 100%">
-<font size="3" style="font-size: 12pt">1 page A4 (blank) 1 Kč</font></p>
-<h1 class="western">Search services</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">Teachers and employees of
-	Faculty of Education for free</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Other
-	users: fee 100 Kč for the service + wage of the librarian: 180 Kč
-	per hour</font></p>
-</ul>
-<h1 class="western">Ring-binding</h1>
-<ul>
-	<li><p style="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%">
-	<font size="3" style="font-size: 12pt">Selfmade - every 100 pages 10
-	Kč</font></p>
-	<li><p style="margin-bottom: 0cm; line-height: 100%"><font size="3" style="font-size: 12pt">Made
-	on demand - every 100 pages 60 Kč</font></p>
-	<li><p style="margin-bottom: 0.49cm; line-height: 100%"><font size="3" style="font-size: 12pt">Cardboard
-	and transparent sheet 10 Kč</font></p>
-</ul>
-<p style="margin-left: 0.25cm; margin-top: 0.49cm; margin-bottom: 0.49cm; line-height: 100%">
-<br/>
-<br/>
-
-</p>
-<p style="margin-left: 0.25cm; margin-top: 0.49cm; margin-bottom: 0.49cm; line-height: 100%"><a name="_GoBack"></a>
-<font size="3" style="font-size: 12pt">Refundable deposit for outside
-loans of selected documents will be priced individually</font></p>
-</article>
-            </section>
-        </div>
-        <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
-                    </div>
-                </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

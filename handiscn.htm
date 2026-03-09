@@ -1,95 +1,159 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="cs">
+<html lang="cs" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Skenované tituly pro handicapované studenty
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Skenované tituly pro handicapované studenty" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz//handiscn.htm" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.czimg/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Skenované tituly pro handicapované studenty">
+        <meta property="og:description" content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz//handiscn.htm">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index.html" class="button">
-                    Domů
-                </a>
-                <a href="/sluzby.htm" class="button">
-                    Služby
-                </a>
-                <a href="/biblio.html" class="button">
-                    Publikační činnost
-                </a>
-                <a href="/periodika.htm" class="button">
-                    Časopisy
-                </a>
-                <a href="/eiz.htm" class="button">
-                    Elektronické zdroje
-                </a>
-                <a href="/kvalifikacni_prace.htm" class="button">
-                    Závěrečné práce
-                </a>
-                <a href="/objednavani_liter.htm" class="button">
-                    Nákup publikací
-                </a>
-                <a href="/informace.htm" class="button">
-                    O knihovně
-                </a>
-                <span>
-                    <a href="/index-en.html">
-                        <img src="/img/gb.svg" alt="English version" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a href="/index.html">
-                        <img role="banner" src="/img/logo.svg" alt="Logo knihovny" style="height:90%;">
-                    </a>
+        <header>
+            <nav class="topmenu" aria-label="doplňková navigace">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDF-871.html">
+                            Všechny katedry
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/">
+                            Pedagogická fakulta
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Switch to English version" href="/index-en.html">
+                            EN
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
                 </div>
-            </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <article role="main">
+            </nav>
+            <nav class="mainmenu" aria-label="hlavní menu">
+                <div class="nav-container">
+                    <a href="/index.html">
+                        <img class="logo" src="/img/logo.svg" alt="Zpět na hlavní stránku knihovny" role="banner">
+                    </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/sluzby.htm">
+                                Služby
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/rezervacni_boxy.html">
+                                        Rezervace knih
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/studovna.html">
+                                        Studovna
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/biblio.html">
+                                Publikační činnost
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/zdroje.htm">
+                                Zdroje
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/periodika.htm">
+                                        Časopisy
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/eiz.htm">
+                                        Elektronické zdroje
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/kvalifikacni_prace.htm">
+                                        Závěrečné práce
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/objednavani_liter.htm">
+                                        Nákup publikací
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/informace.htm">
+                                O knihovně
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="drobénková navigace">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">
+                                <img src="/img/home.svg" alt="Domů">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <article role="main">
 <h1>Abecední přehled digitalizovaných titulů</h1>
 <ul>
   <li><a href= "handiscn_b.htm" target="_top"><span class="z5">Podle časového harmonogramu</span></a></li>
-  <li>Aktualizace 25.08. 2020</li>
 </ul>
 <ul>
   
@@ -131,6 +195,8 @@
   
   <li><span class="z1">ČAPEK, Robert, Irena PŘÍKAZSKÁ a Jiří ŠMEJKAL. <a href="handi/228/index.html"><i>Učitel a syndrom vyhoření</i></a>. Praha: Raabe, společně pro kvalitní vzdělávání, 2018. Škola jako (ne)bezpečné místo. ISBN 978-80-7496-392-6.</span></li>
   
+  <li><span class="z1">ČAPEK, Robert. <a href="handi/247/index.html"><i>Moderní didaktika: lexikon výukových a hodnotících metod</i></a>. Praha: Grada, 2015. Pedagogika. ISBN 978-80-247-3450-7.</span></li>
+  
   <li><span class="z1">ČAPEK, R. <a href="handi/117/index.html"><i>Odměny a tresty ve školní praxi.</i></a> Praha :Grada, 2008. 160 s. ISBN 978-80-247-1718-0.</span></li>
   
   <li><span class="z1">ČÁBALOVÁ, D. <a href="handi/156/index.html"><i>Pedagogika.</i></a> Praha : Grada, 2011. 272 s.ISBN 978-80-247-2993-0.</span></li>
@@ -161,7 +227,7 @@
   
   <li><span class="z1">DVOŘÁČEK, J. <a href="handi/45/index.html"><i>Základy pedagogiky pro učitele avychovatele.</i></a> Praha: Univerzita Karlova v Praze. Pedagogická fakulta, 2004. 144 s. : tab. ISBN 80-7290-159-1.</span></li>
   
-  <li><span class="z1">DVOŘÁKOVÁ, H.; MICHALOVÁ, Z. <a href="handi/64/index.html"><i>Využití psychomotoriky ve škole.</i></a> Praha : Univerzita Karlova v Praze. Pedagogická fakulta,2004. 78 s. ISBN 80-7290-157-5.</span></li>
+  <li><span class="z1">DVOŘÁKOVÁ, H.; MICHALOVÁ, Z. <a href="handi/63/index.html"><i>Využití psychomotoriky ve škole.</i></a> Praha : Univerzita Karlova v Praze. Pedagogická fakulta,2004. 78 s. ISBN 80-7290-157-5.</span></li>
   
   <li><span class="z1">DYTRTOVÁ, Radmila a Marie KRHUTOVÁ. <a href="handi/196/index.html"><i>Učitel: příprava na profesi</i></a>. Praha: Grada, 2009. Pedagogika. ISBN 978-80-247-2863-6</span></li>
   
@@ -207,6 +273,8 @@
   
   <li><span class="z1">HOGENOVÁ, A. <a href="handi/124/index.html"><i>Jak pečujeme o svou duši</i></a>. Praha : Univerzita Karlova v Praze - Pedagogická fakulta, 2008. 258 s. ISBN 978-80-7290-349-8.</span></li>
   
+  <li><span class="z1">HOLMAN, Robert. <a href="handi/248/index.html"><i>Dějiny ekonomického myšlení</i></a>. 3. vydání. Praha: Beck, 2005. Beckovy ekonomické učebnice. ISBN 80-7179-380-9.</span></li>
+  
   <li><span class="z1">HONZÍK, J. <a href="handi/145/index.html"><i>Ruská klasická literatura.</i></a> Vyd. 1. Praha: Svoboda, 1977. 629 s.</span></li>
   
   <li><span class="z1">HRABAL, V.; HRABAL, V. <a href="handi/7/index.html"><i>Diagnostika.</i></a> 2. vyd. Praha:Karolinum, 2001. 199 s.</span></li>
@@ -233,9 +301,9 @@
   
   <li><span class="z1">JENETT, Wolfdieter. <a href="handi/212/index.html"><i>ADHD - 100 tipů pro rodiče a učitele</i></a>. Brno: Edika, 2013. Rádce pro rodiče a učitele. ISBN 978-80-266-0158-6.</span></li>
   
-  <li><span class="z1">JESENSKÝ, J. <a href="handi/30/index.html"><i>Přehled systémů komprehenzivní tyflopedie.Díl I.</i></a> Hradec Králové: Gaudeamus, 2002. 60 s. ISBN 80-7041-329-8.</span></li>
+  <li><span class="z1">JESENSKÝ, J. <a href="handi/29/index.html"><i>Přehled systémů komprehenzivní tyflopedie.Díl I.</i></a> Hradec Králové: Gaudeamus, 2002. 60 s. ISBN 80-7041-329-8.</span></li>
   
-  <li><span class="z1">JEŽKOVÁ, V. <a href="handi/32/index.html"><i>Vzdělávací systémy v zahraničí.</i></a> Praha:Karolinum, 1996. 142 s. ISBN 80-7184-078-5.</span></li>
+  <li><span class="z1">JEŽKOVÁ, V. <a href="handi/26/index.html"><i>Vzdělávací systémy v zahraničí.</i></a> Praha:Karolinum, 1996. 142 s. ISBN 80-7184-078-5.</span></li>
   
   <li><span class="z1">JIRÁSEK, J.; VANČUROVÁ, E.; HAVLÍNOVÁ, M. <a href="handi/11/index.html"><i>Hrajeme si doopravdy.</i></a> 1.vyd. Praha: Avicenum, 1983. 112 s.</span></li>
   
@@ -257,7 +325,7 @@
   
   <li><span class="z1">KEBLOVÁ, Alena. <a href="handi/221/index.html"><i>Sluchové vnímání u zrakově postižených</i></a>. Praha: Septima, 1999. ISBN 80-7216-080-X.</span></li>
   
-  <li><span class="z1">KEBLOVÁ, A. <a href="handi/33/index.html"><i>Kompenzační pomůcky pro zrakově postižené žáky základní školy.</i></a> Praha: Septima, 1995. 20 s. ISBN 80-85801-62-0.</span></li>
+  <li><span class="z1">KEBLOVÁ, A. <a href="handi/30/index.html"><i>Kompenzační pomůcky pro zrakově postižené žáky základní školy.</i></a> Praha: Septima, 1995. 20 s. ISBN 80-85801-62-0.</span></li>
   
   <li><span class="z1">KEBLOVÁ, A., aj. <a href="handi/16/index.html"><i>Náprava poruch binokulárního vidění.</i></a>1.vyd. Praha: Septima, 2000. 50 s. ISBN 80-7216-121-0.</span></li>
   
@@ -335,11 +403,11 @@
   
   <li><span class="z1">LEBEER, J., aj. <a href="handi/115/index.html"><i>Programy pro rozvoj myšlení dětí s odchylkami vývoje : podpora začleňování znevýhodněných dětí doběžného vzdělávání.</i></a> Praha : Portál, 2006. 264 s. ISBN 80-7367-103-4.</span></li>
   
-  <li><span class="z1">LUDÍKOVÁ, L. <a href="handi/35/index.html"><i>Vzdělávání hluchoslepých. 3.</i></a> Praha:Scientia, 2001. 78 s. ISBN 80-7183-256-1.</span></li>
+  <li><span class="z1">LUDÍKOVÁ, L. <a href="handi/33/index.html"><i>Vzdělávání hluchoslepých. 3.</i></a> Praha:Scientia, 2001. 78 s. ISBN 80-7183-256-1.</span></li>
   
   <li><span class="z1">LUDÍKOVÁ, L., aj. <a href="handi/77/index.html"><i>Kombinované vady.</i></a> Olomouc :Univerzita Palackého v Olomouci, 2005. 140 s. ISBN 80-244-1154-7.</span></li>
   
-  <li><span class="z1">LUDVÍKOVÁ, L. <a href="handi/28/index.html"><i>Vzdělávání hluchoslepých. I.</i></a> Praha:Scientia, 2000. 74 s. ISBN 80-7183-225-1.</span></li>
+  <li><span class="z1">LUDVÍKOVÁ, L. <a href="handi/27/index.html"><i>Vzdělávání hluchoslepých. I.</i></a> Praha:Scientia, 2000. 74 s. ISBN 80-7183-225-1.</span></li>
   
   <li><span class="z1">LUHMANN, Niklas. <a href="handi/188/index.html"><i>Sociální systémy: nárys obecné teorie</i></a>. 1.vyd. Brno: Centrum pro studium demokracie a kultury (CDK), 2006,550 s. ISBN 80-7325-100-0.</span></li>
   
@@ -353,7 +421,7 @@
   
   <li><span class="z1">MATOUŠEK, O. <a href="handi/23/index.html"><i>Ústavní péče.</i></a> 1.vyd. Praha: Slon, 1995.141 s. ISBN 80-85850-08-7.</span></li>
   
-  <li><span class="z1">MATOUŠEK, O.; HALÍK, T., aj. <a href="handi/27/index.html"><i>Práce s rizikovou mládeží: projekt LATA a další alternativy věznění mládeže.</i></a> Praha:Portál, 1996. 87 s. ISBN 80-7178-064-2.</span></li>
+  <li><span class="z1">MATOUŠEK, O.; HALÍK, T., aj. <a href="handi/35/index.html"><i>Práce s rizikovou mládeží: projekt LATA a další alternativy věznění mládeže.</i></a> Praha:Portál, 1996. 87 s. ISBN 80-7178-064-2.</span></li>
   
   <li><span class="z1">MATOUŠEK, O.; KROFTOVÁ, A. <a href="handi/21/index.html"><i>Mládež a delikvence.</i></a>1.vyd. Praha: Portál, 1998. 336 s. ISBN 80-7178-226-2.</span></li>
   
@@ -383,7 +451,7 @@
   
   <li><span class="z1">NIELSEN, L. <a href="handi/164/index.html"><i>Učení zrakově postižených dětí v raném věku.</i></a> Praha : Institut sociálních vztahů, 1998. 119 s. ISBN 80-85866-26-9.</span></li>
   
-  <li><span class="z1">NOVOTNÁ, L. Domácí vzdělávání jako forma vzdělávání nadaných"Underachievers". In <a href="handi/90/index.html"><i>Aktuální problémy pedagogiky ve výzkumech studentů doktorských studijních programů I.</i></a> Olomouc : Votobia,2003, s. 37-43.</span></li>
+  <li><span class="z1">NOVOTNÁ, L. Domácí vzdělávání jako forma vzdělávání nadaných Underachievers. In <a href="handi/90/index.html"><i>Aktuální problémy pedagogiky ve výzkumech studentů doktorských studijních programů I.</i></a> Olomouc : Votobia,2003, s. 37-43.</span></li>
   
   <li><span class="z1">OLŠOVSKÝ, J. <a href="handi/98/index.html"><i>Slovník filosofických pojmů současnosti.</i></a>2. rozš. vyd. Praha : Academia, 2005. 261 s. ISBN 80-200-1266-4.</span></li>
   
@@ -425,13 +493,13 @@
   
   <li><span class="z1">PRŮCHA, J. <a href="handi/8/index.html"><i>Alternativní školy.</i></a> Praha: Gaudeamus, 1994.109 s. ISBN 80-7041-972.</span></li>
   
-  <li><span class="z1">PRŮCHA, J. <a href="handi/29/index.html"><i>Moderní pedagogika.</i></a> Praha: Portál, 2002.481 s. ISBN 80-7178-631-4.</span></li>
+  <li><span class="z1">PRŮCHA, J. <a href="handi/36/index.html"><i>Moderní pedagogika.</i></a> Praha: Portál, 2002.481 s. ISBN 80-7178-631-4.</span></li>
   
   <li><span class="z1">PRŮCHA, J. <a href="handi/31/index.html"><i>Učebnice: teorie a analýzy edukačního média: příručka pro studenty, učitele, autory učebnic a výzkumnépracovníky.</i></a> Brno: Paido, 1998. 148 s. ISBN 80-85931-49-4.</span></li>
   
   <li><span class="z1">PŘÍVRATSKÝ, V. <a href="handi/56/index.html"><i>Biologie člověka pro učitele a vychovatele.</i></a> Praha: Univerzita Karlova v Praze. Pedagogická fakulta, 2004. 76 s. ISBN 80-7290-182-6.</span></li>
   
-  <li><span class="z1">REKTOR, I.; REKTOROVÁ, I. <a href="handi/36/index.html"><i>Centrální poruchy hybnosti vpraxi.</i></a> Praha: Triton, 2003. 196 s. ISBN 80-7254-418-7.</span></li>
+  <li><span class="z1">REKTOR, I.; REKTOROVÁ, I. <a href="handi/34/index.html"><i>Centrální poruchy hybnosti vpraxi.</i></a> Praha: Triton, 2003. 196 s. ISBN 80-7254-418-7.</span></li>
   
   <li><span class="z1">RENOTIÉROVÁ, M.; LUDÍKOVÁ, L., aj. <a href="handi/78/index.html"><i>Speciální pedagogika.</i></a> 3. vyd. Olomouc: UP v Olomouci, 2005. 314 s. ISBN 80-244-1073-7.</span></li>
   
@@ -467,7 +535,7 @@
   
   <li><span class="z1">SOKOL, J. <a href="handi/170/index.html"><i>Člověk a náboženství : proměny vztahu člověka k posvátnému.</i></a> Praha : Portál, 2004. 245 s. ISBN 80-7178-886-4.</span></li>
   
-  <li><span class="z1">SOURALOVÁ, E. <a href="handi/34/index.html"><i>Vzdělávání hluchoslepých. 2.</i></a> Praha:Scientia, 2000. 78 s. ISBN 80-7183-226-X.</span></li>
+  <li><span class="z1">SOURALOVÁ, E. <a href="handi/32/index.html"><i>Vzdělávání hluchoslepých. 2.</i></a> Praha:Scientia, 2000. 78 s. ISBN 80-7183-226-X.</span></li>
   
   <li><span class="z1">SOVÁK, M. <a href="handi/99/index.html"><i>Nárys speciální pedagogiky.</i></a> 6. vyd. Praha :SPN, 1986. 232 s.</span></li>
   
@@ -527,7 +595,7 @@
   
   <li><span class="z1">ŠIFNER, F. <a href="handi/59/index.html"><i>Jak psát odbornou práci a diplomovou práci zvláště.</i></a> Praha: Univerzita Karlova v Praze. Pedagogická fakulta, 2004. 18 s. ISBN 80-7290-167-2.</span></li>
   
-  <li><span class="z1">ŠIŠKA, J. <a href="handi/63/index.html"><i>Mimořádná dospělost : Edukace člověka s mentálním postižením v období dospělosti.</i></a> Praha : Karolinum,2005. 100 s. ISBN 80-246-0992-4.</span></li>
+  <li><span class="z1">ŠIŠKA, J. <a href="handi/64/index.html"><i>Mimořádná dospělost : Edukace člověka s mentálním postižením v období dospělosti.</i></a> Praha : Karolinum,2005. 100 s. ISBN 80-246-0992-4.</span></li>
   
   <li><span class="z1">ŠKODOVÁ, E.; JEDLIČKA, I. <a href="handi/79/index.html"><i>Klinická logopedie.</i></a> Praha :Portál, 2003. 616 s. ISBN 80-7178-546-6.</span></li>
   
@@ -561,6 +629,8 @@
   
   <li><span class="z1">VOHRADNÍK, M. <a href="handi/74/index.html"><i>Poruchy řečové komunikace u velofaryngeální insuficience.</i></a> Dolní Břežany : Scriptorium, 2001. 136 s. : 24obr. ISBN 80-86197-24-7.</span></li>
   
+  <li><span class="z1">VOLF, V.; VOLFOVÁ, H. <a href="handi/28/index.html"><i>Pediatrie 2: pro 3. ročník středních zdravotních škol.</i></a> Praha: Informatorium, 2003. 244 s. ISBN 80-7333-023-7.</span></li>
+  
   <li><span class="z1">VONDRÁKOVÁ, E. Péče o nadané děti jako znak dobré školy (1.část). In <a href="handi/91/index.html"><i>Učitelské listy,</i></a> 2001/2002, č. 3, s. 7-9. ISSN 1210-6313.</span></li>
   
   <li><span class="z1">VONDRÁKOVÁ, E. Péče o nadané děti jako znak dobré školy (2.část). In <a href="handi/92/index.html"><i>Učitelské listy,</i></a> 2001/2002, č. 4, s. 6-7. ISSN 1210-6313.</span></li>
@@ -570,8 +640,6 @@
   <li><span class="z1">WALTEROVÁ, E. <a href="handi/51/index.html"><i>Kurikulum : proměny a trendy v mezinárodní perspektivě.</i></a> Brno: Masarykova univerzita, 1994, 185 s. : 4příl. ISBN 80-210-0846-6.</span></li>
   
   <li><span class="z1">WIENER, P., aj. <a href="handi/113/index.html"><i>Základy komunikace se zrakově postiženými.</i></a> 2. vyd. Praha : Vzdělávací institut ochrany dětío.p.s., 2007. 16 s. ISBN 978-80-86991-12-2.</span></li>
-  
-  <li><span class="z1">WOLF, V.; WOLFOVÁ, H. <a href="handi/26/index.html"><i>Pediatrie 2: pro 3. ročník středních zdravotních škol.</i></a> Praha: Informatorium, 2003. 244 s. ISBN 80-7333-023-7.</span></li>
   
   <li><span class="z1">ZENKL, L. <a href="handi/46/index.html"><i>ABC hudební nauky.</i></a> Praha: Editio Supraphon,1988. 197 s. : obr.</span></li>
   
@@ -587,55 +655,92 @@
   
 </ul>
 </article>
-            </section>
-        </div>
+                </section>
+            </div>
+        </main>
         <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
                     <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="telefon">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="column">
                     <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
                     <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UK-9056.html">
+                            GDPR
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
+            </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

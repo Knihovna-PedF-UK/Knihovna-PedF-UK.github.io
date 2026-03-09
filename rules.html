@@ -1,79 +1,116 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Excerpt of functional rules of the Library of Faculty of Education, Charles University
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Excerpt of functional rules of the Library of Faculty of Education, Charles University" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz//rules.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.czimg/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Excerpt of functional rules of the Library of Faculty of Education, Charles University">
+        <meta property="og:description" content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz//rules.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed-en.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index-en.html" class="button">
-                    Home
-                </a>
-                <a href="/services.html" class="button">
-                    Services
-                </a>
-                <a href="/catalogues.html" class="button">
-                    Catalogues and databases
-                </a>
-                <a href="/about.html" class="button">
-                    About library
-                </a>
-                <span>
-                    <a href="/index.html">
-                        <img src="/img/cz.svg" alt="Česká verze" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a href="/index-en.html">
-                        <img role="banner" src="/img/logo-eng.svg" alt="Library logo" style="height:90%;">
-                    </a>
+        <header>
+            <nav class="topmenu" aria-label="additional navigation">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-145.html">
+                            All departments
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDFEN-1.html">
+                            Faculty of Education
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Přepnout na českou verzi" href="/index.html">
+                            CS
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
                 </div>
-            </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <article role="main">
+            </nav>
+            <nav class="mainmenu" aria-label="main menu">
+                <div class="nav-container">
+                    <a href="/index-en.html">
+                        <img class="logo" src="/img/logo-eng.svg" alt="Back to library homepage" role="banner">
+                    </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/index-en.html">
+                                Home
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/catalogues.html">
+                                Catalogues and databases
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/about.html">
+                                About library
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="breadcrumb navigation">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index-en.html">
+                                <img src="/img/home.svg" alt="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <article role="main">
 <h1 id="loan-rules-of-the-library-of-faculty-of-education-charles-university">Excerpt of functional rules of the Library of Faculty of Education, Charles University</h1>
 <p>Full version of the Loan rules is available in Czech at the Circulation Desk, in the Study room and on the <a href="https://knihovna.pedf.cuni.cz/img/opad_c._262019_provozni_rad_knihovny_pedagogicke_fakulty_univerzity_karlovy.pdf"><span class="underline">Library website</span></a>.</p>
 <h2 id="provided-services">Provided Services</h2>
@@ -87,22 +124,22 @@
 <p>Basic services are out of charge, others follow the <a href="prices.html"><span class="underline">Price List of fees and paid services</span></a>.</p>
 <h2 id="users">Users</h2>
 <p>Any adult person who  registrated into the CU library system and belongs
-into one of the users cathegory mentioned in Article no. 3 of the <a href="https://cuni.cz/UKEN-1167.html">Charles
+into one of the users cathegory mentioned in Article no. 3 of the <a href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf">Charles
   University Library and Circulation Rules</a> can start to use the services of the
 LFE.  During his visit user is obliged to present
 his CU Card to use library services of the LFE. CU Card is non delegable and
 user is due to notify the Library of its loss.</p>
 <p>The Access level to documents and services is specified in the <a
-  href="https://ckis.cuni.cz/reporty/tab16_summary/eng/matrix_intro.html"><span
+  href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf"><span
     class="underline">Uniform Borrowing Matrix</span></a>.</p>
 <p>Every member of the University finishing his contract has a duty to prove no commitments to the Library.</p>
 <h2 id="loan-conditions">Loan Conditions</h2>
-<p>Maximum possible number of documents to loan, time limits and reservations are described in the <a href="https://ckis.cuni.cz/reporty/tab16_summary/eng/matrix_intro.html"><span class="underline">Uniform Borrowing Matrix</span></a>.</p>
+<p>Maximum possible number of documents to loan, time limits and reservations are described in the <a href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf"><span class="underline">Uniform Borrowing Matrix</span></a>.</p>
 <p>In case a document is not available in the Library, there is a possibility to ask for an inter-library loan.</p>
 <p>E-sources are to be used according to their licences and to the Copyright Act. They are to be used for personal usage only and just for research or educational purposes, not for any commercial purposes, any further distribution or remote storing. Additional information is available at the Service Desk of the Study Room. Copying of audio or visual documents is forbidden.</p>
 <p>In case of any violation of this Loan Rules, rights of the user can be blocked or cancelled. Any damage or theft of a document from the Library may result in legal steps against the user.</p>
 <h2 id="loan-periods">Loan periods</h2>
-<p>Loan periods follow the <a href="https://ckis.cuni.cz/reporty/tab16_summary/eng/matrix_intro.html"><span class="underline">Uniform Borrowing Matrix</span></a>.</p>
+<p>Loan periods follow the <a href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf"><span class="underline">Uniform Borrowing Matrix</span></a>.</p>
 <p>Users are allowed to administrate their library account via the Internet (reservation, prolongation etc.) as well as to check/print state of their account. In case of any inconsistency they are due to announce the Library. The prolongation is possible only before the loan time limit has gone.</p>
 <h2 id="reservation-making">Reservation making</h2>
 <p>In case a document is not available (it´s loaned by somebody else), user can make a reservation for it.</p>
@@ -117,7 +154,7 @@ class="underline">Price List of fees and paid Services</span></a>.</p>
 <h2 id="reimbursement-of-caused-damages">Reimbursement of caused damages</h2>
 <p>User is due to announce every damage or loss of the document he borrowed and
 during certain time-limit to compensate the damage. The way of compensation
-specifies <a href="https://cuni.cz/UKEN-1167.html">Article no6 of Charles University Library and Circulation Rules</a></p>
+specifies <a href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf">Article no6 of Charles University Library and Circulation Rules</a></p>
 <h2 id="rules-of-study-room-of-lfe">Rules of Study Room of LFE</h2>
 <p>To use services of the Study Room user is to present a valid Card of the Charles University and to sign into a user’s book at the Service Desk in the Study Room. In case he doesn´t have the CU card he pays a fee.</p>
 <p>User of the Study Room may let his belongings on place intended for it
@@ -132,58 +169,95 @@ during all his visit ((Library is not responsible for these things) and follow o
 <p>In case of any violation of this Loan Rules, rights of the user can be blocked or cancelled.</p>
 <p>Exceptions of this Loan Rules are allowed only by Head of the Library.</p>
 <p>As the part of the Loan Rules are following documents:</p>
-<p><a href="https://ckis.cuni.cz/reporty/tab16_summary/eng/matrix_intro.html"><span class="underline">Uniform Borrowing Matrix</span></a></p>
+<p><a href="https://cuni.cz/UKEN-714-version1-or_4_2025.pdf">Uniform Borrowing Rules</a></p>
 <p><a href="prices.html"><span class="underline">Price List of fees and paid services</span></a></p>
 </article>
-            </section>
-        </div>
+                </section>
+            </div>
+        </main>
         <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
                     <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="phone">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="column">
                     <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
                     <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UKEN-903.html">
+                            GDPR
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
+            </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

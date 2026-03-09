@@ -1,0 +1,445 @@
+:root{
+  --max-width: 1200px;
+  --header-bg: white;
+  --body-color: #222;
+  --body-bg: #fff;
+  --topmenu-bg: black;
+  --topmenu-color: white;
+  --navmenu-divider-color: #ccc;
+}
+
+@font-face {
+  font-family: "Moderat";
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Moderat-Regular-1.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Moderat";
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Moderat-Medium-1.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Moderat";
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Moderat-Bold-1.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Moderat";
+  font-weight: 900;
+  font-display: swap;
+  src: url(/fonts/Moderat-Black-1.woff2) format("woff2");
+}
+
+body {
+  font-family: "Moderat", Moderat, Arial, Helvetica, sans-serif;
+  margin: 0 auto; 
+  line-height: 1.6;
+  font-size: 1rem; /* 16px */
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+/* header, main, footer {border: 1px solid black;} */
+
+
+/* === CSS Reset === */
+/* Odstranění výchozích marginů/paddingů a sjednocení box modelu */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--header-bg);
+  box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15);
+}
+
+/* navigace jde přes celou šířku stránky*/
+nav {
+  width: 100%;
+  background: #f8f8f8; /* jen pro ukázku */
+  margin: 0;
+  padding: 0;
+}
+
+main.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* vnitřní kontejner drží max. šířku */
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a, a:visited {
+    color: inherit;
+  }
+}
+
+
+img.logo {
+  max-height: 5rem;
+  height: auto;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainmenu {
+  .nav-container {
+    border-bottom: 1px solid var(--navmenu-divider-color);
+  }
+  button{
+    all: unset;
+    display: inline-block; cursor: pointer;
+    img {
+      height: 1em;
+      display: inline-flex;
+      align-items: flex-end;
+      padding:0;
+      border: none;
+      vertical-align: middle;
+    }
+  }
+  .menu {
+    font-size: 1.2rem;
+    font-weight: 700;
+    li {
+      position: relative;
+    }
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    li + li {
+      margin-top: 0.5em;
+    }
+    li:before {
+      content: url("/img/threedots.svg");
+    }
+  }
+
+  @media (min-width: 901px) {
+    li:hover .submenu, li:focus-within .submenu  {
+      width: 200px;
+      display: block;
+    }
+  }
+}
+
+.topmenu {
+  background-color: var(--topmenu-bg);
+  color: var(--topmenu-color);
+  padding: 0.2em 0;
+  text-align: right;
+  padding-left: auto;
+  vertical-align: middle;
+  span{
+    /* display: inline-block; */
+    border-right: 1px solid var(--topmenu-color);
+    margin: 0 0.5em;
+    padding-right: 0.5em;
+    height: 1.5em;
+    width: auto;
+  }
+  span:last-child{
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .nav-container {
+    justify-content: right;
+  }
+  .langswitcher * {
+    display: inline;
+    width: auto;
+  }
+}
+
+.breadcrumb {
+  font-size: 1.1rem;
+  ul {
+    list-style: none;           /* odstraní tečky */
+    display: flex;              /* položky vedle sebe */
+    flex-wrap: wrap;            /* pro menší obrazovky */
+    gap: 0.5em;                 /* mezera mezi položkami */
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  li::after {
+    content: "›";               /* oddělovač mezi položkami */
+    margin-left: 0.5em;
+    color: #555;
+  }
+  li:last-child::after {
+    content: "";                /* poslední položka nemá oddělovač */
+  }
+  img {display: inline; height: 1em; vertical-align: middle;}
+}
+
+/* ukotvi nav, aby absolute prvky měly referenci */
+.nav-container { position: relative; }
+
+/* jistota: každý root li je pozicovaný pro absolutní submenu */
+.mainmenu .menu > li { position: relative; }
+
+/* submenu má být nad ostatními vrstvami */
+.mainmenu .submenu { z-index: 1001; }
+
+/* umožni otevřít submenu i pomocí .open (na desktopu i mobilu) */
+.mainmenu .menu > li.open > .submenu { display: block; }
+
+
+footer {
+  border-top: 5px solid #23b5b5;
+  /* padding: 1rem 0; */
+  img {display: inline; height: 1em; vertical-align: middle;}
+  div {vertical-align: bottom;}
+  div.column div{margin-top: 0.5rem;}
+  address{font-style: normal;}
+  .copyright {
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .nav-container {
+      display: block;
+    }
+  }
+}
+
+
+/* ******************************************** */
+/*    Hamburger menu (pro mobilní zobrazení)    */
+/* ******************************************** */
+
+/* výchozí stav – desktop */
+.mainmenu button.hamburger {
+  all: unset;
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* mobilní stav */
+@media (max-width: 900px) {
+  img.logo {
+    max-height: 3rem;
+    height: auto;
+  }
+
+
+  .mainmenu button.hamburger {
+    display: inline-block; /* jen na mobilech */
+  }
+
+  li.open > .submenu {
+    display: block;     /* ukáže se při třídě .open */
+  }
+  .menu { /* skryté, otevře se .open */
+    display: none;
+    flex-direction: column;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    right: 0;
+    /* position: relative; */
+    z-index: 2000;
+    background: white; box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15);
+  }
+  .menu.open { display: flex; }
+
+  /* mobilní submenu je statické (stackuje se svisle) */
+  .mainmenu .submenu {
+    display: none;
+    /* position: static; */
+    position: static;
+    z-index: 2100; /* ještě nad menu */
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+  .mainmenu .menu > li.open > .submenu { display: block; }
+
+
+}
+
+
+
+
+
+/* *********************** */
+/*     Sticky header       */
+/* *********************** */
+
+:root {
+  --topmenu-h: 3rem; /* fallback, skutečná výška se doplní z JS */
+}
+
+/* top menu – fixní nahoře, na začátku viditelné */
+.topmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: var(--topmenu-h);
+
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+
+  z-index: 1000; /* nad mainmenu a obsahem */
+}
+
+/* při scrollu dolů schovej */
+.topmenu.hidden {
+  transform: translateY(calc(-1 * var(--topmenu-h)));
+}
+
+/* hlavní menu – sticky pod top barem */
+header {
+  position: sticky;
+  top: var(--topmenu-h, 0);
+  z-index: 999; /* pod topmenu */
+}
+
+header.top{
+  top: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+
+/* *************** */
+/*      Triky      */
+/* *************** */
+
+/* Přidat ikonku u odkazů vedoucích mimo web knihovny */
+a[href^="http"]:not([href*="knihovna.pedf.cuni.cz"])::after {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.25em;
+  background: currentColor;
+  -webkit-mask: url("/img/external-link.svg") no-repeat center / contain;
+  mask: url("/img/external-link.svg") no-repeat center / contain;;
+}
+
+
+/* ************************* */
+/*       Obecné styly        */
+/* ************************* */
+
+/* Odstranění defaultních stylů seznamů */
+ul,
+ol {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+/* Odstranění podtržení odkazů v resetu (vrátíme později) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Obrázky a média max. na šířku rodiče */
+img,
+video {
+  /* max-width: 100%; */
+  height: auto;
+  display: block;
+}
+
+/* Tabulky bez mezírek */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* === Typografie === */
+html {
+  font-size: 100%; /* 16px jako základ (1rem = 16px) */
+  -webkit-text-size-adjust: 100%; /* lepší zoom na mobilech */
+}
+
+
+/* Nadpisy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2rem; }   /* 32px */
+h2 { font-size: 1.5rem; } /* 24px */
+h3 { font-size: 1.25rem; }/* 20px */
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+/* Odstavce a seznamy */
+p, ul, ol, blockquote {
+  margin-bottom: 1rem;
+}
+
+/* Odkazy */
+a {
+  color: #0055cc;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Formuláře */
+input, button, textarea, select {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* Zvýraznění */
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
+

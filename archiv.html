@@ -1,102 +1,621 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="cs">
+<html lang="cs" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Knihovna PedF UK
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Knihovna PedF UK" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz/archiv.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.czimg/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Knihovna PedF UK">
+        <meta property="og:description" content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz/archiv.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index.html" class="button">
-                    Domů
-                </a>
-                <a href="/sluzby.htm" class="button">
-                    Služby
-                </a>
-                <a href="/biblio.html" class="button">
-                    Publikační činnost
-                </a>
-                <a href="/periodika.htm" class="button">
-                    Časopisy
-                </a>
-                <a href="/eiz.htm" class="button">
-                    Elektronické zdroje
-                </a>
-                <a href="/kvalifikacni_prace.htm" class="button">
-                    Závěrečné práce
-                </a>
-                <a href="/objednavani_liter.htm" class="button">
-                    Nákup publikací
-                </a>
-                <a href="/informace.htm" class="button">
-                    O knihovně
-                </a>
-                <span>
-                    <a href="/index-en.html">
-                        <img src="/img/gb.svg" alt="English version" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a href="/index.html">
-                        <img role="banner" src="/img/logo.svg" alt="Logo knihovny" style="height:90%;">
-                    </a>
+        <header>
+            <nav class="topmenu" aria-label="doplňková navigace">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDF-871.html">
+                            Všechny katedry
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/">
+                            Pedagogická fakulta
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Switch to English version" href="/index-en.html">
+                            EN
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
                 </div>
-            </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <article role="main"><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/ndk.webp" title="NDK" alt="NDK" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.11.2020 – Národní digitální knihovna plně otevřena pro vysoké školy</h3><p><a href="https://ezdroje.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=964">Digitální knihovna Kramerius &ndash; Covid</a> je opět dočasně zpřístupněna pro
+            </nav>
+            <nav class="mainmenu" aria-label="hlavní menu">
+                <div class="nav-container">
+                    <a href="/index.html">
+                        <img class="logo" src="/img/logo.svg" alt="Zpět na hlavní stránku knihovny" role="banner">
+                    </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/sluzby.htm">
+                                Služby
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/rezervacni_boxy.html">
+                                        Rezervace knih
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/studovna.html">
+                                        Studovna
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/biblio.html">
+                                Publikační činnost
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/zdroje.htm">
+                                Zdroje
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/periodika.htm">
+                                        Časopisy
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/eiz.htm">
+                                        Elektronické zdroje
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/kvalifikacni_prace.htm">
+                                        Závěrečné práce
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/objednavani_liter.htm">
+                                        Nákup publikací
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/informace.htm">
+                                O knihovně
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="drobénková navigace">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">
+                                <img src="/img/home.svg" alt="Domů">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <article role="main"><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.01.2026 – Knihovna v M. Rettigové 4 uzavřena kvůli rekonstrukci</h3><p>
+Během rekonstrukce pro vás rozšiřujeme prostor ke studiu i setkávání.
+Konzultace poskytujeme v kanceláři R136 v pondělí a ve středu od 9 do 16 hodin
+nebo e-mailem na adrese <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>. Studovna v Celetné 13 zůstává
+otevřená v běžném režimu.
+</p>
+
+
+<p>
+Během uzavírky:
+</p>
+
+
+<ul>
+<li>
+    půjčovna i studovna v M. Rettigové 4 jsou uzavřeny,
+</li>
+
+<li>
+    výpůjčky končící v tomto období jsou automaticky prodlouženy do 4. 5. 2026,
+</li>
+
+<li>
+    knihy je možné po celou dobu vracet do biblioboxu u vrátnice,
+</li>
+
+<li>
+    půjčování knih (ani prostřednictvím rezervačních boxů) není možné.
+</li>
+</ul>
+
+
+<p>
+Aktuální informace sledujte na webu fakulty a na sociálních sítích. Děkujeme za pochopení a těšíme se, až vás po rekonstrukci přivítáme v nových prostorách.
+</p>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>10.11.2025 – Knihovna v M. Rettigové 4 uzavřena od 1. 12. 2025 kvůli rekonstrukci</h3><p>Rozšiřujeme pro vás prostor ke studiu i setkávání.</p>
+
+
+<p>Nezapomeňte si včas vypůjčit potřebné knihy – <strong>poslední den pro výpůjčky je pátek 28. listopadu 2025.</strong></p>
+
+
+<h3>Během uzavírky:</h3>
+
+
+<ul>
+<li>bude uzavřena <strong>půjčovna</strong> i <strong>studovna</strong>,</li>
+<li>výpůjčky končící v tomto období budou <strong>automaticky prodlouženy do 4. 5. 2026</strong>,</li>
+<li>knihy bude možné <strong>po celou dobu vracet do biblioboxu u vrátnice</strong>,</li>
+<li><strong>půjčování knih (ani přes rezervační boxy) nebude možné</strong>,</li>
+<li><strong>studovna v Celetné 13 zůstává otevřená</strong> v běžném režimu.</li>
+</ul>
+
+
+<p>Aktuální informace sledujte na webu fakulty a sociálních sítích.  
+Děkujeme za pochopení a těšíme se, až vás po rekonstrukci přivítáme v nových prostorách.</p>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.11.2025 – Zkušební přístup k psychologickým databázím</h3><p>Do 02.12.2025 má Univerzita k dispozici zkušební přístup k databázím 
+<a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926125499906986">APA PsycBooks</a> a 
+<a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926125499806986">APA PsycTests</a>.</p>
+
+<p>Jedná se o databáze od American Psychological Association. PsycBooks nabízí více než 4 600 knih, včetně referenčních příruček a klasických děl;  PsycTests poskytuje tisíce psychologických testů, měřících nástrojů a dotazníků s podrobnými informacemi o metodice a validitě</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lean-library_logo.jpg" title="Lean Library" alt="Lean Library" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.10.2025 – Lean Library – rozšíření pro snadný přístup k EIZ</h3><p>Vyzkoušejte nové rozšíření <a href="https://wiki.alma.cuni.cz/index.php?title=Lean_Library">Lean Library</a> pro webové prohlížeče, které usnadňuje přístup k elektronickým informačním zdrojům (EIZ) Univerzity Karlovy.
+Rozšíření automaticky rozpozná, zda má univerzita přístup k požadovanému článku nebo e-knize, a nabídne přihlášení přes EZproxy nebo jiný dostupný způsob. Upozorní vás také na legální otevřené verze dokumentů (Open Access) či tištěné alternativy v knihovnách UK.</p>
+
+<p>Lean Library je užitečné jak při práci v univerzitní síti, tak i mimo ni – například při vyhledávání přes Google Scholar nebo na stránkách vydavatelů.</p>
+
+<p><a href="https://wiki.alma.cuni.cz/index.php?title=Lean_Library">Rozšíření</a> je dostupné pro prohlížeče:
+Chrome, Firefox, Edge, Opera a Safari.</p>
+
+<p>Zkušební provoz probíhá do 30. 11. 2025.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="img/megafon.jpg" title="Omezený provoz knihovny" alt="Omezený provoz knihovny" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.10.2025 – Zkrácená otevírací doba knihovny</h3><p>V pondělí 27. října bude knihovna otevřena pouze do 15 hodin.<br/>
+Omlouváme se za případné komplikace a děkujeme za pochopení.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/drew-beamer-3SIXZisims4-unsplash.jpg" title="Hello" alt="Hello" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.09.2025 – Vítejte, studentky a studenti 1. ročníků!</h3><p>Těšíme se na vaši první návštěvu ve fakultní knihovně. Můžete se přijít kdykoli
+nezávazně podívat, nebo můžete přijít už s hotovou registrací – vyplněním
+tohoto jednoduchého <a href="https://knihovna.cuni.cz/e-prihlaska/">on-line formuláře</a> se obratem stanete čtenářkami a čtenáři
+všech knihoven na UK. Jediné, co k tomu potřebujete, je studentský průkaz.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/listy.jpg" title="Photo by Aaron Burden on Unsplash" alt="Photo by Aaron Burden on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.09.2025 – Knihovnu v M. Rettigové 4 otevřeme 29. 9. Studovna v Celetné 13 je otevřena denně.</h3><p>Výpůjční dobu na všechny knihy jsme prodloužili do 15. října 2025. <a href="celetna.html">Studovna v Celetné 13</a> má otevřeno od pondělí do čtvrtka 9-16, v pátek 9-13. Těšíme se na vás! </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/slunecnice.jpg" title="photo of flower, summer, blue sky, and leaves in Paris, United States by Courtney Cook (@courtneymcook)" alt="photo of flower, summer, blue sky, and leaves in Paris, United States by Courtney Cook (@courtneymcook)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>27.06.2025 – V létě bude otevřená pouze studovna v Celetné 13</h3><p>Knihovna v M. Rettigové 4 bude zavřená stejně jako celá budova od 1. 7. 2025.
+<strong>Otevře se 29. 9. 2025</strong>. Z důvodu rekonstrukce se ke knihám
+v M. Rettigové nebude možné po celou dobu dostat.<br/>
+</p>
+
+<p>Výpůjční dobu na všechny knihy aktuálně prodlužujeme do 15. října 2025. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/newton.jpg" title="Newton" alt="Newton" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.06.2025 – Nová mediální databáze NewtonOne</h3><p>Mediální databázi Anopress nově nahrazuje modernější platforma <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925904312806986">NewtonOne</a>.</p>
+
+<p>Je přehlednější a nabízí nové funkce, např. seskupování zpráv o stejné události
+a sledování úprav článků včetně změn titulků. Vyzkoušejte NewtonOne doma, na
+cestách nebo u nás knihovně – rádi poradíme!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.05.2025 – Výdejní boxy na knihy dočasně ve vstupní hale</h3><p>Ačkoli rekonstrukce knihovny ještě není na pořadu dne, některé stavební práce zasáhnou do prostoru před knihovnou.
+Proto jsme výdejní boxy přesunuli dočasně do vstupní haly. Omlouváme se za
+případné komplikace.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/velikonoce-kytky.jpg" title="květy" alt="květy" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.04.2025 – Plánované uzavření knihovny</h3><p>Půjčovna i studovny budou v následujících dnech uzavřeny:</p>
+
+<table>
+<tr><td style="text-align:right;">17. 4. 2025 </td><td>děkanský den </td></tr> 
+<tr><td style="text-align:right;"> 1. 5. 2025    </td><td>státní svátek</td></tr>
+<tr><td style="text-align:right;"> 2. 5. 2025    </td><td>zavírací den</td></tr>
+<tr><td style="text-align:right;"> 8. 5. 2025 </td><td>státní svátek</td></tr>
+<tr><td style="text-align:right;"> 9. 5. 2025    </td><td>zavírací den</td></tr>
+<tr><td style="text-align:right;">13. 5. 2025 </td><td>rektorský den</td></tr>
+</table>
+
+
+<p>Výpůjčky automaticky prodlužujeme.</p>
+
+<p>Děkujeme za pochopení a těšíme se na vaši další návštěvu!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.04.2025 – Noc vzdělávání ve studovně v Celetné 13</h3><p>Studovna v Celetné 13 bude mít 9. 4. 2025 z důvodu konání Noci vzdělávání
+zkrácenou otevírací dobu do 17 hodin. Studovna v M. Rettigové zůstává otevřena
+do 18 hodin. Omlouváme se za případné komplikace! </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/51983022924_9c7d41b7df_w.jpg" title="Noc s Andersenem" alt="Noc s Andersenem" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>18.03.2025 – Noc s Andersenem</h3><p>Srdečně zveme děti a vnoučata zaměstnanců fakulty na Noc s Andersenem 2025,
+která se koná 28. 3. 2025. Kromě přespávání ve studovně nás čeká literární hra
+– tentokrát na motivy knihy Polévka pana Leprona od Giovanny Zoboli. Doporučený
+věk dětí: 6-12 let. Přihlašovací formulář najdete <a href="https://forms.office.com/e/RWBwh8Kv5N?origin=lprLink">zde</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/clarivate.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.03.2025 – Web of Science Research Assistant</h3><p>Do 30. dubna 2025 má UK k dispozici ve zkušebním přístupu AI nadstavbu nad
+databází <a href="https://cuni.primo.exlibrisgroup.com/discovery/fulldisplay?context=L&amp;vid=420CKIS_INST:DB&amp;search_scope=DBsearch&amp;tab=DB_search&amp;docid=alma9925591385206986&amp;lang=cs">Web of Science (WoS) – Web of Science Research
+Assistant</a>.
+Jedná se nástroj využívající generativní AI, který pomáhá uživatelům při
+vyhledáváním ve Web of Science Core Collection, poskytuje přehledy a
+vizualizace výsledků vyhledávání a nabízí možnost prozkoumat spojitosti mezi
+tématy, literaturou a autory. Další informace naleznete na <a href="https://ai.cuni.cz/AI-19.html?news=25205&amp;locale=cz">tomto webu</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/joao-silas-74207.jpg" title="autor Joao Silas" alt="autor Joao Silas" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>11.02.2025 – Nové zkušební přístupy k elektronickým zdrojům</h3><p>Univerzita Karlova nabízí zkušební přístupy k následujícím zdrojům:</p>
+
+<ul>
+<li><p><a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9926039169706986">British Library Newspapers (část I)</a> – jedná se o archiv národních a regionálních novin viktoriánské Británie, pečlivě vybraných redakční radou z Britské knihovny. Přístupný bude do 4. 3. 2025.</p></li>
+<li><p>Databáze <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591405706986">Oxford English Dictionary</a>  spustila AI Search Assistant, jako další nástroj pro vyhledávání.  Tato AI funkcionalita bude pro UK v pilotu dostupná do poloviny roku 2025. </p></li>
+<li><a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591384606986">World Christian Database</a>, která poskytuje statistické informace o křesťanství a dalších náboženstvích, včetně možností reportů. Dostupná bude do 31. 12. 2025.</li>
+</ul>
+
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.01.2025 – Nový Portál studentských a zaměstnaneckých průkazů</h3><p>Díky <a href="https://cuni.cz/UK-5360.html">Portálu studentských a zaměstnaneckých průkazů</a> si vyřídíte on-line
+prodloužení licence ISIC, ITIC i ALIVE, objednáte nový průkaz UK nebo tento
+průkaz zneplatníte/aktivujete. V knihovnách UK zatím nelze využívat průkaz
+nahraný v telefonech. Důvodem je chybějící čárový kód. Děkujeme, že do knihoven
+i nadále nosíte plastové průkazy. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Vánoce!" alt="Vánoce!" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.12.2024 – Přejeme vám veselé Vánoce a děkujeme za celoroční přízeň</h3><p>Knihovna se opět otevře 6. ledna 2025. Pokud máte rezervované knihy ve
+výdejních boxech, můžete si je vyzvednout 2. a 3. ledna 2025 od 8 do 15 hodin.
+Moc vám děkujeme za celoroční přízeň. Jen ve studovnách jste nás v roce 2024
+navštívili 29 643×, což je o 1000 návštěv více než minulý rok. Těšíme se na
+další setkávání a i nadále se budeme snažit vytvářet pro vás co nejlepší
+studijní prostředí.   </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Vánoční večírek" alt="Vánoční večírek" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>18.12.2024 – Omezení studovny v M. Rettigové</h3><p>Ve středu 18. 12. bude ve studovně probíhat vánoční setkání zaměstnanců
+fakulty. Studovna bude od 14 hodin uzavřena. Omlouváme se za komplikace a
+srdečně zveme do naší studovny v Celetné 13, která bude v tento den otevřená až
+do 18 hodin.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Obrázek megafon" alt="Obrázek megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.12.2024 – Zkrácená otevírací doba ve studovně v Celetné</h3><p>Dnes máme otevřeno z důvodu natáčení podcastu do 16:00. Omlouváme se za případné komplikace. Studovna v Magdalény Rettigové 4 zůstává otevřena standardně do 18 hodin. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/dramox-0.png" title="Dramox sticker" alt="Dramox sticker" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.10.2024 – Sledujte divadelní představení!</h3><p>České i světové divadlo můžete nově sledovat ve studovně v M. Rettigové! Máme
+neomezený přístup na platformu <a href="https://www.dramox.tv/">Dramox</a> s více než 400 záznamy z českých,
+slovenských i světových divadel, včetně oblíbených scén jako Dejvické divadlo,
+Klicperovo divadlo nebo Divadlo v Dlouhé. Můžete sledovat komedie, drama,
+opery, Shakespeara v angličtině i desítky titulů doporučené četby.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>19.09.2024 – Tisková konference: Reforma školství začíná u učitelů</h3><p>Ve čtvrtek 19. 9. 2024 se ve studovně v M. Rettigové od 11:00 uskuteční tisková
+konference s názvem <a href="https://pedf.cuni.cz/PEDF-61.html?event=28280&amp;lang=cz">Reforma školství začíná u učitelů</a>. Z tohoto důvodu bude
+studovna do 13:00 uzavřena. Omlouváme se za případné komplikace a těšíme se na vás po skončení akce.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/drew-beamer-3SIXZisims4-unsplash.jpg" title="Hello" alt="Hello" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.08.2024 – Vítejte, studentky a studenti 1. ročníků!</h3><p>Těšíme se na vaši první návštěvu ve fakultní knihovně. Můžete se přijít kdykoli
+nezávazně podívat, nebo můžete přijít už s hotovou registrací – vyplněním
+tohoto jednoduchého <a href="https://knihovna.cuni.cz/e-prihlaska/">on-line formuláře</a> se obratem stanete čtenářkami a čtenáři
+všech knihoven na UK. Jediné, co k tomu potřebujete, je studentský průkaz
+(ISIC).</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/plamenak.png" title="Unsplash/Vicko Mozara" alt="Unsplash/Vicko Mozara" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.06.2024 – Letní otevírací doba</h3><p>Půjčovna a studovna v M. Rettigové 4 budou od 1. do 11. července 2024 otevřeny každý
+pracovní den od 9 do 15 hodin. V srpnu se na vás budeme těšit každé úterý od 9
+do 15 hodin. Ve studovně v Celetné bude v červenci i srpnu zavřeno. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg" title="Photo by Lina Trochez on Unsplash" alt="Photo by Lina Trochez on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>13.05.2024 – Rektorský den: Knihovna PedF UK bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během rektorského dne v
+úterý  14. 5. uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit,
+napište nám na e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, 
+budeme se vám snažit maximálně pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/velikonoce-kytky.jpg" title="Květy" alt="Květy" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.03.2024 – Přejeme vám hezké Velikonoce!</h3><p>Všem našim čtenářkám a čtenářům přejeme příjemné prožití velikonočních svátků.
+Půjčovna i studovny budou naposledy otevřeny ve středu 27. 3. 2024. Na viděnou
+se těšíme zase v úterý 2. 4. 2024! </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/brooke-cagle-n1m25jvupEU-unsplash.jpg" title="Unsplash/Brooke Cagle" alt="Unsplash/Brooke Cagle" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.02.2024 – Využijte zkušební přístup k e-knihám na platformě De Gruyter</h3><p>Až do 30. dubna 2024 je pro celou UK k dispozici zkušební přístup k e-knihám na platformě De Gruyter. Jedná se o multioborové knihy v různých jazycích. Pro přístup navštivte <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925612682806986">Portál e-zdrojů</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/celetna-pamet.jpg" title="Pamětní deska" alt="Pamětní deska" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.02.2024 – Nová pamětní deska ve studovně v Celetné 13</h3><p>Pamětní deska, kterou jsme 24. 1. 2024 představili akademické obci, je dílem
+sochaře Radka Mužíka. Připomíná aktivity doc. Anny Grmelové (1947-2012) a doc.
+Josefa Grmely (1942-2020), jež se v polistopadovém období významně zasloužili o
+rozvoj Katedry anglického jazyka a literatury. Doc. Anna Grmelová, která
+katedru vedla v letech 1993-2009, mimo jiné iniciovala v roce 1995 vznik
+specializované studovny anglického jazyka a literatury. Fotografie z
+představení pamětní desky si můžete prohlédnout <a href="https://www.flickr.com/photos/145636261%40N02/albums/72177720314309955/">zde</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>12.01.2024 – Provoz knihoven na Filozofické fakultě</h3><p>Od pondělí 19. 2. bude znovu otevřena většina knihoven na hlavní budově FF UK.</p>
+
+<p>Uzavřeny zatím do odvolání zůstanou knihovny ve 4. patře budovy, tedy Knihovna Ústavu hudební vědy a Knihovna finštiny. 
+Více informací o tom kdy bude možné si zadávat požadavky na knihy z knihoven na
+hlavní budově nebo kdy a kam vracet prodloužené knihy přineseme na našich
+sociálních sítích v příštích dnech! Další informace, včetně omezené otevírací
+doby knihoven, naleznete na webu <a href="http://knihovna.ff.cuni.cz/">Knihoven FF UK</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/Advent_23-PF_2024_A4-Knihovna.png" title="ach jo" alt="ach jo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.12.2023 – Aktuální otevírací doba knihovny</h3><p>Milé čtenářky, milí čtenáři, děkujeme vám za přízeň v uplynulém roce. Obě
+studovny PedF UK budou uzavřeny od 22. 12., celá knihovna pak od 27. 12.
+Všechny výpůjčky byly prodlouženy do 15. ledna.
+Opět se s Vámi těšíme na viděnou 2. ledna 2024!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Vánoční stromeček" alt="Vánoční stromeček" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.12.2023 – Omezení provozu studovny v M. Rettigové</h3><p>Ve čtvrtek 14. 12. bude ve studovně probíhat vánoční setkání zaměstnanců
+fakulty. Studovna bude od 16 hodin <strong>uzavřena</strong>. Omlouváme se za komplikace a
+srdečně zveme do naší studovny v Celetné 13, která bude v tento den otevřená až
+do 18 hodin.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/mikrofon-celetna.jpg" title="matt-botsford" alt="matt-botsford" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>07.12.2023 – Krátkodobé uzavření studovny v Celetné 13</h3><p>V pondělí 11. prosince 2023 proběhne ve studovně natáčení fakultního 
+<a href="https://youtube.com/playlist?list=PL28ZjLb0fJ36Sujrb-MlT2vljQZtgAa12&amp;feature=shared">podcastu Podtrženo</a>. 
+Od 9:30 do 11:30 bude proto studovna uzavřena.<br/>
+</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/akce_listopad_2023.jpg" title="Studenti ve studovně" alt="Studenti ve studovně" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>08.11.2023 – Literární listopad v našich studovnách</h3><p>Zveme vás na dvě literární události, které se budou v naší studovně konat v následujících týdnech.<br/>
+</p>
+
+<p><strong>15. 11. 2023 v 18 hodin: <a href="https://pedf.cuni.cz/PEDF-61.html?event=26294&amp;lang=cz">Hana Lundiaková &ndash; Punk, Literatura a Hudba</a> (studovna v M. Rettigové 4)</strong></p>
+
+<p>Setkání s Hanou Lundiakovou, autorkou, která se v literatuře i hudbě pohybuje po linii punku. Zveme vás na večer plný inspirace a hudby.</p>
+
+<p><strong>29. 11. 2023 v 18 hodin: <a href="https://pedf.cuni.cz/PEDF-61.html?event=26295&amp;lang=cz">Petr Stančík a Galina Miklínová &ndash; Kniha a Kresba</a> (studovna v M. Rettigové 4)</strong></p>
+
+<p>Petr Stančík a Galina Miklínová jsou autorská dvojice, která spojuje slovo a kresbu. Těšit se můžete na diskuzi, komorní koncert a promítání výtvarných prací.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.10.2023 – Uzavření půjčovny z důvodu stávky</h3><p>Z důvodu stávky bude 17. 10. 2023 uzavřena půjčovna knih od 14 do 15 hodin.
+Studovny zůstanou otevřené. Více informací o stávce najdete zde: 
+<a href="https://www.facebook.com/events/284167454427297/?__cft__%5B0%5D=AZWUbhvJEatpW-Fxd8M-zyAWfYqBBcuJoBj2ImTMmnFvu3vaQ1QPqbDlvkjTkHd-AYFdBj2QSkQJwsTt3u_-AJqCLARbPS52xMiyIms3ZiIeIygIjcjlE1VKtyR0lUTipXyMBNxubUy57UV2SK9FqzKIk5CZSYhnThQS7DlKNjHq6aNUUR-Jt87thQzZ1DpxYz0&amp;__tn__=-UK-R">Vysoké školy na křižovatce: českým univerzitám svítí červená!</a></p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="Megafon" alt="Megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.09.2023 – Sanitární den: knihovna bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během mít v
+pátek 29. 9. sanitární den a bude uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit,
+napište nám na e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, 
+budeme se vám snažit maximálně pomoci.<br/>
+</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/selfcheck.jpg" title="Obrázek self-checku" alt="Obrázek self-checku" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.09.2023 – Novinka ve studovně v Celetné</h3><p>Studovnu v Celetné jsme nově vybavili samoobslužným zařízením, tzv.
+selfcheckem. Můžete si díky němu knihy samostatně půjčovat i vracet. Stačí ke
+čtečce na selfchecku přiložit svůj studentský nebo zaměstnanecký průkaz a
+položit knihy na vyznačené místo.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.08.2023 – Aktualizace nabídky vyřazené literatury</h3><p>Objednávejte další vyřazené knihy za 5 Kč z našeho <a href="https://knihovna.pedf.cuni.cz/wp/">seznamu vyřazené literatury</a>. Přidali jsme téměř tisíc titulů.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/henry-be-leto.jpg" title="Photo by Henry Be on Unsplash" alt="Photo by Henry Be on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.06.2023 – Provozní doba knihovny v létě</h3><p>Knihovna v M. Rettigové 4 bude mít v červenci otevřeno 3., 4. a 10. 7. 2023, v
+srpnu pak každé úterý. Jak studovnu, tak půjčovnu můžete navštívit vždy od 9 do
+15 hodin. Studovna v Celetné 13 je celý červenec a srpen uzavřena. Knihy si
+můžete po objednání vyzvedávat v <a href="rezervacni_boxy.html">boxech před studovnou</a>. Pro vrácení využijte
+<a href="bibliobox.html">bibliobox v M. Rettigové 4</a> vedle recepce, případně bibliobox v Celetné 13 před
+vstupem do knihovny. Případné dotazy rádi zodpovíme e-mailem:
+<a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>.<br/>
+</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.05.2023 – Tisková konference ve studovně</h3><p>Ve čtvrtek <strong>25. 5.</strong>, se bude ve studovně konat tisková konference. Studovna bude
+od <strong>8 do 12 hodin uzavřena</strong>. Zveme vás do studovny v Celetné 13, která je
+otevřena od 9 do 18. </p>
+
+<p>Děkujeme za pochopení a omlouváme se za komplikace.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg" title="Photo by Lina Trochez on Unsplash" alt="Photo by Lina Trochez on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.05.2023 – Rektorský den: Knihovna PedF UK bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během rektorského dne ve
+středu 10. 5. uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit,
+napište nám na e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, budeme se vám snažit maximálně
+pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.04.2023 – Školení: Citování a citační manažer Citace Pro Plus</h3><p>Datum: 17. 4. 2023</p>
+
+<p>Čas: 15:00 – 16:30</p>
+
+<p>Školení je určeno studentům Univerzity Karlovy a týká se tématu citování a práce s 
+citačním manažerem <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591379606986">Citace Pro Plus</a>.</p>
+
+<p>Náplní školení je vysvětlení jednoduchých a nejčastěji využívaných zdrojů
+(knihy, články, tištěné i v e-podobě) z hlediska jejich citování, práce s
+citačním manažerem CitaPRO, seznámení s pracovním prostředím citačního manažeru
+a s jeho funkcionalitami, součástí budou názorné ukázky, jak výše zmíněné druhy
+dokumentů za pomoci tohoto citačního manažeru citovat. V závěru bude nastíněno,
+jak si počínat při citování ostatních druhů dokumentů.</p>
+
+<p>Přihlášení probíhá pomocí
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScG1IwxriG3KHacV-iw7EVgxfaYJc3-KLEN8COQ0zrCSn704w/viewform">formuláře</a>.
+Registrovaní zájemci obdrží den předem odkaz na online školení společně s
+prezentací. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.04.2023 – Děkanský den: knihovna bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během děkanského dne ve
+čtvrtek 6. 4. uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit,
+napište nám na e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, 
+budeme se vám snažit maximálně pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/zoubkova.jpg" title="Jana Zoubková" alt="Jana Zoubková" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.03.2023 – Diskuze s překladatelkou Janou Zoubkovou v Celetné 13</h3><p>V pondělí 20. 3. 2023 v 10 hodin vás srdečně zveme do <a href="celetna.html">studovny v Celetné 13</a> na
+diskuzi s překladatelkou Janou Zoubkovou. Diskuze proběhne v rámci celostátní
+akce <a href="http://www.obecprekladatelu.cz/aktualni-informace.htm">Poznej svého překladatele</a>. 
+Pořádají Knihovna PedF UK, Katedra germanistiky a Obec překladatelů.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/il_boemo.png" title="Il Boemo" alt="Il Boemo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>13.03.2023 – Výstava Il Boemo fotografa Richarda Hodonického</h3><p>V Malé galerii u studovny se koná výstava fotografií Richarda Hodonického z natáčení filmu Il Boemo. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/mesic_ctenaru.png" title="Měsíc čtenářů" alt="Měsíc čtenářů" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.03.2023 – Celý březen odpouštíme zpozdné za vrácené knihy</h3><p>V rámci akce Březen – měsíc čtenářů vyhlašujeme čtenářskou amnestii.
+Uživatelům, kteří během března 2023 vrátí knihy vypůjčené z Knihovny
+Pedagogické fakulty UK (včetně studovny v Celetné), nebudeme účtovat zpozdné,
+které je na ně navázané. Knihy můžete vracet u pultů nebo biblioboxů. Bibliobox
+pro vracení knih najdete v M. Rettigové vedle vrátnice, bibliobox v Celetné 13
+je před vchodem naší podkrovní studovny.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/noc_s_andersenem.jpg" title="Noc s Andersenem" alt="Noc s Andersenem" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.02.2023 – Letos v naší knihovně opět proběhne Noc s Andersenem</h3><p>Noc s Andersenem 2023 pro děti a vnoučata zaměstnanců fakulty se už blíží!
+Letošní literární večer s přespáváním ve studovně proběhne 31. 3. 2023.
+Doporučený věk dětí: 6–12 let. Prosíme o zaslání přihlášek nejpozději do 15. 3.
+2023 na adresu <a href="mailto:monika.horakova@pedf.cuni.cz">monika.horakova@pedf.cuni.cz</a>. Maximální kapacita je 12 dětí.
+Naladit se zatím můžete <a href="https://www.flickr.com/photos/145636261%40N02/albums/72177720297864709">fotografiemi z loňského ročníku</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/SAGE_Publishing_logo.svg.png" title="SAGE logo" alt="SAGE logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.01.2023 – Časopisy SAGE publishing</h3><p>On-line časopisy vydavatelství <a href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591402506986">Sage</a> 
+jsou nyní dostupné až do roku 2025, plné impaktovaných časopisů z oblasti
+vzdělávání, včetně žádaných titulů od American Educational Research
+Association. A to není všechno – můžete vyhledávat podle konkrétních názvů časopisů
+přímo v <a href="https://ukaz.cuni.cz/">UKAŽ</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>18.01.2023 – Omezení provozu knihovny</h3><p>Omlouváme se, ale v univerzitním knihovním systému se momentálně vyskytly technické
+potíže. Bohužel to znamená, že v tuto chvíli není možné půjčovat ani vracet
+knihy. Pracujeme na tom, abychom situaci co nejdříve vyřešili, ale zatím není
+jisté, kdy bude všechno opět fungovat normálně.</p>
+
+<p>Omlouváme se za potíže, které momentálně máme s půjčováním a vracením knih 
+I když teď nemůžeme knihy půjčovat na doma, můžete si mezitím 
+knihy půjčit do studovny a číst je tam. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Chad Madden (unsplash)" alt="Chad Madden (unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.12.2022 – Veselé Vánoce</h3><p>Milé čtenářky, milí čtenáři, děkujeme vám za přízeň v uplynulém roce. Těší nás,
+že jsme v našich studovnách zaznamenali více než 20 000 návštěv! Přejeme vám
+krásné svátky, dobrý rok 2023 a těšíme se na další setkávání a spolupráci!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Chad Madden (Unsplash)" alt="Chad Madden (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.12.2022 – Omezení provozu studovny v M. Rettigové</h3><p>Ve středu 14. 12. bude ve studovně probíhat vánoční setkání zaměstnanců
+fakulty. Studovna bude od 16 hodin <strong>uzavřena</strong>. Omlouváme se za komplikace a
+srdečně zveme do naší studovny v Celetné 13, která bude v tento den otevřená až
+do 18 hodin.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/Vystava_Komiksovy_roman_Stefanik-plazma_1_.png" title="vystava" alt="vystava" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.11.2022 – Beseda s tvůrci komiksu Štefánik a projekce filmu Cesta do nemožna</h3><p>Ve středu 7. prosince 2022 zveme od 18:00 všechny zájemce na setkání s tvůrci
+komiksu Štefánik. Na akci v naší studovně bude přítomna dvojice scenáristů
+Gabriela Kyselová a Michal Baláž, jakož i výtvarník Václav Šlajch, který učí na
+plzeňské Fakultě umění a designu Ladislava Sutnara. Zmínění autoři komiksového
+libreta téma Milana Rastislava Štefánika již dříve zpracovali i v celovečerním
+filmu „Cesta do nemožna“. Právě projekce tohoto snímku na besedu přímo naváže.
+Večerem bude provázet Tomáš Chlud. Besedy se můžete účastnit i <a href="http://stream.pedf.cuni.cz/">online</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="hláška" alt="hláška" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.11.2022 – Děkanský den: knihovna bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během děkanského dne v
+pátek 18. 11. uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit,
+napište nám na e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, budeme se vám snažit maximálně
+pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/clarivate.jpg" title="Clarivate logo" alt="Clarivate logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.11.2022 – Web of Science - seminář</h3><p>Zveme vás na seminář <strong>Podpora výzkumníků během celého cyklu výzkumu a novinky
+nejen ve Web of Science</strong>. Seminář se koná 22. 11. 2022 v 10 hodin na
+Pedagogické fakultě UK v učebně R118. Dozvíte se, jak efektivně zmapovat
+vědeckou literaturu, jak vytvořit vlastní knihovnu, jak citovat během psaní,
+jak zformátovat citace na správný styl a jak vybrat nejvhodnější časopis pro
+zaslání svého článku. Prosíme o registraci předem na
+<a href="mailto:zuzana.formanova@pedf.cuni.cz">zuzana.formanova@pedf.cuni.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>10.11.2022 – Omezení provozu studovny v M. Rettigové 4</h3><p>Studovna v M. Rettigové bude ve čtvrtek 10. 11. 2022 uzavřena od 14 do 15 hodin
+z důvodu natáčení dokumentu pro Českou televizi. Od 15 hodin můžete studovnu
+opět využít v plném rozsahu. Omlouváme se za případné komplikace.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>01.11.2022 – Nový Provozní řád Knihovny PedF UK</h3><p>Od 1. 11. 2022 platí nový Provozní řád Knihovny PedF UK. Jeho znění naleznete <a href="https://wwwmod.pedf.cuni.cz/udeska/files/opatreni_dekana/opad_20_2022_provozni_rad_knihovny_2022.pdf">zde</a>. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/hudebniny-celetna.jpg" title="Josh Goddard/Unsplash" alt="Josh Goddard/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.10.2022 – Notovou sbírku jsme přesunuli do Celetné 13</h3><p>Naše notová sbírka čítá téměř 8000 exemplářů. Nově si je můžete vypůjčit ve
+<a href="celetna.html">studovně v Celetné 13</a>, kam jsme sbírku v průběhu léta přesunuli. Těšíme se na
+vaši návštěvu!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.09.2022 – Otevírací doba knihovny od října</h3><p>V <a href="vypujcni_protokol.html">půjčovně</a> v M. Rettigové 4 nás najdete každý
+pracovní den od 9 do 17 hodin, ve <a href="studovna.html">studovně</a> od 8 do 18 hodin, v
+pátek od 8 do 17 hodin. Po letní pauze otevíráme také <a href="celetna.html">studovnu v Celetné 13</a>:
+těšíme se na vás každé pondělí od 13 do 18 hodin, od úterý do čtvrtka vždy od 9
+do 18 hodin a v pátek od 9 do 13 hodin. Přejeme vám úspěšný zimní semestr!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/kufr.jpg" title="Unsplash - Nick Fewings" alt="Unsplash - Nick Fewings" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>31.08.2022 – Otevírací doba knihovny v září</h3><p>V pondělí 5. září opět otevřeme studovnu a půjčovnu v hlavní budově fakulty. Otevřeno budeme mít každý pracovní den od 9.00 do 17.00.
+Studovna v Celetné zůstane v září zavřená. Jakékoli dotazy rádi zodpovíme na
+<a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chris-montgomery-smgTvepind4-unsplash.jpg" title="Chris Montgomery" alt="Chris Montgomery" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.08.2022 – Prosíme o vyplnění dotazníku k blended learningu</h3><p>Dotazník zabere zhruba 10 minut. Cílem je zjistit, jak pro Vás můžeme inovovat
+služby, aby knihovny držely tempo vývoje s probíhající změnou výukových metod.
+Předem moc děkujeme!</p>
+
+<p>Jste-li akademik UK, dotazník najdete pod tímto <a href="https://forms.office.com/r/FVJ3KDe9u6">odkazem</a>. Jste-li student UK, použijte tento
+<a href="https://forms.office.com/r/EsMHeWTHh7">odkaz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.05.2022 – Nový knihovní řád</h3><p>Od 15. 5. 2022 vstoupil v platnost nový <a href="https://cuni.cz/UK-11859.html">Knihovní a výpůjční řád Univerzity
+Karlovy</a>. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/celetna-zf.jpg" title="Zuzana Formanová. Foto: Hynek Glos" alt="Zuzana Formanová. Foto: Hynek Glos" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>13.05.2022 – Zuzana Formanová: Usnadňujeme čtenářům práci i život</h3><p>V univerzitním časopise Forum vyšel
+<a href="https://www.ukforum.cz/rubriky/academia/8383-zuzana-formanova-usnadnujeme-ctenarum-praci-i-zivot">rozhovor</a>
+s vedoucí Knihovny PedF UK Zuzanou Formanovou. Dozvíte se, co se zatím v
+knihovně za jejího působení změnilo a co ještě plánuje. Přejeme příjemné čtení!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg" title="Photo by Lina Trochez on Unsplash" alt="Photo by Lina Trochez on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>11.05.2022 – Rektorský den: Knihovna PedF UK bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během rektorského dne
+ve středu 11. 5. uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit, napište nám na
+e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, budeme se vám snažit maximálně pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/UDALOSTI-24046-version1-afoto.jpg" title="Pozvánka" alt="Pozvánka" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>10.05.2022 – Posmrtný život v literárních dílech – autorské čtení Evy Markvartové</h3><p>Zveme vás na autorské čtení a besedu s Evou Markvartovou, vedoucí katedry
+germanistiky, která představí svoji novou knihu <em>Zásvětí na cestě k proměně: od
+mýtů po soudobý román</em>. Akce se uskuteční v úterý 10. 5. od 15.00 ve 
+<a href="celetna.html">Studovně v Celetné 13</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/bks-aktualita.jpg" title="BKS" alt="BKS" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>27.04.2022 – Autorská recitace veršů tajné organizace B.K.S.</h3><p>Na nedávnou výstavu nazvanou &ldquo;Dějiny družby tajné organizace B.K.S. a Knihovny
+PedF UK&rdquo; navazujeme podvečerním básnickým pásmem recitovaným členy této
+formace.</p>
+
+<p>Akce proběhne ve středu 27. dubna od 18:00 ve studovně. Účast přislíbili Pablo
+Augeblau, prof. Eckel Eckelhaft a Dr. Il. Škába Sklabinský. Hudební složku
+večera zajistí Katedra hudební výchovy. Přejeme všem krásný umělecký zážitek!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.04.2022 – Tisková konference ve studovně</h3><p>Ve čtvrtek <strong>21. 4.</strong> se bude ve studovně konat tisková konference 
+<em>O zachování druhého cizího jazyka na ZŠ jako povinný</em>. Provoz studovny bude
+během konference a příprav omezený, od <strong>9:30</strong> do zhruba <strong>11:30</strong>
+bude studovna zcela <strong>uzavřena</strong>.</p>
+
+<p>Děkujeme za pochopení a omlouváme se za komplikace.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>31.03.2022 – Během Děkanského dne bude knihovna včetně studovny zavřená</h3><p>Poslední objednané knihy připravíme ve středu 30. března v 17 hodin. Pokud
+kapacita dovolí, uložíme je do <a href="rezervacni_boxy.html">výdejních boxů</a> před studovnou. Urgentní
+záležitosti bude možné řešit s naší kolegyní Zuzanou Krejčí &ndash; stačí zazvonit na
+zvonek s jejím jménem. V pátek 1. dubna na viděnou!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.03.2022 – Aktualizace nabídky vyřazené literatury</h3><p>Objednávejte další vyřazené knihy za 5 Kč z našeho <a href="https://knihovna.pedf.cuni.cz/wp/">seznamu vyřazené literatury</a>. Přidali jsme více než šest set titulů.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.02.2022 – Zkušební přístupy</h3><p>Do 20. 3. 2022 máme ve zkušebním přístupu platformy ProQuestu. <a href="https://ezdroje.cuni.cz/prehled/zdroj.php?id=914">One Literature</a>
+navazuje na Literature Online a nabízí 3 miliony textů a videí vhodných pro
+studium světové literatury v angličtině. <a href="https://ezdroje.cuni.cz/prehled/zdroj.php?id=861">One Academic</a> poskytuje přístup k plným
+textům periodik, e-knihám, dizertacím, agenturnímu zpravodajství, novinám atd.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/megafon.jpg" title="megafon" alt="megafon" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>01.02.2022 – Bezpečná knihovna během covidu: online rezervace knih</h3><p>Abychom předešli frontám v půjčovně, otevřeli jsme u všech knih možnost
+rezervace předem. Po obdržení SMS kódu si můžete objednané knihy vyzvednout v
+jednom z výdejních boxů před studovnou. Návod na on-line rezervaci najdete na
+stránce <a href="rezervacni_boxy.html">rezervační boxy</a>.
+Pokud bude kapacita boxu naplněna, připravíme knihy k výdeji v půjčovně.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/chad-madden-SUTfFCAHV_A-unsplash.jpg" title="Chad Madden (Unsplash)" alt="Chad Madden (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.12.2021 – Omezení provozu studovny v Rettigové</h3><p>Ve středu 15. 12. bude ve studovně probíhat vánoční setkání zaměstnanců fakulty.
+Studovna bude od 14 hodin uzavřena. 
+Omlouváme se za komplikace a srdečně zveme do naší studovny v Celetné 13, která
+bude v tento den otevřená až do 20:30.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.11.2021 – Aktualizace nabídky vyřazené literatury</h3><p>Objednávejte další vyřazené knihy za 5 Kč z našeho <a href="https://knihovna.pedf.cuni.cz/wp/">seznamu vyřazené literatury</a>. Přidali jsme více než čtyři sta titulů.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>25.11.2021 – Odstávka elektřiny v Celetné</h3><p>Ve středu 1. 12. bude v budově fakulty v Celetné ulici probíhat odstávka
+elektřiny. Z tohoto důvodu bude naše <a href="celetna.html">studovna v Celetné</a> celý den
+uzavřena.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/komensky_do_kapsy.jpeg" title="Velikáni do kapsy" alt="Velikáni do kapsy" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>05.11.2021 – Beseda Velikáni do kapsy</h3><p>Srdečně vás zveme ve středu 10. listopadu 2021 na besedu s tvůrci knižní řady
+Velikáni do kapsy (Jan Amos Komenský, Božena Němcová, Jan Hus, Tomáš Garrigue
+Masaryk, Karel IV.) Diskutovat budeme s Tomášem Němečkem a Tomášem Chludem.
+Moderuje Monika Horáková. Začínáme v 18 hodin ve studovně. Sledovat nás můžete
+také <a href="https://live.cesnet.cz/live-pedfuk1.html">online</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.10.2021 – Zkušební přístup k databázi Education Source</h3><p>Databáze je světově nejobsáhlejším zdrojem plného textu pro studenty i profesionály v oblasti vzdělávání a příbuzných témat.
+Přistupovat ke zdroji můžete z <a href="https://ezdroje.cuni.cz/prehled/zdroj.php?lang=cs&amp;amp%3Bid=865">Portálu elektronických
+zdrojů</a>, zkušební
+přístup trvá do 17. listopadu.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/bookport.png" title="Bookport" alt="Bookport" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>07.10.2021 – Bookport: Čtěte beletrii online a zdarma</h3><p>K oblíbeným e-knihám z oboru psychologie a pedagogiky nyní přidáváme také
+beletrii. České i cizojazyčné tituly, včetně dětské literatury, jsou od 1. 10.
+2021 dostupné na platformě <a href="bookport.html">Bookport</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/noc-literatury-brandys.jpg" title="Noc literatury" alt="Noc literatury" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.09.2021 – Podívejte se, jaká byla letošní Noc literatury v našem depozitáři v Brandýse</h3><p>Z knihy Nemá, a dobře, že nemá od Ediny Szvoren četla herečka Lucie Pernetová.
+Fotografie Martina Hoška si můžete prohlédnout v <a href="https://www.flickr.com/photos/145636261%40N02/albums/72157719913418648">této
+fotogalerii</a>.
+Děkujeme všem za účast!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/fridays-for-future.jpg" title="fridays for future" alt="fridays for future" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>23.09.2021 – Podporujeme globální stávku za klima, kterou pořádá studentské hnutí Fridays For Future</h3><p>Naše knihovna se oficiálně přidává k podporovatelům globální stávky za klima,
+která se koná 24. 9. 2021 v Praze, Brně, Ostravě a Slavičíně. Studenti a
+studentky vyjdou do ulic po celém světě. Více informací na
+<a href="https://www.fridaysforfuture.cz">www.fridaysforfuture.cz</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/noc-literatury-brandys.jpg" title="Noc literatury" alt="Noc literatury" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>21.09.2021 – Noc literatury</h3><p>Naše knihovna se účastní <a href="https://www.nocliteratury.cz/regiony-cr/brandys-nad-labem/">Noci
+literatury</a>. Můžete
+nás navštívit v Archivu Knihovny a Studijního oddělení Pedagogické fakulty v
+Brandýse nad Labem, kde herečka Lucie Pernetová bude předčítat z knihy 
+„Nemá, a dobře, že nemá“.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/drew-beamer-3SIXZisims4-unsplash.jpg" title="Drew Beamer (Unsplash)" alt="Drew Beamer (Unsplash)" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>02.09.2021 – Jste na fakultě noví? Přihlašte se do knihovny!</h3><p>Stačí otevřít <a href="https://knihovna.cuni.cz/e-prihlaska/">tento odkaz</a>, zadat své číslo osoby a heslo a potvrdit přihlášku.
+Přihláška platí do všech knihoven Univerzity Karlovy. Těšíme se na vás!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/kufr.jpg" title="Unsplash/Nick Fewings" alt="Unsplash/Nick Fewings" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.07.2021 – Aktuálně k provozu knihovny</h3><p>Po více než roce příprav přesouváme díky Ústřední knihovně Univerzity Karlovy
+veškerá data do knihovního systému Alma. Opouštíme systém Aleph, který jsme
+používali od roku 2005. Aby měl přesun co nejmenší dopad na služby knihovny,
+odehraje se v srpnu 2021:</p>
+
+<p>Od 1. 8. do 11. 8. půjčujeme knihy, které si předem 
+<a href="online_objednani.html">objednáte</a>  e-mailem na 
+<a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>
+do <a href="https://knihovna.pedf.cuni.cz/rezervacni_boxy.html">výdejních boxů</a>. 
+Pro vracení knih využijte <a href="bibliobox.html">bibliobox</a> 
+vedle vrátnice, případně můžete poslat knihy poštou. Půjčovna i 
+studovna bude uzavřena.</p>
+
+<p>Od 12. 8. do 3. 9. není možné knihy půjčovat ani vracet (ani do biblioboxu).</p>
+
+<p>Neváhejte využívat naši
+online poradnu přes FB <a href="https://www.facebook.com/knihovnapedfpraha">@knihovnapedfpraha</a>,
+nebo nám napište na <a href="mailto:knihovna%40pedf.cuni.cz">mail</a>! Radíme s přístupem k e-zdrojům, s
+<a href="inform_vzdelavani.htm">citacemi</a> a řešíme s vámi dostupnost literatury.</p>
+
+<p>Od 6. 9. 2021 se zase těšíme na viděnou v knihovně!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/herbar.png" title="Květina" alt="Květina" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>25.06.2021 – Výstava Herbář, jinak Bylinář - velmi užitečný</h3><p>Při příležitosti výročí 520 let od narození botanika Pietra Andrea Matthioliho
+(1501 – 1577), jsme připravili novou výstavu v Malé galerii u studovny. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/lina-trochez-ktPKyUs3Qjs-unsplash.jpg" title="Photo by Lina Trochez on Unsplash" alt="Photo by Lina Trochez on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>12.05.2021 – Rektorský den: Knihovna PedF UK bude mít zavřeno</h3><p>Vážené čtenářky, vážení čtenáři, naše knihovna bude během rektorského dne
+uzavřena. Pokud byste potřebovali urgentně cokoli vyřešit, napište nám na
+e-mail <a href="mailto:knihovna@pedf.cuni.cz">knihovna@pedf.cuni.cz</a>, budeme se vám snažit maximálně pomoci. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/tom-hermans-9BoqXzEeQqM-unsplash.jpg" title="Photo by Tom Hermans on Unsplash" alt="Photo by Tom Hermans on Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>27.04.2021 – Vyzkoušejte naši novinku</h3><p>Zveme vás do našeho nového e-shopu, v němž si můžete pohodlně rezervovat vyřazené knihy: <a href="https://knihovna.pedf.cuni.cz/wp/">https://knihovna.pedf.cuni.cz/wp/</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>11.02.2021 – Přístup do NDK Covid prodloužen</h3><p>Ministr kultury Lubomír Zaorálek se dohodl se Svazem knihkupců a nakladatelů na
+plném zpřístupnění digitalizovaných dokumentů v systému Kramerius, zejména v <a href="https://www.ndk.cz/">Národní digitální
+knihovně</a>, do konce června 2021. </p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/romano.png" title="Detail jednoho z obrázků" alt="Detail jednoho z obrázků" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>26.01.2021 – Romano suno</h3><p>Výstava Romano suno (v překladu Romský sen) představuje to nejlepší z historie
+stejnojmenné literární a výtvarné soutěže pro děti. Prostřednictvím dětských
+kreseb a krátkých textů v romském a českém jazyce výstava ukazuje svět viděný
+očima a srdcem romských dětí a mladých dospělých.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/pf_2021.jpg" title="PF" alt="PF" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.12.2020 – Vánoce!</h3><p>Všem čtenářkám a čtenářům přejeme krásné svátky, dobrý rok 2021 a těšíme se na viděnou v knihovně!</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/vystava-martina.jpg" title="Pozvánka na výstavu" alt="Pozvánka na výstavu" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>09.12.2020 – Martina Růžičková: Detaily z přírody</h3><p>Martina Růžičková je bývalá pracovnice naší knihovny, nadšená amatérská
+fotografka. Loni v prosinci jste si v naší <em>Malé galerii u studovny</em> mohli
+prohlédnout výstavu jejích fotografií <em>Zima &ndash; barevná i černobílá</em>. Aktuální
+výstava představuje její další oblíbené téma &ndash; rostliny a hmyz.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="COVID" alt="COVID" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>24.11.2020 – Aktuálně k provozu knihovny</h3><p>Od středy 25. 11. 2020 otevřeme v knihovně výdejní okénko. Těšíme se na vás
+každé pondělí a středu od 9 do 14 hodin. Vydáváme zatím výhradně knihy, které
+si předem objednáte přes <a href="online_objednani.html">katalog</a>. 
+<a href="eiz.htm">Elektronické zdroje</a> jsou 24 hodin denně k dispozici. Pro vracení
+knih využijte bibliobox vedle vrátnice, případně můžete poslat knihy poštou.
+Případné zpozdné můžete <a href="zpozdne.html">uhradit převodem na účet</a>. Neváhejte využívat naši
+online poradnu přes FB <a href="https://www.facebook.com/knihovnapedfpraha">@knihovnapedfpraha</a>! Radíme s přístupem k e-zdrojům, s
+<a href="inform_vzdelavani.htm">citacemi</a> a řešíme s vámi dostupnost literatury.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/ndk.webp" title="NDK" alt="NDK" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>03.11.2020 – Národní digitální knihovna plně otevřena pro vysoké školy</h3><p><a href="https://ezdroje.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=964">Digitální knihovna Kramerius &ndash; Covid</a> je opět dočasně zpřístupněna pro
 studenty a zaměstnance vysokých škol. 
 Přihlašování funguje přes Centrální autentizační službu UK.  Digitální knihovna
 zpřístupňuje zdigitalizované dokumenty (knihy, časopisy, noviny atd.) vydané na
 území České republiky do roku 1989 a zároveň díla novější, která nejsou
 dostupná na trhu a/nebo již nejsou pod autorskoprávní ochranou.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="COVID" alt="COVID" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.10.2020 – Aktuálně k provozu knihovny</h3><p>V souvislosti s nařízením vlády je naše knihovna do odvolání uzavřena. Termín
-pro vrácení výpůjček jsme zatím prodloužili do 18. 11. 2020. Veškeré
-<a href="https://knihovna.pedf.cuni.cz/eiz.htm">elektronické zdroje</a> jsou 24 hodin 
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/sars-covid.png" title="COVID" alt="COVID" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.10.2020 – Aktuálně k provozu knihovny</h3><p>V souvislosti s nařízením vlády je naše knihovna do odvolání uzavřena.<br/>
+Veškeré výpůjčky prodloužíme tak, aby nevzniklo žádné nové zpozdné.
+<a href="https://knihovna.pedf.cuni.cz/eiz.htm">Elektronické zdroje</a> jsou 24 hodin 
 denně k dispozici. Pro vracení knih využijte bibliobox
 vedle vrátnice, případně můžete poslat knihy poštou. Případné zpozdné můžete <a href="zpozdne.html">uhradit převodem na účet</a>. Neváhejte využívat naši
-online poradnu přes FB <a href="https://www.facebook.com/knihovnapedfpraha">@knihovnapedfpraha</a>! 
+online poradnu přes FB <a href="https://www.facebook.com/knihovnapedfpraha">@knihovnapedfpraha</a>!
 Radíme s přístupem k e-zdrojům, s citacemi a řešíme s vámi dostupnost literatury.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/fraus-aktualita.jpg" title="Fraus leták" alt="Fraus leták" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>20.10.2020 – Abychom usnadnili vaši aktuální situaci, připravili jsme dvě nové služby.</h3><p>1) Zpřístupnili jsme veškeré <a href="fraus.html">učebnice Fraus v elektronické podobě</a>, a to včetně metodických příruček a interaktivních pracovních sešitů. Využijte přístup zdarma odkudkoli!</p>
 
@@ -186,11 +705,11 @@ jazyce na stránce <a href="https://www.aip.cz/produkty/3142-cairn-info/">aip.cz
 ve studovně Knihovny PedF od Mgr. Evy Strachotové ze společnosti NEWTON Media.</p>
 
 <p>Prosíme potvrďte svůj zájem o účast (nezávazně) předem, nejpozději do 1. 3.2020 na e-mail <a href="mailto:zuzana.formanova%40pedf.cuni.cz">zuzana.formanova@pedf.cuni.cz</a>.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/anopress.png" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Do mediální databáze Anopress se nově dostanete odkudkoli</h3><p>Zpřístupnili jsme pro Vás databázi ANOPRESS, která obsahuje plné texty z periodik i televizních a rozhlasových pořadů od roku 1996 do
-dneška. Studujete či pracujete na PedF UK? Prohlížejte Anopress <a href="https://ezdroje.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=224">zdarma a odkudkoli</a>! </p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/gronsko.png" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Přijďte na výstavu fotografií z Grónska</h3><p> Andrea Kalinová zachytila na svých fotografiích Arctic Circle Trail aneb 240
 kilometrů grónskou divočinou. Přijďte nasát severskou atmosféru do Malé galerie
 u studovny. Fotografie vystavujeme až do konce února.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/anopress.png" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.02.2020 – Do mediální databáze Anopress se nově dostanete odkudkoli</h3><p>Zpřístupnili jsme pro Vás databázi ANOPRESS, která obsahuje plné texty z periodik i televizních a rozhlasových pořadů od roku 1996 do
+dneška. Studujete či pracujete na PedF UK? Prohlížejte Anopress <a href="https://ezdroje.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=224">zdarma a odkudkoli</a>! </p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/celetna-atkualita.jpg" title="Studovna v Celetné" alt="Studovna v Celetné" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>17.01.2020 – Otevíráme zrekonstruovanou studovnu cizích jazyků</h3><p>Zveme Vás po více než dvouleté přestávce do naší studovny cizích jazyků v
 Celetné 13. Pro zkušební provoz ji otevíráme v pátek 17. ledna 2020. Najdete zde referenční
 literaturu, učebnice, monografie, beletrii a specializované databáze ke studiu
@@ -249,13 +768,13 @@ s jejich následným vkládáním do textu ve Wordu. Naučíme vás stahovat e-
 vyhledávat si plné texty článků. Zodpovíme vaše dotazy.</p>
 
 <p>Přijďte a ptejte se! Zúčastněte se soutěžního kvízu!</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/kubalibriaktuality.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.10.2019 – Prodejní výstava zahraniční literatury</h3><p>Ve středu 30. a ve čtvrtek 31. října se ve vestibulu naší fakulty můžete těšit na prodejní výstavu zahraniční odborné literatury.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.10.2019 – Seminář o autorském právu</h3><p>Dovolujeme si Vás pozvat na seminář <em>Základy autorského práva pro akademické
 pracovníky</em>, který se bude konat dne <em>4. listopadu 2019 od 14 hodin</em> ve studovně
 Knihovny PedF. Seminář povede <em>Mgr. Matěj Machů, Ph.D.</em> z  <em>Centra pro přenos
 poznatků a technologií UK</em>. </p>
 
 <p><a href="/img/autorske_pravo_prednaska.pdf">Pozvánka</a></p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/kubalibriaktuality.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>30.10.2019 – Prodejní výstava zahraniční literatury</h3><p>Ve středu 30. a ve čtvrtek 31. října se ve vestibulu naší fakulty můžete těšit na prodejní výstavu zahraniční odborné literatury.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/OAWeek_na_UK_banner.png" title="OA Week banner" alt="OA Week banner" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>16.10.2019 – Open Access Week</h3><p>
 <span>Již příští pondělí startuje 12. ročník mezinárodní události <a href="http://www.openaccessweek.org/">Open Access Week</a> 
 a díky knihovnám UK se i letos naše univerzita zapojí se svým programem – 
@@ -371,11 +890,11 @@ se! <a href="/img/nocsandersenem-1.pdf">Pozvánka</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/logoEhostLg.gif" title="Logo EbscoHost" alt="Logo EbscoHost" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>15.03.2019 – Zkušební přístup do databáze Education Source</h3><p>Do 8.4.2019 máme zkušební přístup do databáze <a href="https://pez.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=865&amp;freetrials=1">Education Source</a>.
 Je světově nejobsáhlejším zdrojem plného textu pro studenty profesionály v oblasti vzdělávání a příbuzných témat.
 Obsahuje téměř 2 000 titulů časopisů v plném textu a celkově indexuje více než 3 500 titulů.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/46514230874_670f54e91f_z.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.03.2019 – Rozhovor s vedoucí knihovny PhDr. Zuzanou Formanovou</h3><p>Co všechno v nové studovně najdete a jaké akce zde plánujeme? To se dozvíte v <a href="https://pedf.cuni.cz/PEDF-54.html?news=7427&amp;locale=cz">tomto rozhovoru</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/skaliste_hory.jpg" title="skalisté hory" alt="skalisté hory" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.03.2019 – Výstava Na střeše Skalistých hor</h3><p>Ve středu 6. 3. v 18 hodin bude zahájena výstava fotografií Renaty Collard Na střeše Skalistých hor. Autorka
 je vědkyně v oboru biochemie na University of Colorado, dobrovolná průvodkyně
 po Skalistých horách a horolezkyně. Vernisáž bude pokračovat besedou s autorkou
 ve studovně Knihovny PedF. <a href="https://knihovna.pedf.cuni.cz/img/skaliste_hory_pozvanka.jpg">Pozvánka</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/46514230874_670f54e91f_z.jpg" title="alt text" alt="alt text" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>06.03.2019 – Rozhovor s vedoucí knihovny PhDr. Zuzanou Formanovou</h3><p>Co všechno v nové studovně najdete a jaké akce zde plánujeme? To se dozvíte v <a href="https://pedf.cuni.cz/PEDF-54.html?news=7427&amp;locale=cz">tomto rozhovoru</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>28.02.2019 – Máme nový Provozní a výpůjční řád</h3><p>S novou studovnou a novými službami jsme aktualizovali také naše pravidla
 fungování.  Čerstvě schválený <em>Provozní a výpůjční řád</em> najdete
 <a href="https://knihovna.pedf.cuni.cz/img/opad_c._82019_provozni_a_vypujcni_rad_knihovny.pdf">zde</a>.</p>
@@ -415,8 +934,8 @@ Knihovny PedF UK (R423).</p>
 a medicínu z produkce nakladatelství  Grada, Portál, Galén a dalších.
 E-knihy můžete číst online v prohlížeči i offline,  na všech zařízeních – počítač, mobilní telefon, tablet. Jak se
 přihlásit a více informací, včetně podmínek, které musíte při využívání služby dodržovat, naleznete <a href="bookport.html">zde</a>.</p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/musiconline.png" title="Logo" alt="Logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Zkušební přístup k databázi Classical Scores Library</h3><p>Do 1. 12. 2018 je z univerzitní počítačové sítě přístupná databáze notových záznamů klasické hudby, <a href="http://search.alexanderstreet.com/shmu">Music Online: Classical Scores Library &ndash; Volume IV</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/LogoPecet.gif" title="Logo Karolinum" alt="Logo Karolinum" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Nakladatelství Karolinum zveřejnilo svou Open Access politiku</h3><p>V roce 2013 se Univerzita Karlova připojila k Berlínské deklaraci o otevřeném přístupu ke znalostem v přírodních a humanitních vědách. V návaznosti na tento krok Nakladatelstvím Karolinum od roku 2015 publikuje všechny své časopisy jako časopisy otevřené. Více informací naleznete na stránkách <a href="http://www.karolinum.cz/ink2_stat/index.jsp?include=access">Nakladatelství Karolinum</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/musiconline.png" title="Logo" alt="Logo" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>14.11.2018 – Zkušební přístup k databázi Classical Scores Library</h3><p>Do 1. 12. 2018 je z univerzitní počítačové sítě přístupná databáze notových záznamů klasické hudby, <a href="http://search.alexanderstreet.com/shmu">Music Online: Classical Scores Library &ndash; Volume IV</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/garnier.png" title="Logo Garnier Classics" alt="Logo Garnier Classics" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>08.11.2018 – Zkušební přístup k databázi Garnier Classics</h3><p>Do 31. prosince je zkušebně přístupná databáze <a href="https://pez.cuni.cz/prehled/zdroj.php?lang=cs&amp;id=853&amp;freetrials=1">Garnier
 Classics</a>.
 Obsahuje e-knihy a e-časopisy z oblasti literatury a humanitních věd.</p>
@@ -652,13 +1171,13 @@ podpoře Ústřední knihovny VUT v Brně dostupná v elektronické verzi zdarma
 volně pod licencí Creative Commons CC-BY.</p>
 
 <p>Stahujte <a href="https://dspace.vutbr.cz/handle/11012/61751">zde</a>.</p>
+</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.09.2016 – Kopie na vyžádání</h3><p>Knihovna nabízí novou službu, <em>kopie na vyžádání</em>. Služba zatím běží ve zkušebním provozu, více informací naleznete v <a href="/img/kopie_u%C5%BEivatel.pdf">návodu</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.09.2016 – Bibliobox</h3><p>Ústřední knihovna zavádí novou službu – vracení knih
 prostřednictvím Biblioboxu, který je umístěn vedle recepce ve vstupní hale
 fakulty v ulici Magdalény Rettigové 4.<br /></p>
 
 <p>Vracení knih je možné vždy během provozní doby fakulty.<br/>
 </p>
-</div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>22.09.2016 – Kopie na vyžádání</h3><p>Knihovna nabízí novou službu, <em>kopie na vyžádání</em>. Služba zatím běží ve zkušebním provozu, více informací naleznete v <a href="/img/kopie_u%C5%BEivatel.pdf">návodu</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>21.09.2016 – Informační odpoledne</h3><p>Ústřední knihovna pořádá informační školení pro studenty prvního ročníku studia. </p>
 
 <ul>
@@ -755,7 +1274,7 @@ Pondělí 8. 2.
 
 <p>Předpokládaná délka webináře: 40 min</p>
 
-<p>V případě Vašeho zájmu o více informací nás prosím kontaktujte zde: <a href="psynek%40ebsco.com">psynek@ebsco.com</a>.</p>
+<p>V případě Vašeho zájmu o více informací nás prosím kontaktujte zde: <a href="mailto:psynek%40ebsco.com">psynek@ebsco.com</a>.</p>
 
 <p>Tutoriál, který Vás provede připojením k webináři a nastavením Vašeho audio zařízení najdete pod <a href="https://www.dropbox.com/s/uspw8xivim3xzvw/WebEx%2520-%2520Tutorial.pdf">tímto odkazem</a>.</p>
 </div></div></div><hr><div class="row"><div class="col-sm-12 col-md-2"><img src="/img/default.jpg" title="Foto: Kimberly Farmer/Unsplash" alt="Foto: Kimberly Farmer/Unsplash" class="aktual-img"></div><div class="col-sm-12 col-md-10"><div><h3>29.01.2016 – Discovery systém EDS</h3><p><a href="http://eds.cuni.cz">Discovery EDS</a> umožňuje všem studentům, pedagogům a
@@ -846,55 +1365,92 @@ mimo jiné i Univerzita Karlova a ČVUT. Více informací o slavnostech najdete 
 Ústavu T.G. Masaryka, má již 4050 záznamů, tj. asi 35 % celé sbírky. Databáze
 je přístupná v angličtině, češtině i ve francouzštině.</p>
 </div></div></div></article>
-            </section>
-        </div>
+                </section>
+            </div>
+        </main>
         <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
                     <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="telefon">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="column">
                     <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
                     <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UK-9056.html">
+                            GDPR
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
+            </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>

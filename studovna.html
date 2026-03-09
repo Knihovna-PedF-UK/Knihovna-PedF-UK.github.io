@@ -1,152 +1,244 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="cs">
+<html lang="cs" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Studovna
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Studovna" property="og:title">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz//studovna.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.cz/img/46514241504_e6c30042d8_k.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Studovna">
+        <meta property="og:description" content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz//studovna.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/46514241504_e6c30042d8_k.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
         <link href="feed.rss" rel="alternate" type="application/rss+xml">
-        <link href="/mini-knihovna.css" rel="stylesheet" type="text/css">
-        <link href="/style.css" rel="stylesheet" type="text/css">
-        <link href="/media.css" rel="stylesheet" type="text/css">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/manifest.json">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <script src="/js/header.js" defer></script>
+      <script src="/js/hamburger.js" defer></script>
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" type="text/css" href="/css/fa-svg-with-js.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.5.0/tiny-slider.css">
-      <script defer src="/js/fontawesome-all.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-      <script>
-        WebFont.load({
-          custom: {
-            families: ['Fira Sans']
-          }
-        });
-        </script>
       
     </head>
     <body class="container">
-        <div role="navigation">
-            <header>
-                <span class="logo">
-                    &nbsp;
-                </span>
-                <a href="/index.html" class="button">
-                    Domů
-                </a>
-                <a href="/sluzby.htm" class="button">
-                    Služby
-                </a>
-                <a href="/biblio.html" class="button">
-                    Publikační činnost
-                </a>
-                <a href="/periodika.htm" class="button">
-                    Časopisy
-                </a>
-                <a href="/eiz.htm" class="button">
-                    Elektronické zdroje
-                </a>
-                <a href="/kvalifikacni_prace.htm" class="button">
-                    Závěrečné práce
-                </a>
-                <a href="/objednavani_liter.htm" class="button">
-                    Nákup publikací
-                </a>
-                <a href="/informace.htm" class="button">
-                    O knihovně
-                </a>
-                <span>
-                    <a href="study-room.html">
-                        <img src="/img/gb.svg" alt="English version" style="width:1em;">
-                    </a>
-                </span>
-            </header>
-        </div>
-        <div class="logo-container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <a href="/index.html">
-                        <img role="banner" src="/img/logo.svg" alt="Logo knihovny" style="height:90%;">
-                    </a>
+        <header>
+            <nav class="topmenu" aria-label="doplňková navigace">
+                <div class="nav-container">
+                    <span>
+                        <a href="https://pedf.cuni.cz/PEDF-871.html">
+                            Všechny katedry
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://pedf.cuni.cz/">
+                            Pedagogická fakulta
+                        </a>
+                    </span>
+                    <span class="langswitcher">
+                        <img src="/img/world.svg">
+                        <a title="Switch to English version" href="study-room.html">
+                            EN
+                        </a>
+                    </span>
+                    <span>
+                        <img src="/img/search.svg">
+                    </span>
                 </div>
-            </div>
-        </div>
-        <div class="card fluid">
-            <section class="section">
-                <div class="row">
-                    <div class="col-sm-12 col-md-7">
-                        <article role="main">
+            </nav>
+            <nav class="mainmenu" aria-label="hlavní menu">
+                <div class="nav-container">
+                    <a href="/index.html">
+                        <img class="logo" src="/img/logo.svg" alt="Zpět na hlavní stránku knihovny" role="banner">
+                    </a>
+                    <span class="logo">
+                        &nbsp;
+                    </span>
+                    <ul class="menu" id="mainmenu-list" role="menubar">
+                        <li role="menuitem">
+                            <a class="button" href="/sluzby.htm">
+                                Služby
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/rezervacni_boxy.html">
+                                        Rezervace knih
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/studovna.html">
+                                        Studovna
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/biblio.html">
+                                Publikační činnost
+                            </a>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/zdroje.htm">
+                                Zdroje
+                            </a>
+                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li role="menuitem">
+                                    <a class="button" href="/periodika.htm">
+                                        Časopisy
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/eiz.htm">
+                                        Elektronické zdroje
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/kvalifikacni_prace.htm">
+                                        Závěrečné práce
+                                    </a>
+                                </li>
+                                <li role="menuitem">
+                                    <a class="button" href="/objednavani_liter.htm">
+                                        Nákup publikací
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="menuitem">
+                            <a class="button" href="/informace.htm">
+                                O knihovně
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                        ☰
+                    </button>
+                </div>
+            </nav>
+            <nav class="breadcrumb" aria-label="drobénková navigace">
+                <div class="nav-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">
+                                <img src="/img/home.svg" alt="Domů">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sluzby.htm">
+                                Služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/informace.htm">
+                                Informace o knihovně
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card fluid">
+                <section class="section">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7">
+                            <article role="main">
 <h1 id="studovna">Studovna</h1>
 
 <p>Studovna se nachází v levé části budovy PedF UK. Je určena nejen studentům s
 platným průkazem UK, ale i externím uživatelům. </p>
 
-<h2><mark class="secondary">Studovna je v současné době uzavřena kvůli epidemiologickým nařízením</mark></h2>
+<!-- <div class="row"> -->
+<!--   <div class="card fluid warning"> -->
+<!-- <h2><mark class="secondary">Provoz studovny při současných epidemiologických opatřeních</mark></h2> -->
+<!-- <!-1- <h2><mark class="secondary">Studovna je bohužel kvůli vzniklé situaci opět do odvolání uzavřena.</mark></h2> -1-> -->
+
+<!-- <ul> -->
+<!--   <li>Ve studovně může být pouze 20 osob současně, a to s minimálně dvoumetrovými rozestupy.</li> -->
+<!--   <!-1- <li>Po příchodu do studovny zapisujeme studentské ID do návštěvní knihy.</li> -1-> -->
+<!--   <!-1- <li>Před a po použití pracovního místa dezinfikujeme stůl, klávesnici a myš.</li> -1-> -->
+<!-- </ul> -->
+<!--   </div> -->
+<!-- </div> -->
 
 
 
 
 <h2>Nabízené služby</h2>
-<p>Následující informace platí pouze při normálním provozu. Snad se brzy vrátí.</p>
-<details>
-<summary>Tištěné dokumenty</summary>
-<p>Ve studovně je uložena odborná literatura určená pouze pro prezenční studium (nelze si ji tedy půjčit domů). Dokumenty mají v katalogu označení sbírky jako <em>Rett-studovna</em>. Jsou uloženy ve volném výběru, kde jsou seřazeny podle oborů (přesnější lokaci dokumentu určuje <em>2. signatura</em>).</p>
+<!-- <p>Následující informace platí pouze při normálním provozu. Snad se brzy vrátí.</p> -->
+<ul>
+  <li><a href="#knihy">Tištené dokumenty</a></li>
+  <li><a href="#eiz">Elektronické zdroje</a></li>
+  <li><a href="tymovka.html">Týmová studovna</a></li>
+  <li><a href="tisk.html">Kopírování a tisk</a></li>
+  <li><a href="#handi">Uživatelé se speciálními potřebami</a></li>
+  <li><a href="#vyuc">Pro vyučující</a></li>
+  <li><a href="#doplnky">Doplňkové služby</a></li>
+</ul>
+
+
+<h2 id="knihy">Tištěné dokumenty</h2>
+<p>Ve studovně je uložena odborná literatura určená pouze pro prezenční studium (nelze si ji tedy půjčit domů).<p>
 <p>Nachází se zde knihy, učebnice, skripta, odborné a populárně naučné časopisy, denní tisk a noviny.</p>
-</details>
-<details>
-<summary>Elektronické zdroje</summary>
+<p>Dokumenty ze studovny můžete vyhledat ve vyhledávači <a href="https://ukaz.cuni.cz/">UKAŽ</a>, jejich lokační údaje 
+se nachází na zvláštním řádku v seznamu knihoven. V záznamu můžete najít signaturu, která určuje název oddílu, kde jsou
+dokumenty ve studovně uloženy. Knihy samotné jsou v jednotlivých oddílech řazeny abecedně podle příjmení autora, 
+případně podle názvu v případě kolektivních publikací.
+</p>
+<figure>
+  <figcaption>
+    Ukázka vyhledaného záznamu publikace. Signatura ve studovně je zvýrazněna červeným rámečkem.
+  </figcaption>
+  <img src="/img/ukaz-studovna.png" />
+</figure>
+<!-- Dokumenty  <em>Rett-studovna</em>. Jsou uloženy ve volném výběru, kde jsou seřazeny podle oborů (přesnější lokaci dokumentu určuje <em>2. signatura</em>).</p> -->
+
+
+<h2 id="eiz">Elektronické zdroje</h2>
 <p>Ve studovně jsou k dispozici počítače s volným přístupem na internet. Vyhledávat můžete i v <a href="eiz.htm"><span class="underline">elektronických zdrojích</span></a> poskytovaných Univerzitou Karlovou.</p>
 <p>Některé e-zdroje jsou dostupné pouze na počítačích ve studovně. Pro přihlášení do systému požádejte pracovníka služeb.</p>
 <p>Připojit k internetu můžete i vlastní zařízení a to prostřednictvím WiFi sítě.</p>
-</details>
-<!-- <h2>Týmová studovna</h2> -->
-<!-- <p></p> -->
-<!-- <p><a href="http://pages.pedf.cuni.cz/studovna/">Rezervační formulář</a></p> -->
-<details>
-<summary>Kopírování a tisk</summary>
-<p>Kopírovat a tisknout můžete pomocí samoobslužné kopírky (černobílé) a tiskáren (černobílé a barevné). V případě zájmu o barevný tisk si dokument uložte na flash disk či jiné paměťové médium a požádejte pracovníky služby.</p>
-<p>Pořizované kopie by měly <strong>sloužit pouze pro osobní potřebu uživatele a to v souladu s autorským zákonem.</strong></p>
-<p>Nabízíme také možnost kroužkové vazby.</p>
-<p>Poplatky za využití těchto služeb naleznete v <a href="cenik.htm"><span class="underline">ceníku</span></a>. Více informací o pravidlech platných v knihovně naleznete v  
-  <a href="/img/opad_c._262019_provozni_rad_knihovny_pedagogicke_fakulty_univerzity_karlovy.pdf">provozním řádu Knihovny PedF UK</a>.</p>
-</details>
-<details>
-<summary>Doplňkové služby</summary>
-<p>V rámci studovny je možné si prezenčně zapůjčit:</p>
-<ul>
-  <li>notebooky</li>
-  <li>programovatelné kalkulačky</li>
-<li>USB nabíječky,</li>
-<li>USB kabel,</li>
-<li>čtečku elektronických knih,</li>
-<li>flash disk,</li>
-<li>deskové hry.</li>
-</ul>
-</details>
-<details>
-<summary>Uživatelé se speciálními potřebami</summary>
+
+
+<h2 id="tymovka">Týmová studovna</h2>
+<p>Informace o <a href="tymovka.html"><span class="underline">týmové studovně</span></a>.</p>
+
+<h2 id="tisk">Kopírování a tisk</h2>
+<p>Ve studovně můžete tisknout, kopírovat, nebo skenovat dokumenty. Nabízíme také možnost kroužkové vazby nebo laminování. Více informací naleznete <a href="tisk.html">zde</a>.</p>
+
+<h2 id="handi">Uživatelé se speciálními potřebami</h2>
 <p>Studovna nabízí prostor a vybavení pro uživatele se <a href="handi.htm"><span class="underline">speciálními potřebami</span></a>.</p>
-</details>
-<details>
-<summary>Pro vyučující</summary>
+
+
+<h2 id="vyuc">Pro vyučující</h2>
 
 <ul>
   <li>Vyučující na PedF UK mohou tisknout a kopírovat zdarma. K dispozici máte také skener a přístup k informačním zdrojům.</li>
   <li>Můžete zde umístit materiály k výuce pro studenty.</li>
 </ul>
-</details>
+
+
+<h2 id="doplnky">Doplňkové služby</h2>
+<p>V rámci studovny je možné si prezenčně zapůjčit:</p>
+<ul>
+  <li>notebooky</li>
+  <!-- <li>programovatelné kalkulačky</li> -->
+  <li>USB nabíječky,</li>
+  <li>USB kabel,</li>
+  <!-- <li>čtečku elektronických knih,</li> -->
+  <!-- <li>flash disk,</li> -->
+  <li>deskové hry.</li>
+</ul>
 
 <h2>Studovna po rekonstrukci</h2>
 
@@ -156,60 +248,97 @@ Fotografie ze slavnostního zahájení provozu si můžete prohlédnout <a href=
 
 
 </article>
+                        </div>
+                        <div class="col-sm-12 col-md-5">
+                            <div class="page-img"><img src="/img/46514241504_e6c30042d8_k.jpg"></div>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-5">
-                        <div class="page-img"><img src="/img/46514241504_e6c30042d8_k.jpg"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
+        </main>
         <footer role="contentinfo">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
+            <div class="nav-container">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                    <h3>
+                        Kontakt
+                    </h3>
                     <div>
-                        <p>
-                            Knihovna PedF UK, Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
-                        </p>
-                        <p>
-                            Aktualizováno: 2020-11-12
-                        </p>
-                        <p>
-                            © Univerzita Karlova
-                        </p>
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                            <span>
+                                Knihovna PedF UK
+                            </span>
+                            , 
+                            <span itemprop="streetAddress">
+                                Magdaleny Rettigové 4, 116&#8239;39&nbsp;Praha&nbsp;1
+                            </span>
+                        </address>
+                    </div>
+                    <div>
+                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <a href="mailto:knihovna@pedf.cuni.cz">
+                            knihovna@pedf.cuni.cz
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/phone.svg" alt="telefon">
+                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                            <span itemprop="telephone">
+                                +420 221 900 178
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/knihovnapedfpraha">
+                            Facebook
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/KnihovnaPedFPraha/">
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/feed.rss">
+                            RSS
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="column">
                     <div>
-                        <div>
-                            <a href="https://www.facebook.com/knihovnapedfpraha">
-                                Facebook
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/KnihovnaPedFPraha/">
-                                Instagram
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/feed.rss">
-                                RSS
-                            </a>
-                        </div>
+                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
                     <div>
-                        <p>
-                            Webmaster: <a href='mailto:michal.hoftich@pedf.cuni.cz'>michal.hoftich@pedf.cuni.cz</a>
-                        </p>
-                        <p>
-                            <a href="prohlaseni.html">
-                                Prohlášení o přístupnosti stránek
-                            </a>
-                        </p>
+                        <a href="/prohlaseni.html">
+                            Prohlášení o přístupnosti stránek
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://cuni.cz/UK-9056.html">
+                            GDPR
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                ©
+                2026
+                Knihovna Pedagogické fakulty Univerzity Karlovy 
+            </div>
         </footer>
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        </script>
+        <script type="text/javascript">
+  function searchPrimoBase(id,temp) {
+    document.getElementById(id).value = "any,contains," + document.getElementById(temp).value.replace(/[,]/g, " ");
+    document.forms["searchForm"].submit();
+  }
+  function searchPrimo() {
+    searchPrimoBase("primoQuery","primoQueryTemp");
+  }
+  function searchClanky(){
+    searchPrimoBase("primoClanky","primoClankyTemp");
+  }
+  </script>
+  
     </body>
 </html>
