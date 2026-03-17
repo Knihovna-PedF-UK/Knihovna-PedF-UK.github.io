@@ -6,6 +6,8 @@
   --topmenu-bg: black;
   --topmenu-color: white;
   --navmenu-divider-color: #ccc;
+  --menu-title-bg: #F5722C;
+  --footer-divider-color: #23b5b5;
 }
 
 @font-face {
@@ -57,6 +59,10 @@ body {
   padding: 0;
 }
 
+
+
+/* === Základní design === */
+/* Odstranění výchozích marginů/paddingů a sjednocení box modelu */
 header {
   background-color: var(--header-bg);
   box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15);
@@ -105,8 +111,38 @@ img.logo {
   padding: 0;
 }
 
+.quick-links{
+  box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15);
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  .quicklink{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+    img {
+      vertical-align: middle;
+      margin: 0 auto;
+      text-align: center;
+      height: 2.5rem;
+    }
+    a, a:visited {color: inherit; font-weight: bold;}
+  }
+  .quicklink + .quicklink {
+    border-left: 1px solid var(--navmenu-divider-color);
+    border-radius: 0;
+    transition: none;
+  }
+
+}
 .mainmenu {
-  .nav-container {
+  .has-breadcrumbs {
     border-bottom: 1px solid var(--navmenu-divider-color);
   }
   button{
@@ -143,14 +179,18 @@ img.logo {
     li + li {
       margin-top: 0.5em;
     }
-    li:before {
+    li.menuitem:before {
       content: url("/img/threedots.svg");
+    }
+    li.section-title {
+      background-color: var(--menu-title-bg);
+      text-align: center;
     }
   }
 
   @media (min-width: 901px) {
     li:hover .submenu, li:focus-within .submenu  {
-      width: 200px;
+      min-width: 300px;
       display: block;
     }
   }
@@ -204,7 +244,7 @@ img.logo {
   li:last-child::after {
     content: "";                /* poslední položka nemá oddělovač */
   }
-  img {display: inline; height: 1em; vertical-align: middle;}
+  img {display: inline; height: 1em; vertical-align: -0.2ch;}
 }
 
 /* ukotvi nav, aby absolute prvky měly referenci */
@@ -220,8 +260,117 @@ img.logo {
 .mainmenu .menu > li.open > .submenu { display: block; }
 
 
+.rollup{
+  padding-bottom: 1ch;
+  margin-top: 3rem;
+  img {
+    max-width: 100%;
+  }
+}
+
+.news {
+  .news-item {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 33%;
+    margin-bottom: auto;
+    padding: 0.5rem;
+    padding-left: 0;
+    overflow: hidden; /* Důležité pro oříznutí obsahu */
+    transition: all 0.3s ease;
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .date {font-size: 0.9rem;}
+    summary::-webkit-details-marker { display: none; }
+    summary { 
+     list-style: none; 
+     cursor: pointer;
+     outline: none;
+    }
+    /* Styl pro "tlačítko" */
+  .read-more-btn {
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }
+
+  /* Omezení výšky v zavřeném stavu */
+  &:not([open]) {
+    /* Oříznutí obsahu a zobrazení efektu vytrácení */
+    max-height: 23rem;
+    /* Efekt vytrácení textu do ztracena */
+    /* background: linear-gradient(to bottom, black 80%, transparent 100%); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+  }
+
+  /* V otevřeném stavu */
+  &[open] {
+    max-height: 90rem; /* Dostatečně velká výška */
+    background: none;
+    -webkit-text-fill-color: currentcolor;
+
+    .read-more-btn {
+      display: none; /* Schová tlačítko po rozbalení */
+    }
+  }
+  }
+  h2 {text-align: center;}
+
+  .news-item + .news-item {
+    border-left: 1px solid var(--navmenu-divider-color);
+    padding-left: 0.5rem;
+  }
+  .archive-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+.opening{
+  h2 {text-align: center;margin-bottom: 2rem;}
+  table{
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    caption{
+      width: fit-content;
+    }
+    td:first-child {
+      padding-right: 1rem;
+    }
+
+  }
+  table + table {
+    margin-left: 2rem;
+  }
+  text-align: center;
+  margin-bottom: 3rem;
+
+}
+
+.planned_closing, .archive-link{
+  font-size: 1.2rem;
+  a{
+    color: var(--body-color);
+    text-decoration: underline; 
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--footer-divider-color);
+  }
+  a:hover{
+    text-decoration: underline; 
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--body-color);
+  }
+}
+
 footer {
-  border-top: 5px solid #23b5b5;
+  border-top: 5px solid var(--footer-divider-color);
   /* padding: 1rem 0; */
   img {display: inline; height: 1em; vertical-align: middle;}
   div {vertical-align: bottom;}
@@ -294,6 +443,14 @@ footer {
     padding-left: 1rem;
   }
   .mainmenu .menu > li.open > .submenu { display: block; }
+  .quick-links{ 
+    img {height: 1.5rem;}
+    overflow-x: auto;
+    white-space: nowrap;    /* Volitelné: zabrání textu, aby se zalamoval pod sebe */
+    scrollbar-width: thin;
+    scrollbar-color: var(--body-color)  var(--body-bg);
+    -webkit-overflow-scrolling: touch;
+  }
 
 
 }
@@ -366,11 +523,12 @@ a[href^="http"]:not([href*="knihovna.pedf.cuni.cz"])::after {
 /* ************************* */
 
 /* Odstranění defaultních stylů seznamů */
-ul,
-ol {
-  list-style: none;
-  padding-left: 1.5rem;
-}
+/* Proč jsem to tu měl? */
+/* ul, */
+/* ol { */
+/*   list-style: none; */
+/*   padding-left: 1.5rem; */
+/* } */
 
 /* Odstranění podtržení odkazů v resetu (vrátíme později) */
 a {

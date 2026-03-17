@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#" lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,8 @@
         <meta property="og:site_name" content="Knihovna PedF UK">
         <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/vypujcka.jpg">
         <meta name="twitter:card" content="summary_large_image">
-        <link href="feed-en.rss" rel="alternate" type="application/rss+xml">
-        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <link type="application/rss+xml" rel="alternate" href="feed-en.rss">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -51,36 +51,139 @@
                 </div>
             </nav>
             <nav class="mainmenu" aria-label="main menu">
-                <div class="nav-container">
+                <div class="nav-container has-breadcrumbs">
                     <a href="/index-en.html">
-                        <img class="logo" src="/img/logo-eng.svg" alt="Back to library homepage" role="banner">
+                        <img src="/img/logo-eng.svg" role="banner" class="logo" alt="Back to library homepage">
                     </a>
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul class="menu" id="mainmenu-list" role="menubar">
-                        <li role="menuitem">
-                            <a class="button" href="/index-en.html">
-                                Home
-                            </a>
-                        </li>
-                        <li role="menuitem">
+                    <ul id="mainmenu-list" class="menu" role="menubar">
+                        <li class="menuitem" role="menuitem">
                             <a class="button" href="/services.html">
                                 Services
                             </a>
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li class="section-title" role="presentation">
+                                    Lending services
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/reference-desk.html">
+                                        Reference Desk – Borrowing documents
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="https://library.cuni.cz/e-application/">
+                                        Registration for Borrowing
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/lockers.html">
+                                        Smart Lockers
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/bibliobox-en.html">
+                                        Returning Books to Biblioboxes
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/fees.html">
+                                        How to Pay Fines
+                                    </a>
+                                </li>
+                                <li class="section-title" role="presentation">
+                                    Other services
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/print.html">
+                                        Copying and Printing
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/special-needs.html">
+                                        Services for Students with Special Needs
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li role="menuitem">
-                            <a class="button" href="/catalogues.html">
-                                Catalogues and databases
+                        <li class="menuitem" role="menuitem">
+                            <a class="button" href="/spaces.html">
+                                Our Facilities
                             </a>
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li class="section-title" role="presentation">
+                                    Reference Desk
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/reference-desk.html">
+                                        Reference Desk – Borrowing documents
+                                    </a>
+                                </li>
+                                <li class="section-title" role="presentation">
+                                    Study Rooms
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/study-room.html">
+                                        Study Room Rettigová
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="/celetna-en.html">
+                                        Study Room Celetná 
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li role="menuitem">
+                        <li class="menuitem" role="menuitem">
+                            <a class="button" href="/catalogues.html">
+                                Collections and resources
+                            </a>
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            </button>
+                            <ul class="submenu" role="menu">
+                                <li class="section-title" role="presentation">
+                                    Catalogues and databases
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="https://ukaz.cuni.cz/">
+                                        Discovery System – Search for Books and Articles 
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="https://ezdroje.cuni.cz/index.php?lang=en">
+                                        eResources Portal of Charles University
+                                    </a>
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="https://cuni.primo.exlibrisgroup.com/permalink/420CKIS_INST/gf08nd/alma9925591385506986">
+                                        Ulrichsweb
+                                    </a>
+                                </li>
+                                <li class="section-title" role="presentation">
+                                    Guides
+                                </li>
+                                <li class="menuitem" role="menuitem">
+                                    <a class="button" href="https://publications.cuni.cz/handle/20.500.14178/2503">
+                                        Electronic Resources: A Practical Guide to the ER at CU
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menuitem" role="menuitem">
                             <a class="button" href="/about.html">
                                 About library
                             </a>
                         </li>
                     </ul>
-                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
+                    <button aria-controls="mainmenu-list" aria-label="Otevřít menu" class="hamburger" aria-expanded="false">
                         ☰
                     </button>
                 </div>
@@ -90,17 +193,17 @@
                     <ul>
                         <li>
                             <a href="/index-en.html">
-                                <img src="/img/home.svg" alt="Home">
+                                <img alt="Home" src="/img/home.svg">
                             </a>
                         </li>
                         <li>
-                            <a href="/sluzby.htm">
-                                Služby
+                            <a href="services.html">
+                                Services
                             </a>
                         </li>
                         <li>
-                            <a href="/informace.htm">
-                                Informace o knihovně
+                            <a href="reference-desk.html">
+                                Reference Desk – Borrowing documents
                             </a>
                         </li>
                     </ul>
@@ -108,11 +211,7 @@
             </nav>
         </header>
         <main class="main-content">
-            <div class="card fluid">
-                <section class="section">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-7">
-                            <article role="main">
+            
 <h1 id="loans">Reference desk</h1>
 
 <p>The Reference Desk is situated on the ground floor to the left of the foyer in the building in Rettigova 4 Street. </p>
@@ -139,23 +238,16 @@ Libraries. </p>
 <p>Books can be returned at the reference desk, or you can use a Bibliobox (situated next to the reception), which is available during the opening hours of the faculty. Documents handed back via Bibliobox are cut out of a user’s library account the next weekday. </p>
 
  
-</article>
-                        </div>
-                        <div class="col-sm-12 col-md-5">
-                            <div class="page-img"><img src="/img/vypujcka.jpg"></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+
         </main>
         <footer role="contentinfo">
             <div class="nav-container">
-                <div class="column" itemtype="http://schema.org/Library" itemscope="">
+                <div itemtype="http://schema.org/Library" itemscope="" class="column">
                     <h3>
-                        Kontakt
+                        Contact
                     </h3>
                     <div>
-                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
+                        <address itemprop="address" itemtype="http://schema.org/PostalAddress">
                             <span>
                                 Knihovna PedF UK
                             </span>
@@ -172,7 +264,7 @@ Libraries. </p>
                         </a>
                     </div>
                     <div>
-                        <img src="/img/phone.svg" alt="phone">
+                        <img alt="phone" src="/img/phone.svg">
                         <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
                             <span itemprop="telephone">
                                 +420 221 900 178
@@ -180,16 +272,19 @@ Libraries. </p>
                         </a>
                     </div>
                     <div>
+                        <img alt="facebook" src="/img/facebook.svg">
                         <a href="https://www.facebook.com/knihovnapedfpraha">
                             Facebook
                         </a>
                     </div>
                     <div>
+                        <img alt="instagram" src="/img/instagram.svg">
                         <a href="https://www.instagram.com/KnihovnaPedFPraha/">
                             Instagram
                         </a>
                     </div>
                     <div>
+                        <img alt="rss" src="/img/rss.svg">
                         <a href="/feed.rss">
                             RSS
                         </a>
@@ -197,11 +292,14 @@ Libraries. </p>
                 </div>
                 <div class="column">
                     <div>
-                        Jsme členy knihovnických organizací <a href='https://www.skipcr.cz/'>SKIP</a> a <a href='https://sdruk.cz/'>SDRUK z. s.</a>
+                        We are members of library organizations
+                        <a href='https://www.skipcr.cz/'>SKIP</a>
+                         and 
+                        <a href='https://sdruk.cz/'>SDRUK z. s.</a>
                     </div>
                     <div>
                         <a href="/prohlaseni.html">
-                            Prohlášení o přístupnosti stránek
+                            Accessibility statement
                         </a>
                     </div>
                     <div>
@@ -217,7 +315,7 @@ Libraries. </p>
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        <script data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" src="/js/count.js" async="true">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
