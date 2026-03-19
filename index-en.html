@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns#" lang="en">
     <head>
         <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Library of Faculty of Education CU
         </title>
@@ -11,7 +11,7 @@
         <meta property="og:url" content="http://knihovna.pedf.cuni.cz/index-en.html">
         <meta property="og:site_name" content="Knihovna PedF UK">
         <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
-        <meta content="summary_large_image" name="twitter:card">
+        <meta name="twitter:card" content="summary_large_image">
         <link rel="alternate" href="feed-en.rss" type="application/rss+xml">
         <link rel="stylesheet" href="/css/style.css" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -57,13 +57,13 @@
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul id="mainmenu-list" role="menubar" class="menu">
+                    <ul id="mainmenu-list" class="menu" role="menubar">
                         <li role="menuitem" class="menuitem">
                             <a class="button" href="/services.html">
                                 Services
                             </a>
-                            <button aria-expanded="false" aria-controls="submenu-id" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            <button aria-expanded="false" class="dropdown" aria-controls="submenu-id">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -113,8 +113,8 @@
                             <a class="button" href="/spaces.html">
                                 Our Facilities
                             </a>
-                            <button aria-expanded="false" aria-controls="submenu-id" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            <button aria-expanded="false" class="dropdown" aria-controls="submenu-id">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -144,8 +144,8 @@
                             <a class="button" href="/catalogues.html">
                                 Collections and resources
                             </a>
-                            <button aria-expanded="false" aria-controls="submenu-id" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                            <button aria-expanded="false" class="dropdown" aria-controls="submenu-id">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -182,7 +182,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button aria-expanded="false" aria-controls="mainmenu-list" aria-label="Otevřít menu" class="hamburger">
+                    <button aria-label="Otevřít menu" aria-expanded="false" class="hamburger" aria-controls="mainmenu-list">
                         ☰
                     </button>
                 </div>
@@ -229,7 +229,7 @@
                     <h2 class="news-head">
                         News
                     </h2>
-                    <div id="closed" class="closed">
+                    <div class="closed" id="closed">
                     </div>
                     <details class="news-item">
                         <summary>
@@ -313,66 +313,74 @@ We look forward to seeing you!</p>
                     <h2>
                         Opening hours
                     </h2>
-                    <table class="prov_doba small">
-                        <caption>
-                            Místnost R136
-                        </caption>
-                        <tr>
-                            <td>
-                                Po, St
-                            </td>
-                            <td>
-                                9.00 – 16.00
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="prov_doba small">
-                        <caption>
-                            <a href="reference-desk.html">Library</a>
-                        </caption>
-                        <tr>
-                            <td>
-                                Zavřeno – rekonstrukce
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="prov_doba small">
-                        <caption>
-                            <a href="study-room.html">Study Room M. Rettigové</a>
-                        </caption>
-                        <tr>
-                            <td>
-                                Zavřeno – rekonstrukce
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="prov_doba small">
-                        <caption>
-                            <a href="celetna-en.html">Study Room Celetná</a>
-                        </caption>
-                        <tr>
-                            <td>
-                                Mon–Thu
-                            </td>
-                            <td>
-                                9.00 – 18.00
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Fri
-                            </td>
-                            <td>
-                                9.00 – 13.00
-                            </td>
-                        </tr>
-                    </table>
+                    <section class="prov_doba_container">
+                        <table class="prov_doba small">
+                            <caption>
+                                Místnost R136
+                            </caption>
+                            <tr>
+                                <td>
+                                    Po, St
+                                </td>
+                                <td>
+                                    9.00 – 16.00
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="prov_doba_container">
+                        <table class="prov_doba small">
+                            <caption>
+                                <a href="reference-desk.html">Library</a>
+                            </caption>
+                            <tr>
+                                <td>
+                                    Zavřeno – rekonstrukce
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="prov_doba_container">
+                        <table class="prov_doba small">
+                            <caption>
+                                <a href="study-room.html">Study Room M. Rettigové</a>
+                            </caption>
+                            <tr>
+                                <td>
+                                    Zavřeno – rekonstrukce
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="prov_doba_container">
+                        <table class="prov_doba small">
+                            <caption>
+                                <a href="celetna-en.html">Study Room Celetná</a>
+                            </caption>
+                            <tr>
+                                <td>
+                                    Mon–Thu
+                                </td>
+                                <td>
+                                    9.00 – 18.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fri
+                                </td>
+                                <td>
+                                    9.00 – 13.00
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
                     <div class="planned_closing">
                         <a href="opening.html">
                             Closing days
@@ -383,14 +391,14 @@ We look forward to seeing you!</p>
                     <b>
                         Latest updates
                     </b>
-                     (2026-03-18): <a href='/spaces.html'>Our Facilities</a>, <a href='/services.html'>Library services</a>, <a href='/fees.html'>How to pay late fees?</a>, <a href='/first-time.html'>First Time in the Library</a>, <a href='/special-needs.html'>Services for Students with Special Needs</a>
+                     (2026-03-19): <a href='/spaces.html'>Our Facilities</a>, <a href='/services.html'>Library services</a>, <a href='/fees.html'>How to pay late fees?</a>, <a href='/first-time.html'>First Time in the Library</a>, <a href='/special-needs.html'>Services for Students with Special Needs</a>
                     /
                     <a href="updates.html">
                         Older
                     </a>
                 </section>
             </main>
-            <script defer="defer" type="text/javascript" src="js/opening.js">
+            <script src="js/opening.js" type="text/javascript" defer="defer">
             </script>
             <script>
                 window.onload = function(){ opening('js/calendar-en.js', 'The library is closed today:')};
@@ -414,7 +422,7 @@ We look forward to seeing you!</p>
                         </address>
                     </div>
                     <div>
-                        <img itemprop="email" alt="e-mail" src="/img/mail.svg">
+                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
@@ -471,7 +479,7 @@ We look forward to seeing you!</p>
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" async="true" type="text/javascript">
+        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
