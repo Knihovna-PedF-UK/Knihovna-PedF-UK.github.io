@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Welcome, first-year students!
         </title>
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Welcome, first-year students!">
-        <meta property="og:description" content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!">
-        <meta property="og:url" content="http://knihovna.pedf.cuni.cz/news//2025-09-26-welcome_first-year_students.html">
-        <meta property="og:site_name" content="Knihovna PedF UK">
-        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/drew-beamer-3SIXZisims4-unsplash.jpg">
-        <meta content="summary_large_image" name="twitter:card">
-        <link rel="alternate" type="application/rss+xml" href="feed-en.rss">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <meta content="website" property="og:type">
+        <meta content="Welcome, first-year students!" property="og:title">
+        <meta content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!" property="og:description">
+        <meta content="http://knihovna.pedf.cuni.cz/news//2025-09-26-welcome_first-year_students.html" property="og:url">
+        <meta content="Knihovna PedF UK" property="og:site_name">
+        <meta content="http://knihovna.pedf.cuni.cz/img/drew-beamer-3SIXZisims4-unsplash.jpg" property="og:image">
+        <meta name="twitter:card" content="summary_large_image">
+        <link href="feed-en.rss" type="application/rss+xml" rel="alternate">
+        <link href="/css/style.css" type="text/css" rel="stylesheet">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -27,7 +27,7 @@
     </head>
     <body class="container">
         <header>
-            <nav aria-label="additional navigation" class="topmenu">
+            <nav class="topmenu" aria-label="additional navigation">
                 <div class="nav-container">
                     <span>
                         <a href="https://pedf.cuni.cz/PEDFEN-145.html">
@@ -50,21 +50,21 @@
                     </span>
                 </div>
             </nav>
-            <nav aria-label="main menu" class="mainmenu">
+            <nav class="mainmenu" aria-label="main menu">
                 <div class="nav-container">
                     <a href="/index-en.html">
-                        <img role="banner" alt="Back to library homepage" src="/img/logo-eng.svg" class="logo">
+                        <img class="logo" src="/img/logo-eng.svg" role="banner" alt="Back to library homepage">
                     </a>
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul role="menubar" id="mainmenu-list" class="menu">
+                    <ul class="menu" role="menubar" id="mainmenu-list">
                         <li role="menuitem" class="menuitem">
                             <a href="/services.html" class="button">
                                 Services
                             </a>
-                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            <button class="dropdown" aria-expanded="false" aria-controls="submenu-id">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -114,8 +114,8 @@
                             <a href="/spaces.html" class="button">
                                 Our Facilities
                             </a>
-                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            <button class="dropdown" aria-expanded="false" aria-controls="submenu-id">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -145,8 +145,8 @@
                             <a href="/catalogues.html" class="button">
                                 Collections and resources
                             </a>
-                            <button aria-controls="submenu-id" aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                            <button class="dropdown" aria-expanded="false" aria-controls="submenu-id">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul role="menu" class="submenu">
                                 <li role="presentation" class="section-title">
@@ -183,7 +183,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button aria-controls="mainmenu-list" aria-expanded="false" aria-label="Otevřít menu" class="hamburger">
+                    <button class="hamburger" aria-expanded="false" aria-label="Otevřít menu" aria-controls="mainmenu-list">
                         ☰
                     </button>
                 </div>
@@ -199,12 +199,12 @@ All you need is your student ID card.</p>
         </main>
         <footer role="contentinfo">
             <div class="nav-container">
-                <div itemscope="" itemtype="http://schema.org/Library" class="column">
+                <div class="column" itemtype="http://schema.org/Library" itemscope="">
                     <h3>
                         Contact
                     </h3>
                     <div>
-                        <address itemprop="address" itemtype="http://schema.org/PostalAddress">
+                        <address itemtype="http://schema.org/PostalAddress" itemprop="address">
                             <span>
                                 Knihovna PedF UK
                             </span>
@@ -215,13 +215,13 @@ All you need is your student ID card.</p>
                         </address>
                     </div>
                     <div>
-                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
                     </div>
                     <div>
-                        <img alt="phone" src="/img/phone.svg">
+                        <img src="/img/phone.svg" alt="phone">
                         <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
                             <span itemprop="telephone">
                                 +420 221 900 178
@@ -229,19 +229,19 @@ All you need is your student ID card.</p>
                         </a>
                     </div>
                     <div>
-                        <img alt="facebook" src="/img/facebook.svg">
+                        <img src="/img/facebook.svg" alt="facebook">
                         <a href="https://www.facebook.com/knihovnapedfpraha">
                             Facebook
                         </a>
                     </div>
                     <div>
-                        <img alt="instagram" src="/img/instagram.svg">
+                        <img src="/img/instagram.svg" alt="instagram">
                         <a href="https://www.instagram.com/KnihovnaPedFPraha/">
                             Instagram
                         </a>
                     </div>
                     <div>
-                        <img alt="rss" src="/img/rss.svg">
+                        <img src="/img/rss.svg" alt="rss">
                         <a href="/feed.rss">
                             RSS
                         </a>
@@ -272,7 +272,7 @@ All you need is your student ID card.</p>
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" src="/js/count.js" async="true">
+        <script data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" src="/js/count.js" type="text/javascript" async="true">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
