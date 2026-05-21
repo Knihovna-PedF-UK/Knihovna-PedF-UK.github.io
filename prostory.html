@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns#" lang="cs">
     <head>
         <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Naše prostory
         </title>
@@ -12,9 +12,9 @@
         <meta content="http://knihovna.pedf.cuni.cz//prostory.html" property="og:url">
         <meta content="Knihovna PedF UK" property="og:site_name">
         <meta content="http://knihovna.pedf.cuni.cz/img/DSC-506.JPG" property="og:image">
-        <meta content="summary_large_image" name="twitter:card">
-        <link type="application/rss+xml" rel="alternate" href="feed.rss">
-        <link type="text/css" rel="stylesheet" href="/css/style.css">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="alternate" type="application/rss+xml" href="feed.rss">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -53,17 +53,17 @@
             <nav class="mainmenu" aria-label="hlavní menu">
                 <div class="nav-container has-breadcrumbs">
                     <a href="/index.html">
-                        <img src="/img/logo.svg" role="banner" class="logo" alt="Zpět na hlavní stránku knihovny">
+                        <img src="/img/logo.svg" class="logo" alt="Zpět na hlavní stránku knihovny" role="banner">
                     </a>
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul id="mainmenu-list" class="menu" role="menubar">
+                    <ul class="menu" id="mainmenu-list" role="menubar">
                         <li class="menuitem" role="menuitem">
                             <a href="/sluzby.htm" class="button">
                                 Služby
                             </a>
-                            <button class="dropdown" aria-controls="submenu-id" aria-expanded="false">
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
@@ -122,7 +122,7 @@
                             <a href="/prostory.html" class="button">
                                 Naše prostory
                             </a>
-                            <button class="dropdown" aria-controls="submenu-id" aria-expanded="false">
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
@@ -158,7 +158,7 @@
                             <a href="/sbirky.html" class="button">
                                 Sbírky a zdroje
                             </a>
-                            <button class="dropdown" aria-controls="submenu-id" aria-expanded="false">
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
@@ -214,7 +214,7 @@
                             <a href="/odborne_prace.html" class="button">
                                 Odborné práce
                             </a>
-                            <button class="dropdown" aria-controls="submenu-id" aria-expanded="false">
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
@@ -258,7 +258,7 @@
                             <a href="/informace.htm" class="button">
                                 O knihovně
                             </a>
-                            <button class="dropdown" aria-controls="submenu-id" aria-expanded="false">
+                            <button aria-controls="submenu-id" class="dropdown" aria-expanded="false">
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul role="menu" class="submenu">
@@ -366,7 +366,7 @@
                         </address>
                     </div>
                     <div>
-                        <img src="/img/mail.svg" itemprop="email" alt="e-mail">
+                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
@@ -423,7 +423,7 @@
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script async="true" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" src="/js/count.js" type="text/javascript">
+        <script src="/js/count.js" async="true" type="text/javascript" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
