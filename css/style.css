@@ -220,6 +220,27 @@ mark.secondary{
   font-size: 1.2rem;
 }
 
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+  margin: 0; 
+  padding: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    padding: .5rem 1rem;
+    background: white;
+    border: 1px solid black;
+}
+
 
 /* ============================================ */
 /*   Navigační menu                              */
@@ -350,6 +371,14 @@ mark.secondary{
     display: inline;
     width: auto;
   }
+
+  @media (max-width: 900px) {
+    font-size: clamp(0.8rem, 2vw, 1rem); /* plynulé zmenšování podle šířky viewportu */
+    height: auto;
+
+    span{overflow: hidden; white-space: nowrap;}
+  }
+
 }
 
 .topmenu.hidden {
@@ -366,7 +395,7 @@ mark.secondary{
 
   ul {
     list-style: none;
-    display: flex;
+   display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;
     gap: var(--space-s);
@@ -575,6 +604,9 @@ mark.secondary{
 
       caption {
         width: fit-content;
+      }
+      th {
+        font-weight: normal;
       }
     }
   }
