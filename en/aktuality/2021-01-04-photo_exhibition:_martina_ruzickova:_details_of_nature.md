@@ -1,5 +1,0 @@
-
-Martina Růžičková is a former employee of our library, an enthusiastic amateur
-photographer. Last December, you could see an exhibition of her photographs
-*Winter - color and black and white* - in our Small Gallery by the Studyroom. The
-current exhibition presents her other favorite theme - plants and insects.
