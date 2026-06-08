@@ -3,17 +3,21 @@
 /* ============================================ */
 :root {
   --max-width: 1200px;
+  --paragraph-max-width: 65ch;
 
   /* Barvy */
   --color-header-bg: white;
   --color-body: #222;
   --color-body-bg: #fff;
-  --color-highlight: #D32E3F;
+  /* --color-highlight: #D32E3F; */
+  --color-highlight: #dd5f5e;
   --color-topmenu-bg: black;
   --color-topmenu: white;
   --color-divider: #ccc;
   --color-menu-title-bg: var(--color-highlight);
-  --color-footer-divider: #47BCCA; 
+  /* --color-footer-divider: #47BCCA; */ 
+  /* --color-footer-divider: #f4c8c1; */ 
+  --color-footer-divider: var(--color-highlight);
 
   /* Stíny */
   --shadow-card: 0 4px 12px -2px rgba(0, 0, 0, 0.15);
@@ -147,6 +151,20 @@ p, ul, ol, blockquote {
   margin-bottom: var(--space-m);
 }
 
+p {
+  max-width: var(--paragraph-max-width);
+}
+
+.card {
+  border: 1px solid var(--color-divider);
+  padding: var(--space-m);
+  max-width: var(--paragraph-max-width);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 strong { font-weight: 600; }
 em     { font-style: italic; }
 
@@ -241,6 +259,18 @@ mark.secondary{
     border: 1px solid black;
 }
 
+.page-with-image {
+  display: grid;
+  /* Na desktopu vedle sebe, na mobilu pod sebou */
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-l);
+  .page-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-s);
+  }
+}
+
 
 /* ============================================ */
 /*   Navigační menu                              */
@@ -278,6 +308,12 @@ mark.secondary{
     li {
       position: relative;
     }
+
+    li:last-child .submenu,
+    li:nth-last-child(2) .submenu {
+      left: auto;
+      right: 0;
+    }
   }
 
   .submenu {
@@ -285,6 +321,7 @@ mark.secondary{
     position: absolute;
     top: 100%;
     left: 0;
+    right: auto;
     background: white;
     list-style: none;
     margin: 0;
@@ -308,6 +345,7 @@ mark.secondary{
       text-align: center;
       color: white;
     }
+
   }
 
   /* Otevření submenu na desktopu hoveru / focusu */
@@ -762,6 +800,13 @@ footer {
   vertical-align: bottom;
 }
 
+img[src="/img/search.svg"] {
+  height: 1em;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
 
 /* ============================================ */
 /*   Mobilní navigace (max 900px)                */
@@ -814,6 +859,12 @@ footer {
 
     img {
       height: 1.5rem;
+    }
+  }
+  .page-with-image {
+    grid-template-columns: 1fr;
+    .page-image img {
+      display: none;
     }
   }
 }
