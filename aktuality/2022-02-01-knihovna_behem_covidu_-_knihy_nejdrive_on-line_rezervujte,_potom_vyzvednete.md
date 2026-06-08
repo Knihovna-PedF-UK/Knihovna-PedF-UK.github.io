@@ -1,0 +1,8 @@
+
+Abychom předešli frontám v půjčovně, otevřeli jsme u všech knih možnost
+rezervace předem. Po obdržení SMS kódu si můžete objednané knihy vyzvednout v
+jednom z výdejních boxů před studovnou. Návod na on-line rezervaci najdete na
+stránce [rezervační boxy](rezervacni_boxy.html).
+Pokud bude kapacita boxu naplněna, připravíme knihy k výdeji v půjčovně.
+
+

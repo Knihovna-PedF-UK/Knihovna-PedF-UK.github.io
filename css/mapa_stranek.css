@@ -1,0 +1,31 @@
+ul {list-style-type: none;
+}
+.z0 {
+     font-size: 14pt;
+     font-style: normal;
+     font-weight: bold;
+     text-decoration: none;
+     color: brown;}
+.za {
+     font-size: 10pt;
+     font-style: normal;
+     font-weight: bold;
+     text-decoration: none;
+     color: red;}
+.zb {
+     font-size: 10pt;
+     font-style: normal;
+     font-weight: normal;
+     text-decoration: underline;
+     color: blue;}
+.zc {
+     font-size: 10pt;
+     font-style: normal;
+     font-weight: bold;
+     text-decoration: none;
+     color: black;}
+.zz {
+     font-size: 10pt;
+     font-weight: bold;
+     text-decoration: none;
+     color: blue;}

@@ -1,0 +1,3 @@
+{
+"2026-12-26":"Vánoční prázdniny","2026-04-06":"Státní svátek","2026-12-29":"Vánoční prázdniny","2026-12-24":"Vánoční prázdniny","2027-01-01":"Vánoční prázdniny","2026-12-27":"Vánoční prázdniny","2026-05-01":"Státní svátek","2026-04-03":"Státní svátek","2026-07-18":"Sanitární den","2026-07-06":"Státní svátek","2026-10-28":"Státní svátek","2026-09-28":"Státní svátek","2026-12-30":"Vánoční prázdniny","2026-11-16":"Děkanský den","2026-11-17":"Státní svátek","2026-03-25":"Děkanský den","2026-05-08":"Státní svátek","2026-05-13":"Rektorský den","2026-12-23":"Vánoční prázdniny","2026-12-31":"Vánoční prázdniny","2026-07-05":"Státní svátek","2026-12-22":"Vánoční prázdniny","2026-12-21":"Vánoční prázdniny","2026-12-28":"Vánoční prázdniny","2026-12-25":"Vánoční prázdniny"
+}

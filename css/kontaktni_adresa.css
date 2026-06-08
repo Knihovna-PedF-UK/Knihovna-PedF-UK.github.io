@@ -1,0 +1,12 @@
+div.row{
+  display:flex;
+  flex-direction:row;
+}
+
+div.col-md-6 + div.col-md-6{
+  margin-left:6em;
+}
+
+#mapa img{max-width:none;width:600px;}
+#mapa{width:600px;margin-left:100px;}
+

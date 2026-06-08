@@ -1,0 +1,8 @@
+
+Ve středu 7. prosince 2022 zveme od 18:00 všechny zájemce na setkání s tvůrci
+komiksu Štefánik. Na akci v naší studovně bude přítomna dvojice scenáristů
+Gabriela Kyselová a Michal Baláž, jakož i výtvarník Václav Šlajch, který učí na
+plzeňské Fakultě umění a designu Ladislava Sutnara. Zmínění autoři komiksového
+libreta téma Milana Rastislava Štefánika již dříve zpracovali i v celovečerním
+filmu „Cesta do nemožna“. Právě projekce tohoto snímku na besedu přímo naváže.
+Večerem bude provázet Tomáš Chlud. Besedy se můžete účastnit i [online](http://stream.pedf.cuni.cz/).
