@@ -5,14 +5,14 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <title>
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz/hledat.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.cz/img/informace.jpg" property="og:image">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Fakultní knihovna v centru Prahy. Bohatý knižní fond, množství elektronických zdrojů, pravidelné výstavy, denní tisk a časopisy. Těšíme se na vás!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz/hledat.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
         <meta content="summary_large_image" name="twitter:card">
-        <link href="feed.rss" type="application/rss+xml" rel="alternate">
-        <link href="/css/style.css" type="text/css" rel="stylesheet">
+        <link type="application/rss+xml" rel="alternate" href="feed.rss">
+        <link type="text/css" rel="stylesheet" href="/css/style.css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -24,7 +24,7 @@
       
     </head>
     <body class="container">
-        <a href="#main-content" class="skip-link">
+        <a class="skip-link" href="#main-content">
             Přejít k obsahu
         </a>
         <header>
@@ -61,7 +61,7 @@
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul id="mainmenu-list" class="menu">
+                    <ul class="menu" id="mainmenu-list">
                         <li class="menuitem">
                             <a href="/sluzby.htm" class="button">
                                 Služby
@@ -301,48 +301,48 @@
                             </ul>
                         </li>
                     </ul>
-                    <button aria-controls="mainmenu-list" class="hamburger" aria-expanded="false" aria-label="Otevřít menu">
+                    <button class="hamburger" aria-controls="mainmenu-list" aria-expanded="false" aria-label="Otevřít menu">
                         ☰
                     </button>
                 </div>
             </nav>
         </header>
-        <main id="main-content" class="main-content">
+        <main class="main-content" id="main-content">
             <div class="page-no-image">
                 <h1>
                     Vyhledávání
                 </h1>
                 <div class="top-searchbox">
                     <div class="tabs searchbox">
-                        <input name="tab-group" checked="checked" aria-hidden="true" type="radio" id="ukaz-sbox">
+                        <input checked="checked" aria-hidden="true" type="radio" id="ukaz-sbox" name="tab-group">
                         <label for="ukaz-sbox" aria-hidden="true">
                             UKAŽ
                         </label>
                         <div>
-                            <form enctype="application/x-www-form-urlencoded; charset=utf-8" target="_blank" action="https://cuni.primo.exlibrisgroup.com/discovery/search" method="get" onsubmit="searchPrimo()" id="ebscohostCustomSearchBox">
-                                <input value="420CKIS_INST:UKAZ" name="vid" type="hidden">
-                                <input value="Everything" name="tab" type="hidden">
-                                <input value="MyInst_and_CI" name="search_scope" type="hidden">
-                                <input value="cs" name="lang" type="hidden">
-                                <input value="basic" name="mode" type="hidden">
-                                <input name="query" type="hidden" id="primoQuery">
-                                <input value="true" name="pcAvailabiltyMode" type="hidden">
-                                <input style="max-width:12rem;width:95%;" placeholder="Hledat knihy a články" type="search" id="primoQueryTemp">
-                                <input class="small" src="/img/search.svg" title="hledat" alt="hledat" type="image" id="go">
+                            <form target="_blank" onsubmit="searchPrimo()" enctype="application/x-www-form-urlencoded; charset=utf-8" method="get" id="ebscohostCustomSearchBox" action="https://cuni.primo.exlibrisgroup.com/discovery/search">
+                                <input type="hidden" value="420CKIS_INST:UKAZ" name="vid">
+                                <input type="hidden" value="Everything" name="tab">
+                                <input type="hidden" value="MyInst_and_CI" name="search_scope">
+                                <input type="hidden" value="cs" name="lang">
+                                <input type="hidden" value="basic" name="mode">
+                                <input type="hidden" id="primoQuery" name="query">
+                                <input type="hidden" value="true" name="pcAvailabiltyMode">
+                                <input type="search" id="primoQueryTemp" placeholder="Hledat knihy a články" style="max-width:12rem;width:95%;">
+                                <input class="small" alt="hledat" type="image" id="go" src="/img/search.svg" title="hledat">
                             </form>
                         </div>
-                        <input name="tab-group" aria-hidden="true" type="radio" id="web-knihovny-sbox">
+                        <input aria-hidden="true" type="radio" id="web-knihovny-sbox" name="tab-group">
                         <label for="web-knihovny-sbox" aria-hidden="true">
                             Web knihovny
                         </label>
                         <div>
-                            <form target="_blank" action="https://duckduckgo.com/" method="get" role="search" id="duckduckgo-search">
-                                <input value="knihovna.pedf.cuni.cz" name="sites" type="hidden">
-                                <input value="#444444" name="k8" type="hidden">
-                                <input value="#D51920" name="k9" type="hidden">
-                                <input value="h" name="kt" type="hidden">
-                                <input name="q" style="max-width:12rem;width:95%;" maxlength="255" type="search" placeholder="Hledat na tomto webu">
-                                <input class="small" src="/img/search.svg" title="hledat" alt="hledat" type="image" id="go">
+                            <form target="_blank" method="get" id="duckduckgo-search" role="search" action="https://duckduckgo.com/">
+                                <input type="hidden" value="knihovna.pedf.cuni.cz" name="sites">
+                                <input type="hidden" value="#444444" name="k8">
+                                <input type="hidden" value="#D51920" name="k9">
+                                <input type="hidden" value="h" name="kt">
+                                <input placeholder="Hledat na tomto webu" style="max-width:12rem;width:95%;" type="search" maxlength="255" name="q">
+                                <input class="small" alt="hledat" type="image" id="go" src="/img/search.svg" title="hledat">
                             </form>
                         </div>
                     </div>
@@ -367,7 +367,7 @@
                         </address>
                     </div>
                     <div>
-                        <img itemprop="email" alt="e-mail" src="/img/mail.svg">
+                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
@@ -381,19 +381,19 @@
                         </a>
                     </div>
                     <div>
-                        <img aria-hidden="true" alt="" src="/img/facebook.svg">
+                        <img src="/img/facebook.svg" aria-hidden="true" alt="">
                         <a href="https://www.facebook.com/knihovnapedfpraha">
                             Facebook
                         </a>
                     </div>
                     <div>
-                        <img aria-hidden="true" alt="" src="/img/instagram.svg">
+                        <img src="/img/instagram.svg" aria-hidden="true" alt="">
                         <a href="https://www.instagram.com/KnihovnaPedFPraha/">
                             Instagram
                         </a>
                     </div>
                     <div>
-                        <img aria-hidden="true" alt="" src="/img/rss.svg">
+                        <img src="/img/rss.svg" aria-hidden="true" alt="">
                         <a href="/feed.rss">
                             RSS
                         </a>
@@ -424,7 +424,7 @@
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script src="/js/count.js" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" async="true">
+        <script type="text/javascript" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" async="true" src="/js/count.js">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
