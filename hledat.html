@@ -11,8 +11,8 @@
         <meta content="Knihovna PedF UK" property="og:site_name">
         <meta content="http://knihovna.pedf.cuni.cz/img/informace.jpg" property="og:image">
         <meta content="summary_large_image" name="twitter:card">
-        <link href="feed.rss" type="application/rss+xml" rel="alternate">
-        <link href="/css/style.css?v=FFFFFFFFF32E96BE" type="text/css" rel="stylesheet">
+        <link href="feed.rss" rel="alternate" type="application/rss+xml">
+        <link href="/css/style.css?v=FFFFFFFFF32E96BE" rel="stylesheet" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,14 +41,14 @@
                         </a>
                     </span>
                     <span class="langswitcher">
-                        <img src="/img/world.svg" alt="jazyk">
-                        <a href="search.html" hreflang="en" title="Switch to English version" lang="en">
+                        <img alt="jazyk" src="/img/world.svg">
+                        <a hreflang="en" lang="en" title="Switch to English version" href="search.html">
                             EN
                         </a>
                     </span>
                     <span>
                         <a href="hledat.html">
-                            <img src="/img/search.svg" alt="hledat">
+                            <img alt="hledat" src="/img/search.svg">
                         </a>
                     </span>
                 </div>
@@ -56,7 +56,7 @@
             <nav aria-label="hlavní menu" class="mainmenu">
                 <div class="nav-container">
                     <a href="/index.html">
-                        <img alt="Knihovna PedF UK" class="logo" src="/img/logo.svg">
+                        <img src="/img/logo.svg" alt="Knihovna PedF UK" class="logo">
                     </a>
                     <span class="logo">
                         &nbsp;
@@ -67,7 +67,7 @@
                                 Služby
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
                                 <li role="presentation" class="section-title">
@@ -126,7 +126,7 @@
                                 Naše prostory
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
                                 <li role="presentation" class="section-title">
@@ -159,7 +159,7 @@
                                 Sbírky a zdroje
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
                                 <li role="presentation" class="section-title">
@@ -210,7 +210,7 @@
                                 Odborné práce
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
                                 <li role="presentation" class="section-title">
@@ -254,7 +254,7 @@
                                 O knihovně
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
+                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
                                 <li role="presentation" class="section-title">
@@ -301,7 +301,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <button aria-controls="mainmenu-list" class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+                    <button aria-expanded="false" aria-controls="mainmenu-list" aria-label="Otevřít menu" class="hamburger">
                         ☰
                     </button>
                 </div>
@@ -314,35 +314,35 @@
                 </h1>
                 <div class="top-searchbox">
                     <div class="tabs searchbox">
-                        <input name="tab-group" aria-hidden="true" id="ukaz-sbox" type="radio" checked="checked">
-                        <label aria-hidden="true" for="ukaz-sbox">
+                        <input checked="checked" aria-hidden="true" id="ukaz-sbox" name="tab-group" type="radio">
+                        <label for="ukaz-sbox" aria-hidden="true">
                             UKAŽ
                         </label>
                         <div>
-                            <form enctype="application/x-www-form-urlencoded; charset=utf-8" target="_blank" id="ebscohostCustomSearchBox" action="https://cuni.primo.exlibrisgroup.com/discovery/search" method="get" onsubmit="searchPrimo()">
-                                <input name="vid" type="hidden" value="420CKIS_INST:UKAZ">
-                                <input name="tab" type="hidden" value="Everything">
-                                <input name="search_scope" type="hidden" value="MyInst_and_CI">
-                                <input name="lang" type="hidden" value="cs">
-                                <input name="mode" type="hidden" value="basic">
+                            <form target="_blank" onsubmit="searchPrimo()" method="get" enctype="application/x-www-form-urlencoded; charset=utf-8" action="https://cuni.primo.exlibrisgroup.com/discovery/search" id="ebscohostCustomSearchBox">
+                                <input value="420CKIS_INST:UKAZ" name="vid" type="hidden">
+                                <input value="Everything" name="tab" type="hidden">
+                                <input value="MyInst_and_CI" name="search_scope" type="hidden">
+                                <input value="cs" name="lang" type="hidden">
+                                <input value="basic" name="mode" type="hidden">
                                 <input id="primoQuery" name="query" type="hidden">
-                                <input name="pcAvailabiltyMode" type="hidden" value="true">
-                                <input id="primoQueryTemp" style="max-width:12rem;width:95%;" type="search" placeholder="Hledat knihy a články">
-                                <input alt="hledat" src="/img/search.svg" id="go" class="small" title="hledat" type="image">
+                                <input value="true" name="pcAvailabiltyMode" type="hidden">
+                                <input placeholder="Hledat knihy a články" id="primoQueryTemp" style="max-width:12rem;width:95%;" type="search">
+                                <input src="/img/search.svg" alt="hledat" class="small" type="image" title="hledat" id="go">
                             </form>
                         </div>
-                        <input name="tab-group" aria-hidden="true" id="web-knihovny-sbox" type="radio">
-                        <label aria-hidden="true" for="web-knihovny-sbox">
+                        <input aria-hidden="true" id="web-knihovny-sbox" name="tab-group" type="radio">
+                        <label for="web-knihovny-sbox" aria-hidden="true">
                             Web knihovny
                         </label>
                         <div>
-                            <form target="_blank" id="duckduckgo-search" action="https://duckduckgo.com/" method="get" role="search">
-                                <input name="sites" type="hidden" value="knihovna.pedf.cuni.cz">
-                                <input name="k8" type="hidden" value="#444444">
-                                <input name="k9" type="hidden" value="#D51920">
-                                <input name="kt" type="hidden" value="h">
-                                <input name="q" maxlength="255" style="max-width:12rem;width:95%;" type="search" placeholder="Hledat na tomto webu">
-                                <input alt="hledat" src="/img/search.svg" id="go" class="small" title="hledat" type="image">
+                            <form target="_blank" method="get" role="search" action="https://duckduckgo.com/" id="duckduckgo-search">
+                                <input value="knihovna.pedf.cuni.cz" name="sites" type="hidden">
+                                <input value="#444444" name="k8" type="hidden">
+                                <input value="#D51920" name="k9" type="hidden">
+                                <input value="h" name="kt" type="hidden">
+                                <input style="max-width:12rem;width:95%;" placeholder="Hledat na tomto webu" maxlength="255" name="q" type="search">
+                                <input src="/img/search.svg" alt="hledat" class="small" type="image" title="hledat" id="go">
                             </form>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
         </main>
         <footer role="contentinfo">
             <div class="nav-container">
-                <div class="column" itemscope="" itemtype="https://schema.org/Library">
+                <div itemtype="https://schema.org/Library" itemscope="" class="column">
                     <h3>
                         Kontakt
                     </h3>
@@ -367,13 +367,13 @@
                         </address>
                     </div>
                     <div>
-                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
+                        <img itemprop="email" alt="e-mail" src="/img/mail.svg">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
                     </div>
                     <div>
-                        <img src="/img/phone.svg" alt="telefon">
+                        <img alt="telefon" src="/img/phone.svg">
                         <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
                             <span itemprop="telephone">
                                 +420 221 900 178
@@ -381,19 +381,19 @@
                         </a>
                     </div>
                     <div>
-                        <img src="/img/facebook.svg" alt="" aria-hidden="true">
+                        <img aria-hidden="true" alt="" src="/img/facebook.svg">
                         <a href="https://www.facebook.com/knihovnapedfpraha">
                             Facebook
                         </a>
                     </div>
                     <div>
-                        <img src="/img/instagram.svg" alt="" aria-hidden="true">
+                        <img aria-hidden="true" alt="" src="/img/instagram.svg">
                         <a href="https://www.instagram.com/KnihovnaPedFPraha/">
                             Instagram
                         </a>
                     </div>
                     <div>
-                        <img src="/img/rss.svg" alt="" aria-hidden="true">
+                        <img aria-hidden="true" alt="" src="/img/rss.svg">
                         <a href="/feed.rss">
                             RSS
                         </a>
@@ -424,7 +424,7 @@
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script async="true" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" type="text/javascript" src="/js/count.js">
+        <script src="/js/count.js" type="text/javascript" async="true" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
