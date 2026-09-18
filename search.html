@@ -2,17 +2,17 @@
 <html prefix="og: http://ogp.me/ns#" lang="en">
     <head>
         <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
         </title>
-        <meta content="website" property="og:type">
-        <meta content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!" property="og:description">
-        <meta content="http://knihovna.pedf.cuni.cz/search.html" property="og:url">
-        <meta content="Knihovna PedF UK" property="og:site_name">
-        <meta content="http://knihovna.pedf.cuni.cz/img/informace.jpg" property="og:image">
-        <meta content="summary_large_image" name="twitter:card">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Faculty library in the center of Prague. Rich book collection, many electronic resources, and magazines. We look forward to you!">
+        <meta property="og:url" content="http://knihovna.pedf.cuni.cz/search.html">
+        <meta property="og:site_name" content="Knihovna PedF UK">
+        <meta property="og:image" content="http://knihovna.pedf.cuni.cz/img/informace.jpg">
+        <meta name="twitter:card" content="summary_large_image">
         <link rel="alternate" href="feed-en.rss" type="application/rss+xml">
-        <link rel="stylesheet" href="/css/style.css?v=FFFFFFFFF32E96BE" type="text/css">
+        <link rel="stylesheet" href="/css/style.css?v=FFFFFFFFE638EB94" type="text/css">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -42,7 +42,7 @@
                     </span>
                     <span class="langswitcher">
                         <img src="/img/world.svg" alt="language">
-                        <a title="Přepnout na českou verzi" href="hledat.html" lang="cs" hreflang="cs">
+                        <a title="Přepnout na českou verzi" href="hledat.html" hreflang="cs" lang="cs">
                             CS
                         </a>
                     </span>
@@ -56,7 +56,7 @@
             <nav aria-label="main menu" class="mainmenu">
                 <div class="nav-container">
                     <a href="/index-en.html">
-                        <img class="logo" src="/img/logo-eng.svg" alt="Library of Faculty of Education CU">
+                        <img src="/img/logo-eng.svg" alt="Library of Faculty of Education CU" class="logo">
                     </a>
                     <span class="logo">
                         &nbsp;
@@ -70,7 +70,7 @@
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Lending services
                                 </li>
                                 <li class="menuitem">
@@ -98,7 +98,7 @@
                                         How to Pay Fines
                                     </a>
                                 </li>
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Other services
                                 </li>
                                 <li class="menuitem">
@@ -121,7 +121,7 @@
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Study Rooms
                                 </li>
                                 <li class="menuitem">
@@ -149,7 +149,7 @@
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Catalogues and databases
                                 </li>
                                 <li class="menuitem">
@@ -167,7 +167,7 @@
                                         Ulrichsweb
                                     </a>
                                 </li>
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Guides
                                 </li>
                                 <li class="menuitem">
@@ -185,7 +185,7 @@
                                 <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
                             </button>
                             <ul class="submenu">
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Contacts
                                 </li>
                                 <li class="menuitem">
@@ -198,7 +198,7 @@
                                         Opening hours
                                     </a>
                                 </li>
-                                <li class="section-title" role="presentation">
+                                <li role="presentation" class="section-title">
                                     Library documents
                                 </li>
                                 <li class="menuitem">
@@ -219,7 +219,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <button aria-controls="mainmenu-list" class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+                    <button aria-label="Otevřít menu" aria-expanded="false" aria-controls="mainmenu-list" class="hamburger">
                         ☰
                     </button>
                 </div>
@@ -232,35 +232,35 @@
                 </h1>
                 <div class="top-searchbox">
                     <div class="tabs searchbox">
-                        <input checked="checked" id="ukaz-sbox" aria-hidden="true" type="radio" name="tab-group">
-                        <label for="ukaz-sbox" aria-hidden="true">
+                        <input type="radio" checked="checked" id="ukaz-sbox" aria-hidden="true" name="tab-group">
+                        <label aria-hidden="true" for="ukaz-sbox">
                             UKAŽ
                         </label>
                         <div>
-                            <form method="get" action="https://cuni.primo.exlibrisgroup.com/discovery/search" id="ebscohostCustomSearchBox" target="_blank" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
-                                <input type="hidden" value="420CKIS_INST:UKAZ" name="vid">
-                                <input type="hidden" value="Everything" name="tab">
-                                <input type="hidden" value="MyInst_and_CI" name="search_scope">
-                                <input type="hidden" value="en" name="lang">
-                                <input type="hidden" value="basic" name="mode">
+                            <form onsubmit="searchPrimo()" target="_blank" method="get" enctype="application/x-www-form-urlencoded; charset=utf-8" id="ebscohostCustomSearchBox" action="https://cuni.primo.exlibrisgroup.com/discovery/search">
+                                <input type="hidden" name="vid" value="420CKIS_INST:UKAZ">
+                                <input type="hidden" name="tab" value="Everything">
+                                <input type="hidden" name="search_scope" value="MyInst_and_CI">
+                                <input type="hidden" name="lang" value="en">
+                                <input type="hidden" name="mode" value="basic">
                                 <input type="hidden" id="primoQuery" name="query">
-                                <input type="hidden" value="true" name="pcAvailabiltyMode">
-                                <input type="search" style="max-width:12rem;width:95%;" id="primoQueryTemp" placeholder="Search books & articles">
-                                <input title="search" id="go" type="image" class="small" src="/img/search.svg" alt="search">
+                                <input type="hidden" name="pcAvailabiltyMode" value="true">
+                                <input type="search" id="primoQueryTemp" placeholder="Search books & articles" style="max-width:12rem;width:95%;">
+                                <input title="search" alt="search" src="/img/search.svg" id="go" type="image" class="small">
                             </form>
                         </div>
-                        <input id="web-knihovny-sbox" aria-hidden="true" type="radio" name="tab-group">
-                        <label for="web-knihovny-sbox" aria-hidden="true">
+                        <input type="radio" id="web-knihovny-sbox" aria-hidden="true" name="tab-group">
+                        <label aria-hidden="true" for="web-knihovny-sbox">
                             Library Website
                         </label>
                         <div>
-                            <form method="get" action="https://duckduckgo.com/" id="duckduckgo-search" target="_blank" role="search">
-                                <input type="hidden" value="knihovna.pedf.cuni.cz" name="sites">
-                                <input type="hidden" value="#444444" name="k8">
-                                <input type="hidden" value="#D51920" name="k9">
-                                <input type="hidden" value="h" name="kt">
-                                <input style="max-width:12rem;width:95%;" type="search" placeholder="Search on the library site" maxlength="255" name="q">
-                                <input title="search" id="go" type="image" class="small" src="/img/search.svg" alt="search">
+                            <form target="_blank" method="get" role="search" id="duckduckgo-search" action="https://duckduckgo.com/">
+                                <input type="hidden" name="sites" value="knihovna.pedf.cuni.cz">
+                                <input type="hidden" name="k8" value="#444444">
+                                <input type="hidden" name="k9" value="#D51920">
+                                <input type="hidden" name="kt" value="h">
+                                <input type="search" maxlength="255" placeholder="Search on the library site" name="q" style="max-width:12rem;width:95%;">
+                                <input title="search" alt="search" src="/img/search.svg" id="go" type="image" class="small">
                             </form>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                         </address>
                     </div>
                     <div>
-                        <img alt="e-mail" src="/img/mail.svg" itemprop="email">
+                        <img src="/img/mail.svg" alt="e-mail" itemprop="email">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
@@ -299,19 +299,19 @@
                         </a>
                     </div>
                     <div>
-                        <img alt="" src="/img/facebook.svg" aria-hidden="true">
+                        <img src="/img/facebook.svg" alt="" aria-hidden="true">
                         <a href="https://www.facebook.com/knihovnapedfpraha">
                             Facebook
                         </a>
                     </div>
                     <div>
-                        <img alt="" src="/img/instagram.svg" aria-hidden="true">
+                        <img src="/img/instagram.svg" alt="" aria-hidden="true">
                         <a href="https://www.instagram.com/KnihovnaPedFPraha/">
                             Instagram
                         </a>
                     </div>
                     <div>
-                        <img alt="" src="/img/rss.svg" aria-hidden="true">
+                        <img src="/img/rss.svg" alt="" aria-hidden="true">
                         <a href="/feed.rss">
                             RSS
                         </a>
@@ -342,7 +342,7 @@
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script type="text/javascript" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" src="/js/count.js" async="true">
+        <script data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" src="/js/count.js" type="text/javascript" async="true">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
