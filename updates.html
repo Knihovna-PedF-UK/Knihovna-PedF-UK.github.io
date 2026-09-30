@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -12,8 +12,8 @@
         <meta content="Knihovna PedF UK" property="og:site_name">
         <meta content="http://knihovna.pedf.cuni.cz/img/informace.jpg" property="og:image">
         <meta content="summary_large_image" name="twitter:card">
-        <link rel="alternate" href="feed-en.rss" type="application/rss+xml">
-        <link rel="stylesheet" href="/css/style.css?v=FFFFFFFF60D88FEE" type="text/css">
+        <link href="feed-en.rss" type="application/rss+xml" rel="alternate">
+        <link href="/css/style.css?v=FFFFFFFF60D88FEE" type="text/css" rel="stylesheet">
               <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,11 +25,11 @@
       
     </head>
     <body class="container">
-        <a href="#main-content" class="skip-link">
+        <a class="skip-link" href="#main-content">
             Skip to content
         </a>
         <header>
-            <nav aria-label="additional navigation" class="topmenu">
+            <nav class="topmenu" aria-label="additional navigation">
                 <div class="nav-container">
                     <span>
                         <a href="https://pedf.cuni.cz/PEDFEN-145.html">
@@ -43,7 +43,7 @@
                     </span>
                     <span class="langswitcher">
                         <img alt="language" src="/img/world.svg">
-                        <a title="Přepnout na českou verzi" hreflang="cs" href="aktualizace.html" lang="cs">
+                        <a href="aktualizace.html" hreflang="cs" title="Přepnout na českou verzi" lang="cs">
                             CS
                         </a>
                     </span>
@@ -54,24 +54,24 @@
                     </span>
                 </div>
             </nav>
-            <nav aria-label="main menu" class="mainmenu">
+            <nav class="mainmenu" aria-label="main menu">
                 <div class="nav-container">
                     <a href="/index-en.html">
-                        <img class="logo" src="/img/logo-eng.svg" alt="Library of Faculty of Education CU">
+                        <img alt="Library of Faculty of Education CU" class="logo" src="/img/logo-eng.svg">
                     </a>
                     <span class="logo">
                         &nbsp;
                     </span>
-                    <ul id="mainmenu-list" class="menu">
+                    <ul class="menu" id="mainmenu-list">
                         <li class="menuitem">
                             <a href="/services.html" class="button">
                                 Services
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul class="submenu">
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Lending services
                                 </li>
                                 <li class="menuitem">
@@ -99,7 +99,7 @@
                                         How to Pay Fines
                                     </a>
                                 </li>
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Other services
                                 </li>
                                 <li class="menuitem">
@@ -119,10 +119,10 @@
                                 Our Facilities
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul class="submenu">
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Study Rooms
                                 </li>
                                 <li class="menuitem">
@@ -147,10 +147,10 @@
                                 Collections and resources
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul class="submenu">
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Catalogues and databases
                                 </li>
                                 <li class="menuitem">
@@ -168,7 +168,7 @@
                                         Ulrichsweb
                                     </a>
                                 </li>
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Guides
                                 </li>
                                 <li class="menuitem">
@@ -183,10 +183,10 @@
                                 About library
                             </a>
                             <button aria-expanded="false" class="dropdown">
-                                <img src="/img/sipkadolu.svg" alt="rozbalit submenu">
+                                <img alt="rozbalit submenu" src="/img/sipkadolu.svg">
                             </button>
                             <ul class="submenu">
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Contacts
                                 </li>
                                 <li class="menuitem">
@@ -199,7 +199,7 @@
                                         Opening hours
                                     </a>
                                 </li>
-                                <li role="presentation" class="section-title">
+                                <li class="section-title" role="presentation">
                                     Library documents
                                 </li>
                                 <li class="menuitem">
@@ -220,7 +220,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <button aria-label="Otevřít menu" class="hamburger" aria-expanded="false" aria-controls="mainmenu-list">
+                    <button aria-expanded="false" aria-label="Otevřít menu" class="hamburger" aria-controls="mainmenu-list">
                         ☰
                     </button>
                 </div>
@@ -248,17 +248,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/rules.html">
-                                                        Excerpt of functional rules of the Library of Faculty of Education, Charles University
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
+                                                    2026-09-22
                                                 </td>
                                                 <td>
                                                     <a href="/first-time.html">
@@ -268,76 +258,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/catalogues.html">
-                                                        Catalogues and information sources
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/special-needs.html">
-                                                        Services for Students with Special Needs
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/opening.html">
-                                                        Opening times
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/reference-desk.html">
-                                                        Reference desk
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/library.html">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/bibliobox-en.html">
-                                                        Biblioboxes
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/fees.html">
-                                                        How to pay late fees?
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
+                                                    2026-09-22
                                                 </td>
                                                 <td>
                                                     <a href="/celetna-en.html">
@@ -347,7 +268,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
+                                                    2026-09-22
                                                 </td>
                                                 <td>
                                                     <a href="/about.html">
@@ -357,67 +278,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/services.html">
-                                                        Library services
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/print.html">
-                                                        Copying and Printing
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/study-room.html">
-                                                        Study Room
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/prices.html">
-                                                        Price list of fees and paid services
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/purchase-books.html">
-                                                        Ordering literature for faculty staff
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
-                                                </td>
-                                                <td>
-                                                    <a href="/lockers.html">
-                                                        Smart Lockers
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2026-09-05
+                                                    2026-09-22
                                                 </td>
                                                 <td>
                                                     <a href="/cas_not_cz_en.htm">
@@ -427,21 +288,160 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
+                                                    2026-09-22
                                                 </td>
                                                 <td>
-                                                    <a href="/spaces.html">
-                                                        Our Facilities
+                                                    <a href="/opening.html">
+                                                        Opening times
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    2026-09-05
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/prices.html">
+                                                        Price list of fees and paid services
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/library.html">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/catalogues.html">
+                                                        Catalogues and information sources
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/purchase-books.html">
+                                                        Ordering literature for faculty staff
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/bibliobox-en.html">
+                                                        Biblioboxes
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/services.html">
+                                                        Library services
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/reference-desk.html">
+                                                        Reference desk
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/study-room.html">
+                                                        Study Room
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/print.html">
+                                                        Copying and Printing
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/rules.html">
+                                                        Excerpt of functional rules of the Library of Faculty of Education, Charles University
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/special-needs.html">
+                                                        Services for Students with Special Needs
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/lockers.html">
+                                                        Smart Lockers
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/fees.html">
+                                                        How to pay late fees?
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
                                                 </td>
                                                 <td>
                                                     <a href="/eiz-pedf-en.html">
                                                         Information sources available for the Faculty of Education 
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2026-09-22
+                                                </td>
+                                                <td>
+                                                    <a href="/spaces.html">
+                                                        Our Facilities
                                                     </a>
                                                 </td>
                                             </tr>
@@ -464,12 +464,12 @@
         </main>
         <footer role="contentinfo">
             <div class="nav-container">
-                <div itemscope="" itemtype="https://schema.org/Library" class="column">
+                <div itemscope="" class="column" itemtype="https://schema.org/Library">
                     <h3>
                         Contact
                     </h3>
                     <div>
-                        <address itemtype="https://schema.org/PostalAddress" itemprop="address">
+                        <address itemprop="address" itemtype="https://schema.org/PostalAddress">
                             <span>
                                 Knihovna PedF UK
                             </span>
@@ -480,14 +480,14 @@
                         </address>
                     </div>
                     <div>
-                        <img itemprop="email" alt="e-mail" src="/img/mail.svg">
+                        <img alt="e-mail" itemprop="email" src="/img/mail.svg">
                         <a href="mailto:knihovna@pedf.cuni.cz">
                             knihovna@pedf.cuni.cz
                         </a>
                     </div>
                     <div>
                         <img alt="phone" src="/img/phone.svg">
-                        <a aria-label="2 2 1 9 0 0 1 7 8" href="tel:+420221900178">
+                        <a href="tel:+420221900178" aria-label="2 2 1 9 0 0 1 7 8">
                             <span itemprop="telephone">
                                 +420 221 900 178
                             </span>
@@ -537,7 +537,7 @@
                 Knihovna Pedagogické fakulty Univerzity Karlovy 
             </div>
         </footer>
-        <script data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php" async="true" type="text/javascript" src="/js/count.js">
+        <script src="/js/count.js" type="text/javascript" async="true" data-goatcounter="https://knihovna.pedf.cuni.cz/counter/counter.php">
         </script>
         <script type="text/javascript">
   function searchPrimoBase(id,temp) {
